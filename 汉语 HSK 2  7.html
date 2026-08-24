@@ -1,0 +1,3779 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)file:///C:/Users/LAPTOP/Downloads/hsk2-darslar-1-15_16.html -->
+<html lang="uz"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>汉语 HSK 2 — 1-15 darslar</title>
+<meta name="theme-color" content="#11181A">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="HSK 2">
+<meta name="description" content="HSK 2 — 15 darslik interaktiv xitoy tili o&#39;quv qo&#39;llanmasi">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=&#39;http://www.w3.org/2000/svg&#39; viewBox=&#39;0 0 100 100&#39;%3E%3Ccircle cx=&#39;50&#39; cy=&#39;50&#39; r=&#39;48&#39; fill=&#39;%23B7362C&#39;/%3E%3Ctext x=&#39;50&#39; y=&#39;68&#39; font-size=&#39;54&#39; text-anchor=&#39;middle&#39; fill=&#39;%23F4EFE1&#39; font-family=&#39;serif&#39;%3E%E6%B1%89%3C/text%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns=&#39;http://www.w3.org/2000/svg&#39; viewBox=&#39;0 0 100 100&#39;%3E%3Crect width=&#39;100&#39; height=&#39;100&#39; rx=&#39;20&#39; fill=&#39;%23B7362C&#39;/%3E%3Ctext x=&#39;50&#39; y=&#39;68&#39; font-size=&#39;54&#39; text-anchor=&#39;middle&#39; fill=&#39;%23F4EFE1&#39; font-family=&#39;serif&#39;%3E%E6%B1%89%3C/text%3E%3C/svg%3E">
+<link rel="manifest" href="data:application/manifest+json,%7B%22name%22%3A%22HSK%202%20-%20Xitoy%20tili%22%2C%22short_name%22%3A%22HSK%202%22%2C%22start_url%22%3A%22.%22%2C%22display%22%3A%22standalone%22%2C%22background_color%22%3A%22%2311181A%22%2C%22theme_color%22%3A%22%2311181A%22%7D">
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link href="./汉语 HSK 2  7_files/css2" rel="stylesheet">
+<style>
+  :root{
+    --ink:#11181A;
+    --ink-2:#182422;
+    --jade:#2FA184;
+    --jade-light:#5FCBAE;
+    --seal:#B7362C;
+    --seal-light:#D65A46;
+    --paper:#F1E8D6;
+    --paper-dim:#DCD0B3;
+    --gold:#C9A227;
+    --text-hi:#F4EFE1;
+    --text-dim:#9FB0AC;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;height:100%;}
+  body{
+    background:
+      radial-gradient(ellipse 60% 45% at 15% 8%, rgba(47,161,132,0.16), transparent 60%),
+      radial-gradient(ellipse 55% 45% at 88% 92%, rgba(183,54,44,0.14), transparent 60%),
+      var(--ink);
+    color:var(--text-hi);
+    font-family:'Sora',sans-serif;
+    min-height:100vh;
+    overflow-x:hidden;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .hanzi{font-family:'Noto Serif SC',serif;}
+
+  /* ambient ink blobs */
+  .blob{position:fixed;border-radius:50%;filter:blur(70px);opacity:0.20;pointer-events:none;z-index:0;}
+  .blob1{width:420px;height:420px;background:var(--jade);top:-120px;left:-140px;animation:drift1 22s ease-in-out infinite;}
+  .blob2{width:360px;height:360px;background:var(--seal);bottom:-140px;right:-120px;animation:drift2 26s ease-in-out infinite;}
+  @keyframes drift1{0%,100%{transform:translate(0,0);}50%{transform:translate(40px,60px);}}
+  @keyframes drift2{0%,100%{transform:translate(0,0);}50%{transform:translate(-50px,-30px);}}
+
+  /* floating petals */
+  #petals{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden;}
+  .petal{position:absolute;top:-40px;font-size:16px;opacity:0.55;animation-name:fall,sway;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;}
+  @keyframes fall{from{transform:translateY(-5vh);}to{transform:translateY(105vh);}}
+  @keyframes sway{0%,100%{margin-left:0;}50%{margin-left:40px;}}
+
+  /* hero entrance */
+  .eyebrow{opacity:0;animation:stampDown .6s cubic-bezier(.2,.8,.3,1.3) forwards;animation-delay:.1s;}
+  @keyframes stampDown{
+    0%{opacity:0;transform:scale(2.6) rotate(-14deg);}
+    60%{opacity:1;transform:scale(0.92) rotate(-6deg);}
+    100%{opacity:1;transform:scale(1) rotate(-4deg);}
+  }
+  h1.reveal{
+    display:inline-block;clip-path:inset(0 100% 0 0);
+    animation:wipeIn 1.1s cubic-bezier(.65,0,.15,1) forwards;
+    animation-delay:.5s;
+  }
+  @keyframes wipeIn{to{clip-path:inset(0 0 0 0);}}
+  .subtitle{opacity:0;animation:fadeUp .6s ease forwards;animation-delay:1.4s;}
+  .tabs{opacity:0;animation:fadeUp .6s ease forwards;animation-delay:1.65s;}
+  .lesson-pills{opacity:0;animation:fadeUp .6s ease forwards;animation-delay:1.2s;}
+
+  /* card entrance */
+  .card{opacity:0;animation:cardIn .55s cubic-bezier(.2,.8,.25,1) forwards;}
+  @keyframes cardIn{from{opacity:0;transform:translateY(18px) scale(.94);}to{opacity:1;transform:translateY(0) scale(1);}}
+
+  /* tab content transition */
+  section.active{animation:sectionIn .5s cubic-bezier(.2,.8,.25,1);}
+  @keyframes sectionIn{from{opacity:0;transform:translateY(16px);}to{opacity:1;transform:translateY(0);}}
+
+  #confettiCanvas{position:fixed;inset:0;pointer-events:none;z-index:50;}
+
+  .wrap{position:relative;z-index:1;max-width:1080px;margin:0 auto;padding:32px 20px 80px;}
+
+  header{text-align:center;margin-bottom:22px;}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:12px;letter-spacing:0.16em;text-transform:uppercase;
+    color:var(--jade-light);border:1px solid rgba(95,203,174,0.35);
+    padding:6px 14px;border-radius:100px;margin-bottom:18px;
+  }
+  .eyebrow::before{content:"印";font-family:'Noto Serif SC';color:var(--seal-light);font-size:14px;}
+  h1{
+    font-family:'Noto Serif SC',serif;font-weight:900;
+    font-size:clamp(32px,7vw,58px);margin:0 0 6px;
+    background:linear-gradient(135deg,var(--text-hi) 20%,var(--jade-light) 65%,var(--gold) 100%);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+    letter-spacing:0.02em;
+  }
+  .subtitle{color:var(--text-dim);font-size:16px;font-weight:500;}
+
+  /* overall progress */
+  .overall-progress{max-width:420px;margin:0 auto 4px;opacity:0;animation:fadeUp .6s ease forwards;animation-delay:1.1s;}
+  .overall-progress .lbl{display:flex;justify-content:space-between;font-size:11px;color:var(--text-dim);font-weight:600;margin-bottom:6px;letter-spacing:.04em;}
+  .overall-track{height:5px;background:rgba(255,255,255,0.08);border-radius:100px;overflow:hidden;}
+  .overall-fill{height:100%;background:linear-gradient(90deg,var(--gold),var(--seal-light));width:0%;transition:width .5s ease;}
+
+  /* lesson nav row */
+  .lesson-nav{display:flex;align-items:center;gap:10px;margin:22px 0 6px;}
+  .nav-btn{
+    flex:0 0 auto;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);
+    color:var(--text-hi);width:38px;height:38px;border-radius:11px;cursor:pointer;
+    display:flex;align-items:center;justify-content:center;font-size:16px;transition:.2s;
+  }
+  .nav-btn:hover{border-color:var(--jade-light);color:var(--jade-light);}
+  .nav-btn:disabled{opacity:0.3;cursor:default;}
+  .nav-btn:disabled:hover{border-color:rgba(255,255,255,0.1);color:var(--text-hi);}
+
+  /* lesson pills */
+  .lesson-pills{
+    display:flex;gap:8px;overflow-x:auto;padding:6px 2px 14px;flex:1;
+    scrollbar-width:thin;
+  }
+  .lesson-pills::-webkit-scrollbar{height:6px;}
+  .lesson-pills::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.15);border-radius:10px;}
+  .lpill{
+    position:relative;flex:0 0 auto;font-family:'Sora';font-weight:700;font-size:13px;color:var(--text-dim);
+    background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);
+    width:40px;height:40px;border-radius:12px;cursor:pointer;transition:.2s;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .lpill:hover{border-color:rgba(95,203,174,0.4);color:var(--text-hi);}
+  .lpill.active{background:linear-gradient(135deg,var(--seal),#7c231b);color:var(--text-hi);border-color:transparent;box-shadow:0 8px 20px -8px rgba(183,54,44,0.6);}
+  .lpill.done::after{
+    content:"";position:absolute;top:-3px;right:-3px;width:9px;height:9px;border-radius:50%;
+    background:var(--jade-light);border:2px solid var(--ink);
+  }
+  .lpill-badge{
+    position:absolute;bottom:-6px;left:50%;transform:translateX(-50%);
+    font-size:8px;font-weight:700;color:var(--text-dim);background:var(--ink);
+    padding:0 3px;letter-spacing:.02em;
+  }
+
+  /* tabs */
+  .tabs{display:flex;justify-content:center;gap:10px;margin:18px 0 34px;flex-wrap:wrap;}
+  .tab{
+    font-family:'Sora';font-weight:700;font-size:14px;color:var(--text-dim);
+    background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);
+    padding:12px 22px;border-radius:14px;cursor:pointer;transition:.25s;
+    display:flex;align-items:center;gap:8px;
+  }
+  .tab:hover{border-color:rgba(95,203,174,0.4);color:var(--text-hi);}
+  .tab.active{background:linear-gradient(135deg,var(--jade),#1f7a63);color:#08130F;border-color:transparent;box-shadow:0 8px 24px -8px rgba(47,161,132,0.6);}
+
+  section{display:none;}
+  section.active{display:block;}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:translateY(0);}}
+
+  /* ===== Flashcards ===== */
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:16px;}
+  .card{
+    perspective:1200px;height:190px;cursor:pointer;
+  }
+  .card-inner{
+    position:relative;width:100%;height:100%;
+    transform-style:preserve-3d;transition:transform .55s cubic-bezier(.2,.9,.25,1.1);
+  }
+  .card.flipped .card-inner{transform:rotateY(180deg);}
+  .face{
+    position:absolute;inset:0;border-radius:18px;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    backface-visibility:hidden;padding:14px;text-align:center;
+  }
+  .front{
+    background:linear-gradient(160deg,var(--ink-2),#0d1513);
+    border:1px solid rgba(255,255,255,0.07);
+  }
+  .front .num{position:absolute;top:10px;left:14px;font-size:11px;color:var(--text-dim);font-weight:600;}
+  .front .hz{font-size:44px;font-weight:700;color:var(--text-hi);}
+  .front .tap-hint{position:absolute;bottom:10px;font-size:10px;color:var(--text-dim);letter-spacing:.08em;text-transform:uppercase;}
+  .back{
+    background:linear-gradient(160deg,var(--paper),#e4d8ba);
+    color:var(--ink);transform:rotateY(180deg);
+    border:1px solid rgba(0,0,0,0.05);
+  }
+  .back .py{font-size:19px;font-weight:700;color:var(--seal);margin-bottom:6px;}
+  .back .uz{font-size:14px;font-weight:600;color:#2b2620;line-height:1.3;}
+  .speaker{
+    margin-top:10px;width:34px;height:34px;border-radius:50%;
+    background:var(--jade);color:#08130F;border:none;display:flex;align-items:center;justify-content:center;
+    cursor:pointer;font-size:15px;box-shadow:0 4px 12px -4px rgba(0,0,0,.4);
+  }
+  .speaker:active{transform:scale(0.9);}
+
+  .flash-controls{display:flex;justify-content:center;gap:12px;margin-top:26px;}
+  .ghost-btn{
+    background:transparent;border:1px solid rgba(255,255,255,0.15);color:var(--text-hi);
+    padding:10px 18px;border-radius:12px;font-family:'Sora';font-weight:600;font-size:13px;cursor:pointer;
+  }
+  .ghost-btn:hover{border-color:var(--jade-light);color:var(--jade-light);}
+
+  /* ===== Quiz ===== */
+  .quiz-box{max-width:560px;margin:0 auto;text-align:center;}
+  .quiz-dir{display:flex;justify-content:center;gap:8px;margin-bottom:20px;}
+  .dir-btn{
+    font-family:'Sora';font-weight:700;font-size:12px;color:var(--text-dim);
+    background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);
+    padding:9px 16px;border-radius:100px;cursor:pointer;transition:.2s;
+  }
+  .dir-btn:hover{border-color:rgba(95,203,174,0.4);color:var(--text-hi);}
+  .dir-btn.active{background:linear-gradient(135deg,var(--jade),#1f7a63);color:#08130F;border-color:transparent;}
+  .prompt-uz{font-size:26px;font-weight:700;padding:0 10px;line-height:1.3;color:var(--text-hi);}
+  .quiz-meta{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;font-size:13px;color:var(--text-dim);font-weight:600;}
+  .progress-track{height:6px;background:rgba(255,255,255,0.08);border-radius:100px;overflow:hidden;margin-bottom:34px;}
+  .progress-fill{height:100%;background:linear-gradient(90deg,var(--jade),var(--jade-light));width:0%;transition:width .4s ease;}
+
+  .prompt-card{
+    position:relative;background:linear-gradient(165deg,var(--ink-2),#0c1210);
+    border:1px solid rgba(255,255,255,0.08);border-radius:26px;
+    padding:52px 30px 44px;margin-bottom:26px;min-height:190px;
+    display:flex;align-items:center;justify-content:center;
+    animation:promptIn .45s cubic-bezier(.2,.8,.25,1);
+  }
+  @keyframes promptIn{from{opacity:0;transform:scale(.92) translateY(10px);}to{opacity:1;transform:scale(1) translateY(0);}}
+  .opt{opacity:0;animation:optIn .4s ease forwards;}
+  @keyframes optIn{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:translateY(0);}}
+  .prompt-hz{font-size:64px;font-weight:700;}
+  .prompt-py{position:absolute;bottom:16px;left:0;right:0;font-size:13px;color:var(--text-dim);letter-spacing:.05em;}
+  .stamp{
+    position:absolute;font-family:'Noto Serif SC';font-weight:900;font-size:76px;color:var(--seal);
+    opacity:0;transform:scale(2.4) rotate(-18deg);pointer-events:none;
+  }
+  .stamp.show{animation:stampIn .55s cubic-bezier(.15,.85,.3,1.2) forwards;}
+  @keyframes stampIn{
+    0%{opacity:0;transform:scale(2.4) rotate(-18deg);}
+    55%{opacity:0.92;transform:scale(0.94) rotate(-10deg);}
+    75%{transform:scale(1.06) rotate(-10deg);}
+    100%{opacity:0.92;transform:scale(1) rotate(-10deg);}
+  }
+
+  .options{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  .opt{
+    background:var(--paper);color:#2b2620;border:none;border-radius:16px;
+    padding:18px 14px;font-family:'Sora';font-weight:700;font-size:14.5px;cursor:pointer;
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .opt:hover{transform:translateY(-3px);box-shadow:0 10px 22px -10px rgba(0,0,0,.5);}
+  .opt.correct{background:linear-gradient(150deg,var(--jade-light),var(--jade));color:#06120E;}
+  .opt.wrong{background:linear-gradient(150deg,var(--seal-light),var(--seal));color:#2a0e0a;animation:shake .4s;}
+  .opt:disabled{cursor:default;}
+  @keyframes shake{0%,100%{transform:translateX(0);}25%{transform:translateX(-8px);}75%{transform:translateX(8px);}}
+
+  .quiz-end{text-align:center;padding:40px 20px;}
+  .quiz-end .score{font-family:'Noto Serif SC';font-size:56px;font-weight:900;color:var(--gold);}
+  .quiz-end p{color:var(--text-dim);}
+  .cta-btn{
+    margin-top:18px;background:linear-gradient(135deg,var(--jade),#1f7a63);color:#08130F;
+    border:none;padding:14px 30px;border-radius:14px;font-weight:800;font-size:14px;cursor:pointer;
+  }
+  .cta-btn.secondary{
+    margin-left:10px;background:transparent;color:var(--text-hi);border:1px solid rgba(255,255,255,0.18);
+  }
+  .cta-row{display:flex;justify-content:center;flex-wrap:wrap;}
+  .mistake-list{margin-top:22px;text-align:left;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:16px 18px;}
+  .mistake-list h4{margin:0 0 10px;font-size:12px;color:var(--seal-light);text-transform:uppercase;letter-spacing:.06em;}
+  .mistake-row{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05);font-size:14px;}
+  .mistake-row:last-child{border-bottom:none;}
+  .mistake-row .mhz{font-family:'Noto Serif SC';font-weight:700;}
+  .mistake-row .muz{color:var(--text-dim);text-align:right;}
+
+  footer{text-align:center;margin-top:60px;color:var(--text-dim);font-size:12px;letter-spacing:.04em;}
+
+  /* ===== Memory match game ===== */
+  .match-meta{
+    display:flex;align-items:center;justify-content:center;gap:22px;margin-bottom:22px;
+    font-size:13px;color:var(--text-dim);font-weight:700;flex-wrap:wrap;
+  }
+  .match-meta span span{color:var(--text-hi);}
+  .match-grid{
+    display:grid;grid-template-columns:repeat(4,1fr);gap:12px;max-width:640px;margin:0 auto;
+  }
+  @media(max-width:520px){ .match-grid{grid-template-columns:repeat(3,1fr);} }
+  .mcard{perspective:900px;height:100px;cursor:pointer;}
+  .mcard-inner{
+    position:relative;width:100%;height:100%;transform-style:preserve-3d;
+    transition:transform .45s cubic-bezier(.2,.9,.25,1.1);
+  }
+  .mcard.flipped .mcard-inner, .mcard.matched .mcard-inner{transform:rotateY(180deg);}
+  .mface{
+    position:absolute;inset:0;border-radius:14px;backface-visibility:hidden;
+    display:flex;align-items:center;justify-content:center;text-align:center;padding:8px;
+  }
+  .mfront{
+    background:linear-gradient(160deg,var(--ink-2),#0d1513);border:1px solid rgba(255,255,255,0.08);
+    font-family:'Noto Serif SC';font-size:22px;color:var(--jade-light);
+  }
+  .mback{
+    background:linear-gradient(160deg,var(--paper),#e4d8ba);color:#2b2620;
+    transform:rotateY(180deg);font-weight:700;font-size:13px;line-height:1.25;
+  }
+  .mback .mhz{font-family:'Noto Serif SC';font-size:19px;color:var(--seal);display:block;margin-bottom:2px;}
+  .mcard.matched .mback{background:linear-gradient(160deg,var(--jade-light),var(--jade));color:#06120E;}
+  .mcard.wrong-flash .mback{background:linear-gradient(160deg,var(--seal-light),var(--seal));color:#2a0e0a;}
+  .mcard.matched{cursor:default;}
+  .match-win{
+    text-align:center;padding:30px 20px;max-width:400px;margin:0 auto;
+    animation:promptIn .45s cubic-bezier(.2,.8,.25,1);
+  }
+  .match-win .score{font-family:'Noto Serif SC';font-size:44px;font-weight:900;color:var(--gold);}
+
+  /* ===== XP / Level / Streak badge ===== */
+  .xp-bar{
+    display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;
+    margin:0 0 18px;opacity:0;animation:fadeUp .6s ease forwards;animation-delay:0.9s;
+  }
+  .xp-chip{
+    display:flex;align-items:center;gap:6px;font-size:12px;font-weight:700;color:var(--text-hi);
+    background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);
+    padding:7px 13px;border-radius:100px;
+  }
+  .xp-chip .lvl{color:var(--gold);}
+  .xp-chip .streak{color:#ff9a4d;}
+  .xp-track{width:90px;height:6px;background:rgba(255,255,255,0.1);border-radius:100px;overflow:hidden;}
+  .xp-fill{height:100%;background:linear-gradient(90deg,var(--gold),#ffd873);width:0%;transition:width .5s ease;}
+  .xp-toast{
+    position:fixed;top:18px;left:50%;transform:translateX(-50%) translateY(-30px);
+    background:linear-gradient(135deg,var(--gold),#a67c1c);color:#221a03;font-weight:800;font-size:13px;
+    padding:10px 20px;border-radius:100px;box-shadow:0 12px 26px -8px rgba(0,0,0,.6);
+    opacity:0;z-index:60;pointer-events:none;transition:transform .35s ease, opacity .35s ease;
+  }
+  .xp-toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
+  .level-up-banner{
+    position:fixed;top:50%;left:50%;transform:translate(-50%,-50%) scale(0.6);
+    background:linear-gradient(160deg,var(--ink-2),#0d1513);border:1px solid var(--gold);
+    border-radius:22px;padding:34px 44px;text-align:center;z-index:70;opacity:0;
+    transition:transform .4s cubic-bezier(.2,.8,.25,1.3), opacity .4s ease;pointer-events:none;
+  }
+  .level-up-banner.show{opacity:1;transform:translate(-50%,-50%) scale(1);}
+  .level-up-banner .big{font-family:'Noto Serif SC';font-size:40px;color:var(--gold);font-weight:900;}
+
+  /* ===== Speed round ===== */
+  .speed-meta{display:flex;justify-content:center;gap:26px;margin-bottom:20px;font-size:13px;color:var(--text-dim);font-weight:700;}
+  .speed-meta span span{color:var(--text-hi);}
+  .speed-timer-ring{width:64px;height:64px;margin:0 auto 20px;}
+  .speed-start{text-align:center;padding:30px 20px;}
+  .speed-best{color:var(--gold);font-weight:700;font-size:13px;margin-top:6px;}
+
+  /* ===== Word builder ===== */
+  .build-box{max-width:520px;margin:0 auto;text-align:center;}
+  .build-target{
+    background:linear-gradient(165deg,var(--ink-2),#0c1210);border:1px solid rgba(255,255,255,0.08);
+    border-radius:22px;padding:30px 20px;margin-bottom:22px;
+  }
+  .build-uz{font-size:16px;color:var(--text-dim);margin-bottom:14px;font-weight:600;}
+  .build-slots{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;min-height:64px;}
+  .build-slot{
+    width:56px;height:56px;border-radius:12px;border:2px dashed rgba(255,255,255,0.18);
+    display:flex;align-items:center;justify-content:center;font-family:'Noto Serif SC';font-size:26px;
+    color:var(--text-hi);background:rgba(255,255,255,0.02);
+  }
+  .build-slot.filled{border-style:solid;border-color:var(--jade-light);background:rgba(95,203,174,0.1);cursor:pointer;}
+  .build-choices{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;}
+  .build-chip{
+    width:56px;height:56px;border-radius:12px;background:var(--paper);color:#2b2620;border:none;
+    font-family:'Noto Serif SC';font-size:26px;cursor:pointer;transition:transform .15s;
+  }
+  .build-chip:hover{transform:translateY(-3px);}
+  .build-chip:disabled{opacity:0.25;cursor:default;transform:none;}
+
+  /* ===== Hangman ===== */
+  .hang-box{max-width:480px;margin:0 auto;text-align:center;}
+  .hang-uz{font-size:16px;color:var(--text-dim);margin-bottom:18px;font-weight:600;}
+  .hang-slots{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-bottom:24px;}
+  .hang-letter{
+    min-width:30px;padding:0 4px;border-bottom:3px solid rgba(255,255,255,0.25);
+    font-size:22px;font-weight:700;text-align:center;color:var(--text-hi);
+  }
+  .hang-keyboard{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;max-width:420px;margin:0 auto 18px;}
+  .hang-key{
+    width:32px;height:36px;border-radius:8px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);
+    color:var(--text-hi);font-weight:700;font-size:13px;cursor:pointer;
+  }
+  .hang-key:hover{border-color:var(--jade-light);}
+  .hang-key:disabled{opacity:0.25;cursor:default;}
+  .hang-key.hit{background:var(--jade);color:#06120E;border-color:transparent;}
+  .hang-key.miss{background:var(--seal);color:#2a0e0a;border-color:transparent;}
+  .hang-lives{display:flex;justify-content:center;gap:6px;margin-bottom:16px;font-size:20px;}
+
+  /* ===== Listening quiz ===== */
+  .listen-replay{
+    width:84px;height:84px;border-radius:50%;background:linear-gradient(135deg,var(--jade),#1f7a63);
+    border:none;color:#06120E;font-size:32px;cursor:pointer;display:flex;align-items:center;justify-content:center;
+    margin:0 auto 10px;box-shadow:0 12px 26px -10px rgba(47,161,132,.7);
+  }
+  .listen-replay:active{transform:scale(0.92);}
+
+  /* toggle rows shared */
+  .toggle-row{display:flex;justify-content:center;gap:8px;margin-bottom:20px;flex-wrap:wrap;}
+  .toggle-btn{
+    font-family:'Sora';font-weight:700;font-size:12px;color:var(--text-dim);
+    background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);
+    padding:9px 16px;border-radius:100px;cursor:pointer;transition:.2s;
+  }
+  .toggle-btn:hover{border-color:rgba(95,203,174,0.4);color:var(--text-hi);}
+  .toggle-btn.active{background:linear-gradient(135deg,var(--jade),#1f7a63);color:#08130F;border-color:transparent;}
+  .type-input{
+    width:100%;max-width:280px;background:var(--paper);border:none;border-radius:14px;
+    padding:14px 16px;font-family:'Sora';font-weight:700;font-size:16px;color:#2b2620;text-align:center;
+    margin:0 auto 14px;display:block;
+  }
+  .type-input:focus{outline:2px solid var(--jade-light);}
+  .type-submit{
+    background:linear-gradient(135deg,var(--jade),#1f7a63);color:#08130F;border:none;
+    padding:12px 26px;border-radius:12px;font-weight:800;cursor:pointer;font-size:13px;
+  }
+
+  /* ===== Theme toggle (light mode) ===== */
+  body[data-theme="light"]{
+    --ink:#F1E8D6; --ink-2:#fbf6e9; --text-hi:#2b2620; --text-dim:#7a6f57;
+    background:
+      radial-gradient(ellipse 60% 45% at 15% 8%, rgba(47,161,132,0.12), transparent 60%),
+      radial-gradient(ellipse 55% 45% at 88% 92%, rgba(183,54,44,0.10), transparent 60%),
+      var(--ink);
+  }
+  body[data-theme="light"] .front{ background:linear-gradient(160deg,#fff,#f4ecd8); border-color:rgba(0,0,0,0.08); }
+  body[data-theme="light"] .prompt-card{ background:linear-gradient(165deg,#fff,#f4ecd8); border-color:rgba(0,0,0,0.08); }
+  body[data-theme="light"] .mfront{ background:linear-gradient(160deg,#fff,#f4ecd8); border-color:rgba(0,0,0,0.08); color:var(--seal); }
+  body[data-theme="light"] .tab, body[data-theme="light"] .lpill, body[data-theme="light"] .toggle-btn, body[data-theme="light"] .dir-btn, body[data-theme="light"] .ghost-btn, body[data-theme="light"] .nav-btn{
+    background:rgba(0,0,0,0.03); border-color:rgba(0,0,0,0.1);
+  }
+  .theme-toggle{
+    position:absolute;top:0;right:0;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);
+    width:38px;height:38px;border-radius:11px;cursor:pointer;font-size:16px;color:var(--text-hi);
+    display:flex;align-items:center;justify-content:center;
+  }
+  header{position:relative;}
+
+  /* ===== Sentence builder ===== */
+  .sb-target-uz{color:var(--text-dim);font-size:14px;margin-bottom:22px;text-align:center;}
+  .sb-slots{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;min-height:56px;margin-bottom:26px;padding:12px;background:rgba(255,255,255,0.03);border-radius:14px;border:1px dashed rgba(255,255,255,0.15);}
+  .sb-slot{
+    min-width:52px;height:44px;border:1px solid rgba(255,255,255,0.15);border-radius:10px;
+    display:flex;align-items:center;justify-content:center;font-family:'Noto Serif SC';font-size:18px;color:var(--text-hi);
+    cursor:pointer;
+  }
+  .sb-slot.filled{border-color:var(--jade-light);background:rgba(47,161,132,0.1);}
+  .sb-choices{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;}
+  .sb-chip{
+    background:var(--paper);color:#2b2620;border:none;border-radius:10px;padding:11px 16px;
+    font-family:'Noto Serif SC';font-size:17px;font-weight:700;cursor:pointer;
+  }
+  .sb-chip:disabled{opacity:0.25;cursor:default;}
+
+  /* ===== Boss test ===== */
+  .boss-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;max-width:640px;margin:0 auto;}
+  .boss-card{
+    background:linear-gradient(160deg,var(--ink-2),#0c1210);border:1px solid rgba(255,255,255,0.08);
+    border-radius:18px;padding:24px 18px;text-align:center;cursor:pointer;transition:.2s;
+  }
+  .boss-card:hover{border-color:var(--seal-light);transform:translateY(-3px);}
+  .boss-card .boss-icon{font-size:30px;margin-bottom:8px;}
+  .boss-card .boss-title{font-weight:800;font-size:15px;margin-bottom:4px;}
+  .boss-card .boss-sub{font-size:12px;color:var(--text-dim);}
+  .boss-card .boss-best{font-size:11px;color:var(--gold);margin-top:8px;font-weight:700;}
+
+  /* ===== Achievements ===== */
+  .ach-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px;}
+  .ach-card{
+    background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:16px;
+    padding:18px 14px;text-align:center;opacity:0.4;filter:grayscale(1);transition:.3s;
+  }
+  .ach-card.unlocked{opacity:1;filter:none;border-color:rgba(201,162,39,0.4);background:rgba(201,162,39,0.06);}
+  .ach-card .ach-icon{font-size:30px;margin-bottom:8px;}
+  .ach-card .ach-name{font-weight:800;font-size:13px;margin-bottom:4px;}
+  .ach-card .ach-desc{font-size:11px;color:var(--text-dim);line-height:1.3;}
+  .ach-toast{
+    position:fixed;top:20px;left:50%;transform:translateX(-50%) translateY(-120%);
+    background:linear-gradient(135deg,var(--gold),#8a6e12);color:#1c1503;
+    padding:14px 22px;border-radius:14px;font-weight:800;font-size:13px;z-index:60;
+    transition:transform .5s cubic-bezier(.2,.8,.25,1.4);box-shadow:0 12px 30px -8px rgba(0,0,0,.5);
+    display:flex;align-items:center;gap:10px;
+  }
+  .ach-toast.show{transform:translateX(-50%) translateY(0);}
+
+  /* ===== Stats ===== */
+  .stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px;margin-bottom:30px;}
+  .stat-card{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:18px;text-align:center;}
+  .stat-card .stat-num{font-family:'Noto Serif SC';font-size:30px;font-weight:900;color:var(--jade-light);}
+  .stat-card .stat-lbl{font-size:11px;color:var(--text-dim);margin-top:4px;}
+  .stat-bar-row{display:flex;align-items:center;gap:10px;margin-bottom:9px;font-size:13px;}
+  .stat-bar-hz{width:70px;flex:0 0 auto;font-family:'Noto Serif SC';font-weight:700;}
+  .stat-bar-track{flex:1;height:10px;background:rgba(255,255,255,0.06);border-radius:100px;overflow:hidden;}
+  .stat-bar-fill{height:100%;background:linear-gradient(90deg,var(--seal),var(--seal-light));border-radius:100px;}
+  .stat-bar-pct{width:38px;text-align:right;color:var(--text-dim);font-size:11px;}
+
+  /* ===== Dictation ===== */
+  .dict-mode-row{display:flex;justify-content:center;gap:8px;margin-bottom:20px;}
+
+  /* ===== Multiplayer (Jamoviy) ===== */
+  .mp-mode-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;max-width:680px;margin:0 auto 30px;}
+  .mp-mode-card{
+    background:linear-gradient(160deg,var(--ink-2),#0c1210);border:1px solid rgba(255,255,255,0.08);
+    border-radius:18px;padding:24px 18px;text-align:center;cursor:pointer;transition:.2s;
+  }
+  .mp-mode-card:hover{border-color:var(--jade-light);transform:translateY(-3px);}
+  .mp-mode-card.selected{border-color:var(--jade-light);background:rgba(47,161,132,0.1);box-shadow:0 8px 24px -10px rgba(47,161,132,0.5);}
+  .mp-mode-card .mp-icon{font-size:32px;margin-bottom:10px;}
+  .mp-mode-card .mp-title{font-weight:800;font-size:15px;margin-bottom:6px;}
+  .mp-mode-card .mp-desc{font-size:12px;color:var(--text-dim);line-height:1.4;}
+
+  .mp-setup{max-width:460px;margin:0 auto;}
+  .mp-setup h3{text-align:center;font-size:15px;color:var(--text-hi);margin-bottom:18px;}
+  .mp-player-row{display:flex;align-items:center;gap:10px;margin-bottom:10px;}
+  .mp-player-row input{
+    flex:1;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.12);
+    color:var(--text-hi);padding:11px 14px;border-radius:10px;font-family:'Sora';font-size:14px;
+  }
+  .mp-player-row input:focus{outline:none;border-color:var(--jade-light);}
+  .mp-swatch{width:14px;height:14px;border-radius:50%;flex:0 0 auto;}
+  .mp-remove{background:none;border:none;color:var(--text-dim);cursor:pointer;font-size:16px;padding:4px 8px;}
+  .mp-remove:hover{color:var(--seal-light);}
+  .mp-add-btn{width:100%;background:rgba(255,255,255,0.03);border:1px dashed rgba(255,255,255,0.2);color:var(--text-dim);
+    padding:11px;border-radius:10px;cursor:pointer;font-family:'Sora';font-weight:600;font-size:13px;margin-bottom:20px;}
+  .mp-add-btn:hover{color:var(--jade-light);border-color:var(--jade-light);}
+  .mp-start-btn{
+    width:100%;background:linear-gradient(135deg,var(--jade),#1f7a63);color:#08130F;border:none;
+    padding:15px;border-radius:14px;font-weight:800;font-size:15px;cursor:pointer;
+  }
+  .mp-scope-row{display:flex;gap:8px;justify-content:center;margin-bottom:20px;}
+
+  .mp-scoreboard{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:24px;}
+  .mp-score-chip{
+    display:flex;align-items:center;gap:8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);
+    padding:9px 16px;border-radius:100px;font-size:13px;font-weight:700;transition:.3s;
+  }
+  .mp-score-chip.active-turn{border-color:var(--gold);background:rgba(201,162,39,0.15);box-shadow:0 0 0 3px rgba(201,162,39,0.15);}
+  .mp-score-chip .mp-dot{width:10px;height:10px;border-radius:50%;}
+  .mp-score-chip .mp-pts{color:var(--gold);}
+
+  .mp-turn-banner{
+    text-align:center;padding:50px 24px;max-width:420px;margin:0 auto;
+    background:linear-gradient(165deg,var(--ink-2),#0c1210);border:1px solid rgba(255,255,255,0.08);border-radius:24px;
+    animation:promptIn .45s cubic-bezier(.2,.8,.25,1);
+  }
+  .mp-turn-banner .mp-turn-name{font-family:'Noto Serif SC';font-size:30px;font-weight:900;color:var(--gold);margin:10px 0;}
+  .mp-turn-banner .mp-turn-sub{color:var(--text-dim);font-size:13px;}
+
+  .mp-podium{display:flex;align-items:flex-end;justify-content:center;gap:14px;margin:30px 0;}
+  .mp-podium-col{text-align:center;}
+  .mp-podium-col .mp-podium-bar{
+    width:78px;border-radius:12px 12px 0 0;display:flex;align-items:flex-start;justify-content:center;padding-top:10px;
+    font-weight:900;font-size:20px;color:#08130F;
+  }
+  .mp-podium-col.gold .mp-podium-bar{height:120px;background:linear-gradient(180deg,#f4d35e,var(--gold));}
+  .mp-podium-col.silver .mp-podium-bar{height:92px;background:linear-gradient(180deg,#e8e8e8,#b8b8b8);}
+  .mp-podium-col.bronze .mp-podium-bar{height:68px;background:linear-gradient(180deg,#d99a63,#a9673a);}
+  .mp-podium-col .mp-podium-name{font-weight:700;font-size:13px;margin-top:8px;}
+  .mp-podium-col .mp-podium-pts{font-size:11px;color:var(--text-dim);}
+
+  /* Host/classroom mode */
+  .host-word-card{
+    text-align:center;padding:60px 24px;max-width:520px;margin:0 auto 24px;
+    background:linear-gradient(165deg,var(--ink-2),#0c1210);border:1px solid rgba(255,255,255,0.08);border-radius:26px;
+    cursor:pointer;
+  }
+  .host-word-card .host-hz{font-size:72px;font-weight:700;}
+  .host-word-card .host-hint{margin-top:14px;color:var(--text-dim);font-size:12px;text-transform:uppercase;letter-spacing:.06em;}
+  .host-answer{
+    text-align:center;font-size:20px;font-weight:700;color:var(--jade-light);margin-bottom:22px;
+    animation:fadeUp .4s ease;
+  }
+  .host-award-row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:20px;}
+  .host-award-btn{
+    background:var(--paper);color:#2b2620;border:none;border-radius:12px;padding:12px 20px;
+    font-weight:700;font-size:13px;cursor:pointer;
+  }
+  .host-award-btn:hover{transform:translateY(-2px);}
+  .host-next-btn{
+    display:block;margin:0 auto;background:linear-gradient(135deg,var(--seal),#7c231b);color:var(--text-hi);
+    border:none;padding:13px 28px;border-radius:12px;font-weight:800;cursor:pointer;
+  }
+
+  @media print{
+    body *{visibility:hidden;}
+    #printArea, #printArea *{visibility:visible;}
+    #printArea{position:absolute;top:0;left:0;width:100%;color:#000;background:#fff;padding:20px;}
+    .blob,#petals,#confettiCanvas{display:none;}
+  }
+  #printArea{display:none;}
+
+  /* ===== Grammar guide ===== */
+  .gram-card{
+    background:linear-gradient(160deg,var(--ink-2),#0c1210);border:1px solid rgba(255,255,255,0.08);
+    border-radius:20px;padding:24px 24px 20px;margin-bottom:18px;max-width:680px;margin-left:auto;margin-right:auto;
+  }
+  .gram-card h3{font-size:17px;color:var(--jade-light);margin:0 0 10px;font-weight:800;}
+  .gram-card p{color:var(--text-hi);font-size:14px;line-height:1.6;margin:0 0 14px;}
+  .gram-example{background:rgba(255,255,255,0.03);border-left:3px solid var(--gold);border-radius:8px;padding:12px 16px;}
+  .gram-example .g-hz{font-family:'Noto Serif SC';font-size:18px;font-weight:700;color:var(--text-hi);}
+  .gram-example .g-py{color:var(--gold);font-size:13px;margin:2px 0;}
+  .gram-example .g-uz{color:var(--text-dim);font-size:13px;}
+
+  /* ===== Dialogues ===== */
+  .dlg-card{max-width:560px;margin:0 auto;}
+  .dlg-line{
+    display:flex;gap:12px;align-items:flex-start;margin-bottom:14px;padding:14px 16px;border-radius:14px;
+    background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);
+  }
+  .dlg-line.speakerB{background:rgba(47,161,132,0.06);}
+  .dlg-avatar{
+    width:32px;height:32px;border-radius:50%;flex:0 0 auto;display:flex;align-items:center;justify-content:center;
+    font-weight:800;font-size:13px;color:#08130F;
+  }
+  .dlg-line.speakerA .dlg-avatar{background:var(--seal-light);}
+  .dlg-line.speakerB .dlg-avatar{background:var(--jade-light);}
+  .dlg-text{font-family:'Noto Serif SC';font-size:17px;line-height:1.7;}
+  .dlg-blank{
+    display:inline-block;min-width:52px;border-bottom:2px solid var(--gold);color:var(--gold);
+    text-align:center;cursor:pointer;padding:0 4px;font-weight:700;
+  }
+  .dlg-blank.filled{color:var(--jade-light);border-color:var(--jade-light);}
+  .dlg-blank.wrong{color:var(--seal-light);border-color:var(--seal-light);}
+  .dlg-choices{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:22px 0;}
+  .dlg-check-btn{
+    display:block;margin:0 auto;background:linear-gradient(135deg,var(--jade),#1f7a63);color:#08130F;
+    border:none;padding:13px 28px;border-radius:12px;font-weight:800;cursor:pointer;
+  }
+
+  /* ===== Writing trace ===== */
+  .write-card{max-width:340px;margin:0 auto;text-align:center;}
+  .write-canvas-wrap{position:relative;width:280px;height:280px;margin:0 auto 18px;border-radius:20px;overflow:hidden;
+    background:linear-gradient(160deg,var(--ink-2),#0c1210);border:1px solid rgba(255,255,255,0.1);}
+  .write-ghost{
+    position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+    font-family:'Noto Serif SC';font-size:190px;color:rgba(255,255,255,0.08);pointer-events:none;user-select:none;
+  }
+  .write-canvas-wrap canvas{position:absolute;inset:0;touch-action:none;cursor:crosshair;}
+  .write-meta{color:var(--text-dim);font-size:13px;margin-bottom:16px;}
+  .write-controls{display:flex;gap:10px;justify-content:center;}
+
+  /* ===== Favorites star ===== */
+  .fav-star{
+    position:absolute;top:8px;right:10px;font-size:16px;background:none;border:none;cursor:pointer;
+    opacity:0.4;transition:.2s;z-index:2;
+  }
+  .fav-star.active{opacity:1;filter:drop-shadow(0 0 4px rgba(201,162,39,.6));}
+  .front{position:relative;}
+
+  /* ===== Settings row (export/import) ===== */
+  .settings-row{display:flex;justify-content:center;gap:10px;margin-bottom:6px;flex-wrap:wrap;}
+
+  /* ===== Onboarding modal ===== */
+  .onboard-overlay{
+    position:fixed;inset:0;background:rgba(5,10,9,0.82);backdrop-filter:blur(4px);z-index:100;
+    display:flex;align-items:center;justify-content:center;padding:20px;
+  }
+  .onboard-card{
+    max-width:420px;background:linear-gradient(165deg,var(--ink-2),#0a100e);border:1px solid rgba(255,255,255,0.1);
+    border-radius:26px;padding:32px 28px;text-align:center;
+  }
+  .onboard-card h2{font-family:'Noto Serif SC';color:var(--gold);font-size:24px;margin:0 0 14px;}
+  .onboard-list{text-align:left;font-size:13px;color:var(--text-dim);line-height:1.9;margin-bottom:22px;}
+  .onboard-list b{color:var(--text-hi);}
+
+  /* ===== Search ===== */
+  .search-btn{
+    background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.12);color:var(--text-hi);
+    width:38px;height:38px;border-radius:11px;cursor:pointer;font-size:15px;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .search-overlay{
+    position:fixed;inset:0;background:rgba(5,10,9,0.82);backdrop-filter:blur(4px);z-index:90;
+    display:none;align-items:flex-start;justify-content:center;padding:60px 20px;
+  }
+  .search-overlay.show{display:flex;}
+  .search-panel{width:100%;max-width:480px;background:linear-gradient(165deg,var(--ink-2),#0a100e);
+    border:1px solid rgba(255,255,255,0.12);border-radius:20px;padding:18px;max-height:70vh;display:flex;flex-direction:column;}
+  .search-panel input{
+    width:100%;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.15);color:var(--text-hi);
+    padding:13px 16px;border-radius:12px;font-family:'Sora';font-size:15px;margin-bottom:12px;
+  }
+  .search-panel input:focus{outline:none;border-color:var(--jade-light);}
+  .search-results{overflow-y:auto;flex:1;}
+  .search-result-row{
+    display:flex;align-items:center;justify-content:space-between;gap:12px;padding:11px 10px;border-radius:10px;cursor:pointer;
+  }
+  .search-result-row:hover{background:rgba(255,255,255,0.05);}
+  .search-result-row .sr-hz{font-family:'Noto Serif SC';font-size:18px;font-weight:700;}
+  .search-result-row .sr-mid{flex:1;padding:0 10px;font-size:12px;color:var(--text-dim);}
+  .search-result-row .sr-lesson{font-size:10px;color:var(--gold);background:rgba(201,162,39,0.12);padding:3px 8px;border-radius:100px;}
+  .search-empty{text-align:center;color:var(--text-dim);font-size:13px;padding:20px;}
+  .search-hint{text-align:center;color:var(--text-dim);font-size:11px;margin-top:10px;}
+  .search-hint kbd{background:rgba(255,255,255,0.08);padding:2px 6px;border-radius:5px;font-family:monospace;}
+
+  /* ===== Themed Dictionary ===== */
+  .dict-cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px;margin-bottom:26px;}
+  .dict-cat-card{
+    background:linear-gradient(160deg,var(--ink-2),#0c1210);border:1px solid rgba(255,255,255,0.08);
+    border-radius:16px;padding:18px 14px;text-align:center;cursor:pointer;transition:.2s;
+  }
+  .dict-cat-card:hover{border-color:var(--jade-light);transform:translateY(-2px);}
+  .dict-cat-card.active{border-color:var(--gold);background:rgba(201,162,39,0.1);box-shadow:0 8px 20px -10px rgba(201,162,39,0.5);}
+  .dict-cat-card .dc-icon{font-size:26px;margin-bottom:8px;}
+  .dict-cat-card .dc-name{font-weight:800;font-size:12.5px;line-height:1.3;margin-bottom:4px;}
+  .dict-cat-card .dc-count{font-size:10px;color:var(--text-dim);}
+  .dict-word-list{max-width:640px;margin:0 auto;}
+  .dict-word-row{
+    display:flex;align-items:center;gap:14px;padding:12px 16px;border-radius:12px;
+    background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);margin-bottom:8px;cursor:pointer;
+  }
+  .dict-word-row:hover{border-color:rgba(95,203,174,0.4);}
+  .dict-word-row .dw-hz{font-family:'Noto Serif SC';font-size:20px;font-weight:700;min-width:56px;}
+  .dict-word-row .dw-mid{flex:1;}
+  .dict-word-row .dw-py{color:var(--gold);font-size:13px;font-weight:600;}
+  .dict-word-row .dw-uz{color:var(--text-dim);font-size:12px;}
+  .dict-word-row .dw-lesson{font-size:10px;color:var(--text-dim);background:rgba(255,255,255,0.05);padding:3px 9px;border-radius:100px;}
+  .dict-back-btn{display:block;margin:0 auto 20px;}
+  .dict-total-badge{
+    display:block;text-align:center;font-family:'Noto Serif SC';font-size:15px;font-weight:800;
+    color:var(--gold);margin-bottom:6px;
+  }
+  .dict-all-btn{
+    display:block;margin:0 auto 24px;background:linear-gradient(135deg,var(--gold),#8a6e12);color:#1c1503;
+    border:none;padding:13px 26px;border-radius:14px;font-weight:800;cursor:pointer;font-size:13px;
+  }
+  .dict-filter-input{
+    width:100%;max-width:640px;display:block;margin:0 auto 18px;background:rgba(255,255,255,0.04);
+    border:1px solid rgba(255,255,255,0.14);color:var(--text-hi);padding:12px 16px;border-radius:12px;
+    font-family:'Sora';font-size:14px;
+  }
+  .dict-filter-input:focus{outline:none;border-color:var(--jade-light);}
+  .dict-az-bar{
+    display:flex;flex-wrap:wrap;gap:6px;justify-content:center;max-width:640px;margin:0 auto 18px;
+  }
+  .dict-az-btn{
+    background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);color:var(--text-dim);
+    width:28px;height:28px;border-radius:8px;font-size:11px;font-weight:700;cursor:pointer;
+  }
+  .dict-az-btn:hover{border-color:var(--jade-light);color:var(--jade-light);}
+  .dict-az-group-label{
+    max-width:640px;margin:18px auto 8px;color:var(--gold);font-weight:800;font-size:13px;
+    border-bottom:1px solid rgba(201,162,39,0.25);padding-bottom:4px;
+  }
+
+  /* ===== Notification bell ===== */
+  .bell-btn{
+    position:relative;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.12);color:var(--text-hi);
+    width:38px;height:38px;border-radius:11px;cursor:pointer;font-size:16px;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .bell-dot{
+    position:absolute;top:-3px;right:-3px;width:16px;height:16px;border-radius:50%;background:var(--seal-light);
+    color:#fff;font-size:9px;font-weight:800;display:flex;align-items:center;justify-content:center;
+    border:2px solid var(--ink);
+  }
+  .bell-panel{
+    position:fixed;top:64px;z-index:95;width:320px;max-width:calc(100vw - 32px);
+    background:linear-gradient(165deg,var(--ink-2),#0a100e);border:1px solid rgba(255,255,255,0.12);
+    border-radius:18px;padding:16px;max-height:60vh;overflow-y:auto;display:none;
+    box-shadow:0 20px 50px -12px rgba(0,0,0,.6);
+  }
+  .bell-panel.show{display:block;}
+  .bell-panel h4{margin:0 0 12px;font-size:13px;color:var(--text-hi);display:flex;justify-content:space-between;align-items:center;}
+  .bell-panel h4 button{background:none;border:none;color:var(--jade-light);font-size:11px;cursor:pointer;font-weight:700;}
+  .bell-item{display:flex;gap:10px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.06);}
+  .bell-item:last-child{border-bottom:none;}
+  .bell-item .bi-icon{font-size:18px;flex:0 0 auto;}
+  .bell-item .bi-text{font-size:12.5px;color:var(--text-hi);line-height:1.4;}
+  .bell-item .bi-time{font-size:10px;color:var(--text-dim);margin-top:2px;}
+  .bell-empty{text-align:center;color:var(--text-dim);font-size:12px;padding:20px 0;}
+  .bell-reminder-row{display:flex;align-items:center;justify-content:space-between;padding-top:12px;margin-top:8px;border-top:1px solid rgba(255,255,255,0.08);font-size:11.5px;color:var(--text-dim);}
+  .bell-toggle{
+    width:38px;height:22px;border-radius:100px;background:rgba(255,255,255,0.12);position:relative;cursor:pointer;border:none;flex:0 0 auto;
+  }
+  .bell-toggle::after{content:"";position:absolute;top:2px;left:2px;width:18px;height:18px;border-radius:50%;background:var(--text-hi);transition:.2s;}
+  .bell-toggle.on{background:var(--jade);}
+  .bell-toggle.on::after{transform:translateX(16px);}
+
+  /* ===== Notes (Qaydlar) ===== */
+  .notes-composer{max-width:560px;margin:0 auto 26px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:18px;padding:18px;}
+  .notes-composer textarea{
+    width:100%;min-height:80px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.12);
+    color:var(--text-hi);padding:12px 14px;border-radius:12px;font-family:'Sora';font-size:14px;resize:vertical;margin-bottom:10px;
+  }
+  .notes-composer textarea:focus{outline:none;border-color:var(--jade-light);}
+  .notes-composer-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;}
+  .notes-composer-row select{
+    background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.12);color:var(--text-hi);
+    padding:9px 12px;border-radius:10px;font-family:'Sora';font-size:12.5px;flex:1;min-width:140px;
+  }
+  .notes-list{max-width:560px;margin:0 auto;}
+  .note-card{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:14px;padding:14px 16px;margin-bottom:10px;}
+  .note-card-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;}
+  .note-card-tag{font-size:10px;color:var(--gold);background:rgba(201,162,39,0.12);padding:3px 9px;border-radius:100px;font-weight:700;}
+  .note-card-date{font-size:10px;color:var(--text-dim);}
+  .note-card p{margin:0;font-size:13.5px;color:var(--text-hi);line-height:1.5;white-space:pre-wrap;}
+  .note-del-btn{background:none;border:none;color:var(--text-dim);cursor:pointer;font-size:13px;}
+  .note-del-btn:hover{color:var(--seal-light);}
+
+  /* ===== Pinyin toggle ===== */
+  body.hide-pinyin .py-hide{ filter: blur(6px); opacity:0.35; transition:.2s; cursor:pointer; }
+  body.hide-pinyin .py-hide:hover, body.hide-pinyin .py-hide.peek{ filter:blur(0); opacity:1; }
+  .pinyin-toggle-row{display:flex;justify-content:center;margin-bottom:16px;}
+  .pinyin-toggle-btn{
+    display:flex;align-items:center;gap:8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.12);
+    color:var(--text-hi);padding:9px 16px;border-radius:100px;cursor:pointer;font-family:'Sora';font-weight:700;font-size:12.5px;
+  }
+  .pinyin-toggle-btn:hover{border-color:var(--jade-light);}
+  .pinyin-toggle-btn .pt-dot{width:8px;height:8px;border-radius:50%;background:var(--jade-light);}
+  body.hide-pinyin .pinyin-toggle-btn .pt-dot{background:var(--seal-light);}
+
+  /* ===== Theme background variants ===== */
+  body[data-bg="lantern"]{
+    background:
+      radial-gradient(ellipse 70% 50% at 50% 100%, rgba(183,54,44,0.18), transparent 65%),
+      radial-gradient(ellipse 40% 30% at 20% 15%, rgba(201,162,39,0.10), transparent 60%),
+      var(--ink);
+  }
+  body[data-bg="mountain"]{
+    background:
+      radial-gradient(ellipse 60% 40% at 50% 8%, rgba(200,220,230,0.10), transparent 65%),
+      linear-gradient(180deg, #0a1420 0%, #0d1a1c 55%, #11181A 100%);
+  }
+  body[data-bg="blossom"]{
+    background:
+      radial-gradient(ellipse 60% 45% at 20% 10%, rgba(214,90,70,0.14), transparent 60%),
+      radial-gradient(ellipse 55% 45% at 85% 90%, rgba(255,180,190,0.10), transparent 60%),
+      var(--ink);
+  }
+
+  /* Lantern layer */
+  #lanternLayer{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden;display:none;}
+  body[data-bg="lantern"] #lanternLayer{display:block;}
+  .lantern{
+    position:absolute;bottom:-80px;font-size:34px;opacity:0.8;
+    filter:drop-shadow(0 0 10px rgba(255,120,80,0.55));
+    animation-name:lanternRise,lanternSway;animation-timing-function:linear,ease-in-out;
+    animation-iteration-count:infinite,infinite;
+  }
+  @keyframes lanternRise{from{transform:translateY(10vh);}to{transform:translateY(-115vh);}}
+  @keyframes lanternSway{0%,100%{margin-left:0;}50%{margin-left:34px;}}
+
+  /* Mountain layer */
+  #mountainLayer{position:fixed;bottom:0;left:0;right:0;height:42vh;pointer-events:none;z-index:0;display:none;overflow:hidden;}
+  body[data-bg="mountain"] #mountainLayer{display:block;}
+  #mountainLayer svg{position:absolute;bottom:0;width:100%;height:100%;}
+  .moon-glow{
+    position:fixed;top:8%;right:12%;width:70px;height:70px;border-radius:50%;
+    background:radial-gradient(circle, rgba(244,239,225,0.9), rgba(244,239,225,0.05) 70%);
+    filter:blur(1px);z-index:0;display:none;pointer-events:none;
+    animation:moonGlow 6s ease-in-out infinite;
+  }
+  body[data-bg="mountain"] .moon-glow{display:block;}
+  @keyframes moonGlow{0%,100%{opacity:0.85;}50%{opacity:1;}}
+  .cloud-drift{position:fixed;pointer-events:none;z-index:0;display:none;opacity:0.12;background:#fff;border-radius:50%;filter:blur(20px);}
+  body[data-bg="mountain"] .cloud-drift{display:block;}
+  .cloud-drift.c1{width:280px;height:60px;top:18%;left:-20%;animation:cloudMove1 40s linear infinite;}
+  .cloud-drift.c2{width:220px;height:50px;top:28%;left:-30%;animation:cloudMove2 55s linear infinite;}
+  @keyframes cloudMove1{from{transform:translateX(0);}to{transform:translateX(140vw);}}
+  @keyframes cloudMove2{from{transform:translateX(0);}to{transform:translateX(140vw);}}
+
+  /* Theme picker cards */
+  .theme-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px;max-width:700px;margin:0 auto;}
+  .theme-card{
+    border-radius:18px;overflow:hidden;cursor:pointer;border:2px solid rgba(255,255,255,0.08);
+    transition:.2s;position:relative;
+  }
+  .theme-card:hover{transform:translateY(-3px);}
+  .theme-card.active{border-color:var(--gold);box-shadow:0 10px 26px -10px rgba(201,162,39,0.5);}
+  .theme-preview{height:110px;position:relative;overflow:hidden;}
+  .theme-preview .tp-emoji{position:absolute;font-size:20px;}
+  .theme-label{padding:12px;text-align:center;background:rgba(255,255,255,0.03);}
+  .theme-label .tl-name{font-weight:800;font-size:13px;color:var(--text-hi);}
+  .theme-label .tl-desc{font-size:10.5px;color:var(--text-dim);margin-top:2px;}
+  .theme-check{position:absolute;top:8px;right:8px;width:22px;height:22px;border-radius:50%;background:var(--gold);color:#1c1503;display:none;align-items:center;justify-content:center;font-size:12px;font-weight:900;}
+  body[data-bg="mountain"] #petals{display:none;}
+  body[data-bg="lantern"] #petals{display:none;}
+</style>
+<style id="dynamicTheme"></style>
+</head>
+<body data-theme="dark" class="hide-pinyin" data-bg="ipak">
+
+<div class="blob blob1"></div>
+<div class="blob blob2"></div>
+<div id="petals"><span class="petal" style="left: 22.8515vw; font-size: 15.2728px; animation-duration: 18.205s, 4.07968s; animation-delay: 7.65406s, 0s;">🍃</span><span class="petal" style="left: 58.8918vw; font-size: 14.2495px; animation-duration: 23.6959s, 4.55157s; animation-delay: 8.69323s, 0s;">❀</span><span class="petal" style="left: 26.8561vw; font-size: 14.0176px; animation-duration: 19.6232s, 3.5165s; animation-delay: 5.28214s, 0s;">❁</span><span class="petal" style="left: 64.9474vw; font-size: 15.6476px; animation-duration: 15.5125s, 3.29101s; animation-delay: 0.0190158s, 0s;">❀</span><span class="petal" style="left: 15.6896vw; font-size: 15.8352px; animation-duration: 19.6374s, 3.18308s; animation-delay: 9.32837s, 0s;">❀</span><span class="petal" style="left: 3.33182vw; font-size: 14.9259px; animation-duration: 26.1691s, 4.46334s; animation-delay: 5.335s, 0s;">❀</span><span class="petal" style="left: 42.0755vw; font-size: 16.7684px; animation-duration: 26.3227s, 3.53637s; animation-delay: 9.71557s, 0s;">❀</span><span class="petal" style="left: 28.6977vw; font-size: 17.3255px; animation-duration: 23.7685s, 3.60078s; animation-delay: 2.18167s, 0s;">❁</span><span class="petal" style="left: 85.1442vw; font-size: 14.7476px; animation-duration: 21.8721s, 3.90853s; animation-delay: 8.13547s, 0s;">🍃</span><span class="petal" style="left: 91.3607vw; font-size: 14.3907px; animation-duration: 16.4524s, 3.12855s; animation-delay: 6.73838s, 0s;">❁</span><span class="petal" style="left: 62.7697vw; font-size: 16.4031px; animation-duration: 26.4905s, 4.26578s; animation-delay: 4.13188s, 0s;">❁</span><span class="petal" style="left: 22.0578vw; font-size: 14.3721px; animation-duration: 15.0029s, 5.97575s; animation-delay: 7.91774s, 0s;">❀</span><span class="petal" style="left: 44.6435vw; font-size: 16.5014px; animation-duration: 19.4654s, 4.59834s; animation-delay: 5.26775s, 0s;">🍃</span><span class="petal" style="left: 12.9062vw; font-size: 16.3001px; animation-duration: 21.4823s, 3.26328s; animation-delay: 5.01497s, 0s;">❁</span><span class="petal" style="left: 72.6824vw; font-size: 14.1672px; animation-duration: 21.5538s, 5.46324s; animation-delay: 12.5584s, 0s;">❀</span><span class="petal" style="left: 13.5608vw; font-size: 14.3886px; animation-duration: 23.6861s, 4.28921s; animation-delay: 5.14999s, 0s;">❁</span></div>
+<div id="lanternLayer"><span class="lantern" style="left: 54.48vw; animation-duration: 28.5315s, 4.72521s; animation-delay: 5.24605s, 0s; font-size: 31.7772px;">🏮</span><span class="lantern" style="left: 79.9397vw; animation-duration: 16.55s, 6.00079s; animation-delay: 9.0989s, 0s; font-size: 41.7516px;">🏮</span><span class="lantern" style="left: 78.7519vw; animation-duration: 22.1154s, 6.37648s; animation-delay: 9.51345s, 0s; font-size: 31.4449px;">🏮</span><span class="lantern" style="left: 64.124vw; animation-duration: 23.124s, 5.05646s; animation-delay: 4.02417s, 0s; font-size: 39.8202px;">🏮</span><span class="lantern" style="left: 86.8688vw; animation-duration: 16.8735s, 5.87841s; animation-delay: 10.9879s, 0s; font-size: 43.3263px;">🏮</span><span class="lantern" style="left: 18.712vw; animation-duration: 21.4572s, 6.20179s; animation-delay: 6.57216s, 0s; font-size: 29.3091px;">🏮</span><span class="lantern" style="left: 48.0811vw; animation-duration: 19.6867s, 6.17666s; animation-delay: 2.376s, 0s; font-size: 32.3577px;">🏮</span><span class="lantern" style="left: 40.9245vw; animation-duration: 17.7189s, 6.91631s; animation-delay: 4.87596s, 0s; font-size: 37.128px;">🏮</span><span class="lantern" style="left: 48.9714vw; animation-duration: 19.0295s, 4.21287s; animation-delay: 13.5916s, 0s; font-size: 35.4762px;">🏮</span><span class="lantern" style="left: 82.6941vw; animation-duration: 22.1301s, 4.9738s; animation-delay: 1.55776s, 0s; font-size: 33.3906px;">🏮</span></div>
+<div id="mountainLayer">
+  <svg viewBox="0 0 1000 300" preserveAspectRatio="none">
+    <path d="M0,300 L0,180 L120,90 L230,170 L340,60 L460,160 L560,100 L680,190 L780,110 L880,200 L1000,140 L1000,300 Z" fill="#0d2320" opacity="0.55"></path>
+    <path d="M0,300 L0,220 L150,150 L280,210 L420,130 L540,205 L660,150 L800,225 L920,160 L1000,210 L1000,300 Z" fill="#0a1a18" opacity="0.75"></path>
+  </svg>
+</div>
+<div class="moon-glow"></div>
+<div class="cloud-drift c1"></div>
+<div class="cloud-drift c2"></div>
+<canvas id="confettiCanvas" width="1528" height="746"></canvas>
+
+<div class="wrap">
+  <header>
+    <button class="search-btn" id="searchToggle" title="Qidirish (/)" style="position:absolute;top:0;left:0;">🔍</button>
+    <button class="bell-btn" id="bellToggle" title="Bildirishnomalar" style="position:absolute;top:0;left:46px;">
+      🔔<span class="bell-dot" id="bellDot" style="display:none;">0</span>
+    </button>
+    <button class="theme-toggle" id="themeToggle" title="Rejimni almashtirish">🌙</button>
+    <div class="eyebrow" id="eyebrow">HSK 2 · 1-dars</div>
+    <h1 class="hanzi reveal" id="lessonHz">你的汉语手册</h1>
+    <div class="subtitle" id="lessonSub">Shaxsiy o'quv qo'llanma</div>
+  </header>
+
+  <div class="xp-bar">
+    <div class="xp-chip">🔥 <span class="streak" id="streakVal">3</span> kun</div>
+    <div class="xp-chip"><span class="lvl" id="levelVal">Lv. 32 · Hanzi ustasi</span> · <span id="xpVal">3169</span> XP
+      <div class="xp-track"><div class="xp-fill" id="xpFill" style="width: 69%;"></div></div>
+    </div>
+  </div>
+
+  <div class="settings-row">
+    <button class="ghost-btn" id="exportBtn">⬇ Progressni saqlash</button>
+    <button class="ghost-btn" id="importBtn">⬆ Progressni yuklash</button>
+    <input type="file" id="importFile" accept="application/json" style="display:none;">
+    <button class="ghost-btn" id="favBtn">⭐ Sevimlilar</button>
+    <button class="pinyin-toggle-btn" id="pinyinToggleBtn"><span class="pt-dot"></span> Pinyin: yashirilgan</button>
+  </div>
+
+  <div class="overall-progress">
+    <div class="lbl"><span>Umumiy progress</span><span id="overallLbl">1/15 dars</span></div>
+    <div class="overall-track"><div class="overall-fill" id="overallFill" style="width: 7%;"></div></div>
+  </div>
+
+  <div class="lesson-nav">
+    <button class="nav-btn" id="prevLesson" title="Oldingi dars" disabled="">←</button>
+    <div class="lesson-pills" id="lessonPills"><div class="lpill active done">1<span class="lpill-badge">13</span></div><div class="lpill">2<span class="lpill-badge">14</span></div><div class="lpill">3<span class="lpill-badge">14</span></div><div class="lpill">4<span class="lpill-badge">13</span></div><div class="lpill">5<span class="lpill-badge">14</span></div><div class="lpill">6<span class="lpill-badge">13</span></div><div class="lpill">7<span class="lpill-badge">13</span></div><div class="lpill">8<span class="lpill-badge">10</span></div><div class="lpill">9<span class="lpill-badge">11</span></div><div class="lpill">10<span class="lpill-badge">9</span></div><div class="lpill">11<span class="lpill-badge">11</span></div><div class="lpill">12<span class="lpill-badge">9</span></div><div class="lpill">13<span class="lpill-badge">11</span></div><div class="lpill">14<span class="lpill-badge">7</span></div><div class="lpill">15<span class="lpill-badge">8</span></div></div>
+    <button class="nav-btn" id="nextLesson" title="Keyingi dars">→</button>
+  </div>
+
+  <div class="tabs">
+    <div class="tab" data-tab="cards">🀄 Kartochkalar</div>
+    <div class="tab" data-tab="quiz">🎯 Bilim sinovi</div>
+    <div class="tab" data-tab="match">🎮 Juftlik</div>
+    <div class="tab" data-tab="speed">⚡ Tezlik</div>
+    <div class="tab" data-tab="listen">🎧 Tinglash</div>
+    <div class="tab" data-tab="build">🔤 So'z qurish</div>
+    <div class="tab" data-tab="hangman">🪢 So'zni top</div>
+    <div class="tab" data-tab="sentence">📝 Gap qurish</div>
+    <div class="tab" data-tab="boss">👑 Bosslar</div>
+    <div class="tab" data-tab="achievements">🏅 Yutuqlar</div>
+    <div class="tab" data-tab="stats">📊 Statistika</div>
+    <div class="tab" data-tab="party">👥 Jamoviy</div>
+    <div class="tab" data-tab="grammar">📖 Grammatika</div>
+    <div class="tab" data-tab="dialogues">💬 Dialoglar</div>
+    <div class="tab" data-tab="writing">✍️ Yozish</div>
+    <div class="tab" data-tab="dictionary">📚 Lug'at</div>
+    <div class="tab active" data-tab="notes">📝 Qaydlar</div>
+    <div class="tab" data-tab="themes">🎨 Mavzular</div>
+  </div>
+
+  <section id="cards" class="">
+    <div class="grid" id="cardGrid"><div class="card" style="animation-delay: 0s;">
+      <div class="card-inner">
+        <div class="face front">
+          <button class="fav-star " data-hz="觉得">⭐</button>
+          <span class="num">01</span>
+          <div class="hz hanzi">觉得</div>
+          <span class="tap-hint">Bosing</span>
+        </div>
+        <div class="face back">
+          <div class="py">juéde</div>
+          <div class="uz">deb o'ylamoq, his qilmoq</div>
+          <button class="speaker">🔊</button>
+        </div>
+      </div></div><div class="card" style="animation-delay: 0.05s;">
+      <div class="card-inner">
+        <div class="face front">
+          <button class="fav-star " data-hz="最">⭐</button>
+          <span class="num">02</span>
+          <div class="hz hanzi">最</div>
+          <span class="tap-hint">Bosing</span>
+        </div>
+        <div class="face back">
+          <div class="py">zuì</div>
+          <div class="uz">eng</div>
+          <button class="speaker">🔊</button>
+        </div>
+      </div></div><div class="card" style="animation-delay: 0.1s;">
+      <div class="card-inner">
+        <div class="face front">
+          <button class="fav-star " data-hz="为什么">⭐</button>
+          <span class="num">03</span>
+          <div class="hz hanzi">为什么</div>
+          <span class="tap-hint">Bosing</span>
+        </div>
+        <div class="face back">
+          <div class="py">wèishénme</div>
+          <div class="uz">nima uchun</div>
+          <button class="speaker">🔊</button>
+        </div>
+      </div></div><div class="card" style="animation-delay: 0.15s;">
+      <div class="card-inner">
+        <div class="face front">
+          <button class="fav-star " data-hz="也">⭐</button>
+          <span class="num">04</span>
+          <div class="hz hanzi">也</div>
+          <span class="tap-hint">Bosing</span>
+        </div>
+        <div class="face back">
+          <div class="py">yě</div>
+          <div class="uz">ham</div>
+          <button class="speaker">🔊</button>
+        </div>
+      </div></div><div class="card" style="animation-delay: 0.2s;">
+      <div class="card-inner">
+        <div class="face front">
+          <button class="fav-star " data-hz="运动">⭐</button>
+          <span class="num">05</span>
+          <div class="hz hanzi">运动</div>
+          <span class="tap-hint">Bosing</span>
+        </div>
+        <div class="face back">
+          <div class="py">yùndòng</div>
+          <div class="uz">sport, mashq qilmoq</div>
+          <button class="speaker">🔊</button>
+        </div>
+      </div></div><div class="card" style="animation-delay: 0.25s;">
+      <div class="card-inner">
+        <div class="face front">
+          <button class="fav-star " data-hz="踢">⭐</button>
+          <span class="num">06</span>
+          <div class="hz hanzi">踢</div>
+          <span class="tap-hint">Bosing</span>
+        </div>
+        <div class="face back">
+          <div class="py">tī</div>
+          <div class="uz">tepmoq</div>
+          <button class="speaker">🔊</button>
+        </div>
+      </div></div><div class="card" style="animation-delay: 0.3s;">
+      <div class="card-inner">
+        <div class="face front">
+          <button class="fav-star " data-hz="足球">⭐</button>
+          <span class="num">07</span>
+          <div class="hz hanzi">足球</div>
+          <span class="tap-hint">Bosing</span>
+        </div>
+        <div class="face back">
+          <div class="py">zúqiú</div>
+          <div class="uz">futbol</div>
+          <button class="speaker">🔊</button>
+        </div>
+      </div></div><div class="card" style="animation-delay: 0.35s;">
+      <div class="card-inner">
+        <div class="face front">
+          <button class="fav-star " data-hz="踢足球">⭐</button>
+          <span class="num">08</span>
+          <div class="hz hanzi">踢足球</div>
+          <span class="tap-hint">Bosing</span>
+        </div>
+        <div class="face back">
+          <div class="py">tī zúqiú</div>
+          <div class="uz">futbol o'ynamoq</div>
+          <button class="speaker">🔊</button>
+        </div>
+      </div></div><div class="card" style="animation-delay: 0.4s;">
+      <div class="card-inner">
+        <div class="face front">
+          <button class="fav-star " data-hz="要">⭐</button>
+          <span class="num">09</span>
+          <div class="hz hanzi">要</div>
+          <span class="tap-hint">Bosing</span>
+        </div>
+        <div class="face back">
+          <div class="py">yào</div>
+          <div class="uz">xohlamoq; kerak</div>
+          <button class="speaker">🔊</button>
+        </div>
+      </div></div><div class="card" style="animation-delay: 0.45s;">
+      <div class="card-inner">
+        <div class="face front">
+          <button class="fav-star " data-hz="新">⭐</button>
+          <span class="num">10</span>
+          <div class="hz hanzi">新</div>
+          <span class="tap-hint">Bosing</span>
+        </div>
+        <div class="face back">
+          <div class="py">xīn</div>
+          <div class="uz">yangi</div>
+          <button class="speaker">🔊</button>
+        </div>
+      </div></div><div class="card" style="animation-delay: 0.5s;">
+      <div class="card-inner">
+        <div class="face front">
+          <button class="fav-star " data-hz="它">⭐</button>
+          <span class="num">11</span>
+          <div class="hz hanzi">它</div>
+          <span class="tap-hint">Bosing</span>
+        </div>
+        <div class="face back">
+          <div class="py">tā</div>
+          <div class="uz">u (jonsiz narsaga)</div>
+          <button class="speaker">🔊</button>
+        </div>
+      </div></div><div class="card" style="animation-delay: 0.55s;">
+      <div class="card-inner">
+        <div class="face front">
+          <button class="fav-star " data-hz="眼睛">⭐</button>
+          <span class="num">12</span>
+          <div class="hz hanzi">眼睛</div>
+          <span class="tap-hint">Bosing</span>
+        </div>
+        <div class="face back">
+          <div class="py">yǎnjing</div>
+          <div class="uz">ko'z</div>
+          <button class="speaker">🔊</button>
+        </div>
+      </div></div><div class="card" style="animation-delay: 0.6s;">
+      <div class="card-inner">
+        <div class="face front">
+          <button class="fav-star " data-hz="旅游">⭐</button>
+          <span class="num">13</span>
+          <div class="hz hanzi">旅游</div>
+          <span class="tap-hint">Bosing</span>
+        </div>
+        <div class="face back">
+          <div class="py">lǚyóu</div>
+          <div class="uz">sayohat qilmoq</div>
+          <button class="speaker">🔊</button>
+        </div>
+      </div></div></div>
+    <div class="flash-controls">
+      <button class="ghost-btn" id="flipAll">Hammasini yopish</button>
+      <button class="ghost-btn" id="shuffleCards">Aralashtirish 🔀</button>
+    </div>
+  </section>
+
+  <section id="quiz">
+    <div class="quiz-dir">
+      <button class="dir-btn active" data-dir="hz2uz">汉字 → O'zbekcha</button>
+      <button class="dir-btn" data-dir="uz2hz">O'zbekcha → 汉字</button>
+    </div>
+    <div class="toggle-row">
+      <button class="toggle-btn active" id="scopeLesson">Shu dars</button>
+      <button class="toggle-btn" id="scopeAll">Barcha 15 dars aralash</button>
+      <button class="toggle-btn" id="modeChoice">Variant tanlash</button>
+      <button class="toggle-btn" id="modeType">Yozib javob berish</button>
+    </div>
+    <div class="quiz-box" id="quizBox"></div>
+  </section>
+
+  <section id="match">
+    <div class="match-meta">
+      <span>⏱ <span id="matchTime">00:00</span></span>
+      <span>🔁 Harakatlar: <span id="matchMoves">0</span></span>
+      <button class="ghost-btn" id="matchRestart">Qayta boshlash</button>
+    </div>
+    <div class="match-grid" id="matchGrid"></div>
+  </section>
+
+  <section id="speed">
+    <div class="speed-meta">
+      <span>⏱ <span id="speedTime">45</span>s</span>
+      <span>✅ <span id="speedScore">0</span></span>
+      <span>🔥 Ketma-ket: <span id="speedStreak">0</span></span>
+    </div>
+    <div class="quiz-box" id="speedBox"></div>
+  </section>
+
+  <section id="listen">
+    <div class="dict-mode-row">
+      <button class="toggle-btn active" id="listenModeChoice">Variant tanlash</button>
+      <button class="toggle-btn" id="listenModeType">Pinyinni yozish (diktant)</button>
+    </div>
+    <div class="quiz-box" id="listenBox"></div>
+  </section>
+
+  <section id="build">
+    <div class="build-box" id="buildBox"></div>
+  </section>
+
+  <section id="hangman">
+    <div class="hang-box" id="hangBox"></div>
+  </section>
+
+  <section id="sentence">
+    <div class="quiz-box" id="sentenceBox"></div>
+  </section>
+
+  <section id="boss">
+    <div class="quiz-box" id="bossBox"></div>
+  </section>
+
+  <section id="achievements">
+    <div class="ach-grid" id="achGrid"></div>
+  </section>
+
+  <section id="stats">
+    <div id="statsBox"></div>
+  </section>
+
+  <section id="party">
+    <div id="partyBox"></div>
+  </section>
+
+  <section id="grammar">
+    <div id="grammarBox"></div>
+  </section>
+
+  <section id="dialogues">
+    <div id="dialoguesBox"></div>
+  </section>
+
+  <section id="writing">
+    <div id="writingBox"></div>
+  </section>
+
+  <section id="dictionary">
+    <div id="dictionaryBox"></div>
+  </section>
+
+  <section id="notes" class="active" style="">
+    <div id="notesBox">
+    <div class="notes-composer">
+      <textarea id="noteInput" placeholder="Eslatma, mnemonika yoki shaxsiy fikringizni yozing..."></textarea>
+      <div class="notes-composer-row">
+        <select id="noteLessonSelect">
+          <option value="-1">Umumiy qayd</option>
+          <option value="0" selected="">1-dars — 九月去北京旅游最好</option><option value="1">2-dars — 我每天六点起床</option><option value="2">3-dars — 左边那个红色的是我的</option><option value="3">4-dars — 这个工作是他帮我介绍的</option><option value="4">5-dars — 就买这件吧</option><option value="5">6-dars — 你怎么不吃了</option><option value="6">7-dars — 你家离公司远吗</option><option value="7">8-dars — 让我想想再告诉你</option><option value="8">9-dars — 题太多，我没做完</option><option value="9">10-dars — 别找了，手机在桌子上呢</option><option value="10">11-dars — 他比我大三岁</option><option value="11">12-dars — 你穿得太少了</option><option value="12">13-dars — 门开着呢</option><option value="13">14-dars — 你看过那个电影吗</option><option value="14">15-dars — 新年就要到了</option>
+        </select>
+        <button class="cta-btn" id="noteSaveBtn">💾 Saqlash</button>
+      </div>
+    </div>
+    <div class="notes-list" id="notesList"><div class="search-empty">Hali qaydlar yo'q. Yuqoridagi maydonga birinchi qaydingizni yozing.</div></div>
+  </div>
+  </section>
+
+  <section id="themes" class="" style="">
+    <div id="themesBox">
+    <p style="text-align:center;color:var(--text-dim);font-size:13px;margin-bottom:22px;">Animatsiyali fon mavzusini tanlang</p>
+    <div class="theme-grid" id="themeGrid"><div class="theme-card active">
+      <div class="theme-preview" style="background:linear-gradient(160deg, var(--ink-2), #0a1420);"><span class="tp-emoji" style="left:10%;top:10%;">❀</span><span class="tp-emoji" style="left:32%;top:50%;">🍃</span><span class="tp-emoji" style="left:54%;top:10%;">❁</span><span class="tp-emoji" style="left:76%;top:50%;">❀</span></div>
+      <div class="theme-label"><div class="tl-name">Ipak yo'li</div><div class="tl-desc">Jade va muhr rangidagi klassik</div></div>
+      <div class="theme-check">✓</div>
+    </div><div class="theme-card">
+      <div class="theme-preview" style="background:linear-gradient(160deg, var(--ink-2), #0a1420);"><span class="tp-emoji" style="left:10%;top:10%;">🏮</span><span class="tp-emoji" style="left:32%;top:50%;">🏮</span><span class="tp-emoji" style="left:54%;top:10%;">🏮</span></div>
+      <div class="theme-label"><div class="tl-name">Fonarlar kechasi</div><div class="tl-desc">Suzib yuruvchi qizil fonarlar</div></div>
+      <div class="theme-check">✓</div>
+    </div><div class="theme-card">
+      <div class="theme-preview" style="background:linear-gradient(160deg, var(--ink-2), #0a1420);"><span class="tp-emoji" style="left:10%;top:10%;">⛰️</span><span class="tp-emoji" style="left:32%;top:50%;">☁️</span><span class="tp-emoji" style="left:54%;top:10%;">🌙</span></div>
+      <div class="theme-label"><div class="tl-name">Tog' va oy</div><div class="tl-desc">Tungi tog' silueti, suzuvchi bulutlar</div></div>
+      <div class="theme-check">✓</div>
+    </div><div class="theme-card">
+      <div class="theme-preview" style="background:linear-gradient(160deg, var(--ink-2), #0a1420);"><span class="tp-emoji" style="left:10%;top:10%;">🌸</span><span class="tp-emoji" style="left:32%;top:50%;">🌸</span><span class="tp-emoji" style="left:54%;top:10%;">💮</span><span class="tp-emoji" style="left:76%;top:50%;">🌸</span></div>
+      <div class="theme-label"><div class="tl-name">Bahor gullari</div><div class="tl-desc">Zich uchayotgan gilos gullari</div></div>
+      <div class="theme-check">✓</div>
+    </div></div>
+  </div>
+  </section>
+
+  <footer id="footerText">制作 · HSK 2 标准教程 · 1-15 dars · Elektron doskada ishlash uchun tayyorlangan</footer>
+</div>
+
+<div id="printArea"></div>
+<button class="ghost-btn" id="printBtn" style="position:fixed;bottom:16px;right:16px;z-index:40;">🖨 Chop etish</button>
+
+<div class="xp-toast" id="xpToast">+10 XP</div>
+<div class="ach-toast" id="achToast">🏅 Yutuq!</div>
+
+<div class="bell-panel" id="bellPanel">
+  <h4>🔔 Bildirishnomalar <button id="bellClearBtn">Tozalash</button></h4>
+  <div id="bellList"></div>
+  <div class="bell-reminder-row">
+    <span>Kunlik eslatma (brauzer bildirishnomasi)</span>
+    <button class="bell-toggle on" id="reminderToggle"></button>
+  </div>
+</div>
+
+<div class="search-overlay" id="searchOverlay">
+  <div class="search-panel">
+    <input type="text" id="searchInput" placeholder="Hanzi, pinyin yoki o&#39;zbekcha so&#39;z qidiring..." autocomplete="off">
+    <div class="search-results" id="searchResults"></div>
+    <div class="search-hint">Ochish: <kbd>/</kbd> · Yopish: <kbd>Esc</kbd></div>
+  </div>
+</div>
+
+<div class="onboard-overlay" id="onboardOverlay" style="display:none;">
+  <div class="onboard-card">
+    <h2>你好! 🀄</h2>
+    <p style="color:var(--text-dim);font-size:13px;margin-bottom:16px;">HSK 2 — 15 darslik shaxsiy o'quv qo'llanmangizga xush kelibsiz</p>
+    <div class="onboard-list">
+      <div>🀄 <b>Kartochkalar / Bilim sinovi</b> — asosiy so'z o'rganish</div>
+      <div>🎮 <b>O'yinlar</b> — Juftlik, Tezlik, Tinglash, So'zni top, Gap qurish</div>
+      <div>👑 <b>Bosslar</b> — bir nechta darsni birlashtirgan yakuniy sinov</div>
+      <div>👥 <b>Jamoviy</b> — do'stlar yoki sinf bilan birga o'ynash</div>
+      <div>📖 <b>Grammatika / 💬 Dialoglar / ✍️ Yozish</b> — chuqurroq mashqlar</div>
+      <div>🏅 XP, streak va yutuqlar avtomatik saqlanadi</div>
+    </div>
+    <button class="cta-btn" id="onboardCloseBtn">Boshlaymiz 🚀</button>
+  </div>
+</div>
+
+<div class="level-up-banner" id="levelUpBanner">
+  <div class="big">LEVEL UP!</div>
+  <div id="levelUpText" style="margin-top:8px;color:var(--text-hi);font-weight:700;">Level 2</div>
+</div>
+
+<script>
+const LESSONS = [
+{
+  hz:"九月去北京旅游最好",
+  chunks:["九月","去","北京","旅游","最好"],
+  sub:"Pekinga sayohat qilish uchun eng yaxshi vaqt — sentabr",
+  words:[
+    {hz:"觉得", py:"juéde", uz:"deb o'ylamoq, his qilmoq"},
+    {hz:"最", py:"zuì", uz:"eng"},
+    {hz:"为什么", py:"wèishénme", uz:"nima uchun"},
+    {hz:"也", py:"yě", uz:"ham"},
+    {hz:"运动", py:"yùndòng", uz:"sport, mashq qilmoq"},
+    {hz:"踢", py:"tī", uz:"tepmoq"},
+    {hz:"足球", py:"zúqiú", uz:"futbol"},
+    {hz:"踢足球", py:"tī zúqiú", uz:"futbol o'ynamoq"},
+    {hz:"要", py:"yào", uz:"xohlamoq; kerak"},
+    {hz:"新", py:"xīn", uz:"yangi"},
+    {hz:"它", py:"tā", uz:"u (jonsiz narsaga)"},
+    {hz:"眼睛", py:"yǎnjing", uz:"ko'z"},
+    {hz:"旅游", py:"lǚyóu", uz:"sayohat qilmoq"}
+  ]
+},
+{
+  hz:"我每天六点起床",
+  chunks:["我","每天","六点","起床"],
+  sub:"Men har kuni soat oltida uyg'onaman",
+  words:[
+    {hz:"生病", py:"shēngbìng", uz:"kasal bo'lmoq"},
+    {hz:"每", py:"měi", uz:"har bir"},
+    {hz:"早上", py:"zǎoshang", uz:"ertalab"},
+    {hz:"跑步", py:"pǎobù", uz:"yugurmoq"},
+    {hz:"起床", py:"qǐchuáng", uz:"uyqudan turmoq"},
+    {hz:"药", py:"yào", uz:"dori"},
+    {hz:"身体", py:"shēntǐ", uz:"tana, sog'lik"},
+    {hz:"出院", py:"chūyuàn", uz:"kasalxonadan chiqmoq"},
+    {hz:"高", py:"gāo", uz:"baland, uzun bo'yli"},
+    {hz:"米", py:"mǐ", uz:"metr"},
+    {hz:"知道", py:"zhīdào", uz:"bilmoq"},
+    {hz:"休息", py:"xiūxi", uz:"dam olmoq"},
+    {hz:"忙", py:"máng", uz:"band"},
+    {hz:"时间", py:"shíjiān", uz:"vaqt"}
+  ]
+},
+{
+  hz:"左边那个红色的是我的",
+  chunks:["左边","那个","红色","的","是","我的"],
+  sub:"Chapdagi qizil rangdagisi meniki",
+  words:[
+    {hz:"手表", py:"shǒubiǎo", uz:"qo'l soati"},
+    {hz:"千", py:"qiān", uz:"ming"},
+    {hz:"报纸", py:"bàozhǐ", uz:"gazeta"},
+    {hz:"送", py:"sòng", uz:"jo'natmoq, sovg'a qilmoq"},
+    {hz:"一下", py:"yíxià", uz:"bir oz, biroz"},
+    {hz:"牛奶", py:"niúnǎi", uz:"sut"},
+    {hz:"房间", py:"fángjiān", uz:"xona"},
+    {hz:"丈夫", py:"zhàngfu", uz:"er (turmush o'rtog'i)"},
+    {hz:"旁边", py:"pángbiān", uz:"yonida"},
+    {hz:"真", py:"zhēn", uz:"haqiqatan, chindan"},
+    {hz:"粉色", py:"fěnsè", uz:"pushti rang"},
+    {hz:"颜色", py:"yánsè", uz:"rang"},
+    {hz:"左边", py:"zuǒbian", uz:"chap tomon"},
+    {hz:"红色", py:"hóngsè", uz:"qizil rang"}
+  ]
+},
+{
+  hz:"这个工作是他帮我介绍的",
+  chunks:["这个","工作","是","他","帮","我","介绍","的"],
+  sub:"Bu ishga meni u tanishtirgan",
+  words:[
+    {hz:"生日", py:"shēngrì", uz:"tug'ilgan kun"},
+    {hz:"快乐", py:"kuàilè", uz:"baxtli, xursand"},
+    {hz:"给", py:"gěi", uz:"bermoq; -ga, uchun"},
+    {hz:"接", py:"jiē", uz:"qabul qilmoq, kutib olmoq"},
+    {hz:"晚上", py:"wǎnshang", uz:"kechqurun"},
+    {hz:"问", py:"wèn", uz:"so'ramoq"},
+    {hz:"非常", py:"fēicháng", uz:"juda ham"},
+    {hz:"开始", py:"kāishǐ", uz:"boshlamoq"},
+    {hz:"已经", py:"yǐjīng", uz:"allaqachon"},
+    {hz:"长", py:"cháng", uz:"uzun"},
+    {hz:"两", py:"liǎng", uz:"ikki"},
+    {hz:"帮", py:"bāng", uz:"yordam bermoq"},
+    {hz:"介绍", py:"jièshào", uz:"tanishtirmoq"}
+  ]
+},
+{
+  hz:"就买这件吧",
+  chunks:["就","买","这件","吧"],
+  sub:"Mana shuni oling",
+  words:[
+    {hz:"外面", py:"wàimiàn", uz:"tashqarida"},
+    {hz:"准备", py:"zhǔnbèi", uz:"tayyorlanmoq, rejalashtirmoq"},
+    {hz:"就", py:"jiù", uz:"aynan, darhol (xulosa)"},
+    {hz:"鱼", py:"yú", uz:"baliq"},
+    {hz:"吧", py:"ba", uz:"taklif/buyruq ohangi (yordamchi so'z)"},
+    {hz:"件", py:"jiàn", uz:"dona (kiyim uchun sanoq so'z)"},
+    {hz:"还", py:"hái", uz:"hali ham, ancha"},
+    {hz:"可以", py:"kěyǐ", uz:"mumkin, yomon emas"},
+    {hz:"不错", py:"búcuò", uz:"yomon emas, yaxshi"},
+    {hz:"考试", py:"kǎoshì", uz:"imtihon"},
+    {hz:"意思", py:"yìsi", uz:"ma'no"},
+    {hz:"咖啡", py:"kāfēi", uz:"qahva"},
+    {hz:"对", py:"duì", uz:"uchun, ga nisbatan"},
+    {hz:"以后", py:"yǐhòu", uz:"keyin, keyinchalik"}
+  ]
+},
+{
+  hz:"你怎么不吃了",
+  chunks:["你","怎么","不","吃","了"],
+  sub:"Nega endi yemayapsan",
+  words:[
+    {hz:"门", py:"mén", uz:"eshik"},
+    {hz:"外", py:"wài", uz:"tashqi"},
+    {hz:"自行车", py:"zìxíngchē", uz:"velosiped"},
+    {hz:"羊肉", py:"yángròu", uz:"qo'y go'shti"},
+    {hz:"好吃", py:"hǎochī", uz:"mazali"},
+    {hz:"面条", py:"miàntiáo", uz:"lag'mon, makaron"},
+    {hz:"打篮球", py:"dǎ lánqiú", uz:"basketbol o'ynamoq"},
+    {hz:"因为", py:"yīnwèi", uz:"chunki"},
+    {hz:"所以", py:"suǒyǐ", uz:"shuning uchun"},
+    {hz:"游泳", py:"yóuyǒng", uz:"suzmoq"},
+    {hz:"经常", py:"jīngcháng", uz:"tez-tez"},
+    {hz:"公斤", py:"gōngjīn", uz:"kilogramm"},
+    {hz:"姐姐", py:"jiějie", uz:"opa"}
+  ]
+},
+{
+  hz:"你家离公司远吗",
+  chunks:["你家","离","公司","远","吗"],
+  sub:"Uying kompaniyadan uzoqmi",
+  words:[
+    {hz:"离", py:"lí", uz:"...dan (masofa)"},
+    {hz:"公司", py:"gōngsī", uz:"kompaniya"},
+    {hz:"远", py:"yuǎn", uz:"uzoq"},
+    {hz:"公共汽车", py:"gōnggòng qìchē", uz:"avtobus"},
+    {hz:"小时", py:"xiǎoshí", uz:"soat (vaqt birligi)"},
+    {hz:"慢", py:"màn", uz:"sekin"},
+    {hz:"快", py:"kuài", uz:"tez"},
+    {hz:"过", py:"guò", uz:"o'tkazmoq (vaqt)"},
+    {hz:"走", py:"zǒu", uz:"yurmoq"},
+    {hz:"到", py:"dào", uz:"yetib bormoq"},
+    {hz:"教室", py:"jiàoshì", uz:"sinf xonasi"},
+    {hz:"机场", py:"jīchǎng", uz:"aeroport"},
+    {hz:"路", py:"lù", uz:"yo'l"}
+  ]
+},
+{
+  hz:"让我想想再告诉你",
+  chunks:["让","我","想想","再","告诉","你"],
+  sub:"O'ylab ko'rib, keyin aytaman",
+  words:[
+    {hz:"再", py:"zài", uz:"yana, keyin"},
+    {hz:"让", py:"ràng", uz:"ruxsat bermoq, majbur qilmoq"},
+    {hz:"告诉", py:"gàosu", uz:"aytmoq"},
+    {hz:"等", py:"děng", uz:"kutmoq"},
+    {hz:"找", py:"zhǎo", uz:"qidirmoq"},
+    {hz:"事情", py:"shìqing", uz:"ish, voqea"},
+    {hz:"服务员", py:"fúwùyuán", uz:"xizmatchi, ofitsiant"},
+    {hz:"白", py:"bái", uz:"oq"},
+    {hz:"黑", py:"hēi", uz:"qora"},
+    {hz:"贵", py:"guì", uz:"qimmat"}
+  ]
+},
+{
+  hz:"题太多，我没做完",
+  chunks:["题太多","我","没","做完"],
+  sub:"Savollar juda ko'p edi, hammasini bajarmadim",
+  words:[
+    {hz:"错", py:"cuò", uz:"xato, noto'g'ri"},
+    {hz:"从", py:"cóng", uz:"...dan (boshlanish nuqtasi)"},
+    {hz:"跳舞", py:"tiàowǔ", uz:"raqsga tushmoq"},
+    {hz:"第一", py:"dì yī", uz:"birinchi"},
+    {hz:"希望", py:"xīwàng", uz:"umid qilmoq"},
+    {hz:"问题", py:"wèntí", uz:"savol, muammo"},
+    {hz:"欢迎", py:"huānyíng", uz:"xush kelibsiz"},
+    {hz:"上班", py:"shàngbān", uz:"ishga bormoq"},
+    {hz:"懂", py:"dǒng", uz:"tushunmoq"},
+    {hz:"完", py:"wán", uz:"tugatmoq"},
+    {hz:"题", py:"tí", uz:"savol, masala"}
+  ]
+},
+{
+  hz:"别找了，手机在桌子上呢",
+  chunks:["别找了","手机","在","桌子上","呢"],
+  sub:"Qidirma, telefon stol ustida-ku",
+  words:[
+    {hz:"课", py:"kè", uz:"dars"},
+    {hz:"帮助", py:"bāngzhù", uz:"yordam bermoq"},
+    {hz:"别", py:"bié", uz:"qilma (taqiqlash)"},
+    {hz:"哥哥", py:"gēge", uz:"aka"},
+    {hz:"鸡蛋", py:"jīdàn", uz:"tuxum"},
+    {hz:"西瓜", py:"xīguā", uz:"tarvuz"},
+    {hz:"正在", py:"zhèngzài", uz:"hozir ...moqda"},
+    {hz:"手机", py:"shǒujī", uz:"mobil telefon"},
+    {hz:"洗", py:"xǐ", uz:"yuvmoq"}
+  ]
+},
+{
+  hz:"他比我大三岁",
+  chunks:["他","比","我","大","三岁"],
+  sub:"U mendan uch yosh katta",
+  words:[
+    {hz:"唱歌", py:"chànggē", uz:"qo'shiq aytmoq"},
+    {hz:"男", py:"nán", uz:"erkak"},
+    {hz:"女", py:"nǚ", uz:"ayol"},
+    {hz:"孩子", py:"háizi", uz:"bola"},
+    {hz:"右边", py:"yòubian", uz:"o'ng tomon"},
+    {hz:"比", py:"bǐ", uz:"...dan (solishtirish)"},
+    {hz:"便宜", py:"piányi", uz:"arzon"},
+    {hz:"说话", py:"shuōhuà", uz:"gapirmoq"},
+    {hz:"可能", py:"kěnéng", uz:"mumkin, ehtimol"},
+    {hz:"去年", py:"qùnián", uz:"o'tgan yil"},
+    {hz:"姓", py:"xìng", uz:"familiyasi bo'lmoq"}
+  ]
+},
+{
+  hz:"你穿得太少了",
+  chunks:["你","穿","得","太","少","了"],
+  sub:"Sen juda yupqa kiyinibsan",
+  words:[
+    {hz:"得", py:"de", uz:"natija darajasini bildiruvchi yordamchi so'z"},
+    {hz:"妻子", py:"qīzi", uz:"xotin"},
+    {hz:"雪", py:"xuě", uz:"qor"},
+    {hz:"零", py:"líng", uz:"nol"},
+    {hz:"度", py:"dù", uz:"daraja"},
+    {hz:"穿", py:"chuān", uz:"kiymoq"},
+    {hz:"进", py:"jìn", uz:"kirmoq"},
+    {hz:"弟弟", py:"dìdi", uz:"uka"},
+    {hz:"近", py:"jìn", uz:"yaqin"}
+  ]
+},
+{
+  hz:"门开着呢",
+  chunks:["门","开着","呢"],
+  sub:"Eshik ochiq turibdi",
+  words:[
+    {hz:"着", py:"zhe", uz:"davomiylikni bildiruvchi yordamchi"},
+    {hz:"手", py:"shǒu", uz:"qo'l"},
+    {hz:"拿", py:"ná", uz:"olmoq, ushlamoq"},
+    {hz:"铅笔", py:"qiānbǐ", uz:"qalam"},
+    {hz:"班", py:"bān", uz:"sinf, guruh"},
+    {hz:"长", py:"zhǎng", uz:"o'smoq"},
+    {hz:"笑", py:"xiào", uz:"kulmoq"},
+    {hz:"宾馆", py:"bīnguǎn", uz:"mehmonxona"},
+    {hz:"一直", py:"yìzhí", uz:"to'g'ri, doim"},
+    {hz:"往", py:"wǎng", uz:"tomon"},
+    {hz:"路口", py:"lùkǒu", uz:"chorraha"}
+  ]
+},
+{
+  hz:"你看过那个电影吗",
+  chunks:["你","看过","那个","电影","吗"],
+  sub:"Sen o'sha filmni ko'rganmisan",
+  words:[
+    {hz:"有意思", py:"yǒuyìsi", uz:"qiziqarli"},
+    {hz:"但是", py:"dànshì", uz:"lekin"},
+    {hz:"虽然", py:"suīrán", uz:"garchi"},
+    {hz:"次", py:"cì", uz:"marta (sanoq so'z)"},
+    {hz:"玩儿", py:"wánr", uz:"o'ynamoq, dam olmoq"},
+    {hz:"晴", py:"qíng", uz:"quyoshli, ochiq (havo)"},
+    {hz:"百", py:"bǎi", uz:"yuz"}
+  ]
+},
+{
+  hz:"新年就要到了",
+  chunks:["新年","就要","到了"],
+  sub:"Yangi yil yaqinlashib qolibdi",
+  words:[
+    {hz:"日", py:"rì", uz:"kun, sana"},
+    {hz:"新年", py:"xīnnián", uz:"Yangi yil"},
+    {hz:"票", py:"piào", uz:"chipta"},
+    {hz:"火车站", py:"huǒchēzhàn", uz:"temir yo'l stansiyasi"},
+    {hz:"大家", py:"dàjiā", uz:"hamma"},
+    {hz:"更", py:"gèng", uz:"yanada, ko'proq"},
+    {hz:"妹妹", py:"mèimei", uz:"singil"},
+    {hz:"阴", py:"yīn", uz:"bulutli"}
+  ]
+}
+
+];
+
+let currentLesson = 0;
+
+/* ---------- XP / Level / Streak system ---------- */
+const LEVEL_TITLES = ["Yangi boshlovchi","O'quvchi","Bilimdon","Ilg'or","Mohir","Usta","Hanzi ustasi"];
+function loadProgress(){
+  const defaults = {xp:0, streak:0, lastDate:null, bestSpeed:0, wordStats:{}, achievements:[], theme:'dark', hangWins:0, perfectQuizzes:0, bossBest:{}, favorites:[], onboarded:false, notifications:[], notes:[], remindersEnabled:false, showPinyin:true, bgTheme:'ipak'};
+  try{
+    const raw = localStorage.getItem('hsk2_progress');
+    if(raw) return Object.assign({}, defaults, JSON.parse(raw));
+  }catch(e){}
+  return defaults;
+}
+function saveProgress(){
+  try{ localStorage.setItem('hsk2_progress', JSON.stringify(progress)); }catch(e){}
+}
+let progress = loadProgress();
+/* ---------- Notification center ---------- */
+function pushNotification(icon, text, opts){
+  opts = opts || {};
+  progress.notifications = progress.notifications || [];
+  progress.notifications.unshift({icon, text, time: Date.now()});
+  progress.notifications = progress.notifications.slice(0, 30);
+  progress.unreadNotif = (progress.unreadNotif||0) + 1;
+  saveProgress();
+  updateBellBadge();
+  if(opts.real && progress.remindersEnabled && typeof Notification!=='undefined' && Notification.permission==='granted'){
+    try{ new Notification('HSK 2', {body: text, icon: undefined}); }catch(e){}
+  }
+}
+function updateBellBadge(){
+  const dot = document.getElementById('bellDot');
+  const n = progress.unreadNotif||0;
+  if(n>0){ dot.style.display='flex'; dot.textContent = n>9?'9+':n; }
+  else { dot.style.display='none'; }
+}
+
+(function initStreak(){
+  const today = new Date().toISOString().slice(0,10);
+  if(progress.lastDate === today){ /* already counted today */ }
+  else {
+    const y = new Date(Date.now()-86400000).toISOString().slice(0,10);
+    const wasContinuing = progress.lastDate === y;
+    progress.streak = wasContinuing ? (progress.streak||0)+1 : 1;
+    progress.lastDate = today;
+    saveProgress();
+    if(wasContinuing && progress.streak>=2){
+      pushNotification('🔥', `${progress.streak} kunlik streak davom etmoqda! Ajoyib!`);
+    } else if(!wasContinuing && progress.streak===1){
+      pushNotification('👋', "Xush kelibsiz! Bugungi mashqni boshlang.");
+    }
+  }
+})();
+
+/* ---- word-level spaced repetition stats ---- */
+function recordWordResult(hz, correct){
+  const s = progress.wordStats[hz] || {seen:0, correct:0, wrong:0};
+  s.seen++; if(correct) s.correct++; else s.wrong++;
+  progress.wordStats[hz] = s;
+  saveProgress();
+}
+function weaknessScore(hz){
+  const s = progress.wordStats[hz];
+  if(!s || s.seen===0) return 1; // unseen words treated as medium priority
+  return 1 - (s.correct/s.seen); // 0 = mastered, 1 = always wrong
+}
+// Weighted shuffle: words with higher weakness show up earlier/more often
+function weightedOrder(words, count){
+  const weighted = words.map(w=>({w, score: weaknessScore(w.hz) + Math.random()*0.35}));
+  weighted.sort((a,b)=>b.score-a.score);
+  const picked = weighted.slice(0, count || words.length).map(x=>x.w);
+  return picked.sort(()=>Math.random()-0.5);
+}
+
+function levelFromXp(xp){ return Math.min(Math.floor(xp/100)+1, 99); }
+function updateXpUI(){
+  const lvl = levelFromXp(progress.xp);
+  const title = LEVEL_TITLES[Math.min(lvl-1, LEVEL_TITLES.length-1)];
+  document.getElementById('levelVal').textContent = `Lv. ${lvl} · ${title}`;
+  document.getElementById('xpVal').textContent = progress.xp;
+  document.getElementById('streakVal').textContent = progress.streak || 1;
+  const withinLevel = progress.xp % 100;
+  document.getElementById('xpFill').style.width = withinLevel + '%';
+}
+let xpToastTimer = null;
+function awardXp(amount, label){
+  const beforeLvl = levelFromXp(progress.xp);
+  progress.xp += amount;
+  saveProgress();
+  updateXpUI();
+  const toast = document.getElementById('xpToast');
+  toast.textContent = `${label || ''} +${amount} XP`.trim();
+  toast.classList.add('show');
+  clearTimeout(xpToastTimer);
+  xpToastTimer = setTimeout(()=>toast.classList.remove('show'), 1400);
+  const afterLvl = levelFromXp(progress.xp);
+  if(afterLvl > beforeLvl){
+    const banner = document.getElementById('levelUpBanner');
+    document.getElementById('levelUpText').textContent = `Level ${afterLvl} · ${LEVEL_TITLES[Math.min(afterLvl-1, LEVEL_TITLES.length-1)]}`;
+    banner.classList.add('show');
+    burstConfetti();
+    setTimeout(()=>banner.classList.remove('show'), 2200);
+    pushNotification('⬆️', `Yangi daraja: Level ${afterLvl} — ${LEVEL_TITLES[Math.min(afterLvl-1, LEVEL_TITLES.length-1)]}!`, {real:true});
+  }
+  checkAchievements();
+}
+updateXpUI();
+
+/* ---------- Achievements ---------- */
+const ACHIEVEMENTS = [
+  {id:'streak3', icon:'🔥', name:'3 kunlik olov', desc:"3 kun ketma-ket mashq qiling", check:()=>progress.streak>=3},
+  {id:'streak7', icon:'🔥', name:'Haftalik sadoqat', desc:"7 kun ketma-ket mashq qiling", check:()=>progress.streak>=7},
+  {id:'xp100', icon:'⭐', name:'Birinchi yuzlik', desc:"100 XP to'plang", check:()=>progress.xp>=100},
+  {id:'xp500', icon:'🌟', name:'Yarim minglik', desc:"500 XP to'plang", check:()=>progress.xp>=500},
+  {id:'xp1000', icon:'💫', name:'Ming XP', desc:"1000 XP to'plang", check:()=>progress.xp>=1000},
+  {id:'allLessons', icon:'📚', name:'Barcha darslar', desc:"15 ta darsning barchasini ko'ring", check:()=>visitedLessons.size>=15},
+  {id:'hangman5', icon:'🪢', name:"So'z ustasi", desc:"5 marta Hangmanda yutish", check:()=>progress.hangWins>=5},
+  {id:'perfect1', icon:'🏆', name:'Mukammal test', desc:"Bilim sinovini 100% bilan tugating", check:()=>progress.perfectQuizzes>=1},
+  {id:'perfect5', icon:'👑', name:'Doimiy mukammallik', desc:"5 marta 100% natija oling", check:()=>progress.perfectQuizzes>=5},
+  {id:'speed20', icon:'⚡', name:'Chaqmoq tezlik', desc:"Tezlik raundida 20+ ball to'plang", check:()=>progress.bestSpeed>=20},
+  {id:'bossAll', icon:'👑', name:'Uch bossni yengish', desc:"Barcha 3 ta boss testini tugating", check:()=>Object.keys(progress.bossBest||{}).length>=3},
+];
+function checkAchievements(){
+  let newly = [];
+  ACHIEVEMENTS.forEach(a=>{
+    if(!progress.achievements.includes(a.id) && a.check()){
+      progress.achievements.push(a.id);
+      newly.push(a);
+    }
+  });
+  if(newly.length){
+    saveProgress();
+    newly.forEach(a=>pushNotification(a.icon, `Yutuq qo'lga kiritildi: ${a.name}!`, {real:true}));
+    showAchievementToast(newly[0]);
+  }
+}
+let achToastQueue = [];
+function showAchievementToast(a){
+  const toast = document.getElementById('achToast');
+  toast.innerHTML = `<span style="font-size:22px;">${a.icon}</span><span>Yutuq: ${a.name}!</span>`;
+  toast.classList.add('show');
+  setTimeout(()=>toast.classList.remove('show'), 2600);
+}
+function renderAchievements(){
+  const grid = document.getElementById('achGrid');
+  grid.innerHTML = ACHIEVEMENTS.map(a=>{
+    const unlocked = progress.achievements.includes(a.id);
+    return `<div class="ach-card ${unlocked?'unlocked':''}">
+      <div class="ach-icon">${a.icon}</div>
+      <div class="ach-name">${a.name}</div>
+      <div class="ach-desc">${a.desc}</div>
+    </div>`;
+  }).join('');
+}
+
+/* ---------- Audio: synthesized sound effects (no external files) ---------- */
+let actx;
+function ac(){ if(!actx) actx = new (window.AudioContext||window.webkitAudioContext)(); return actx; }
+function tone(freq, dur, type='sine', vol=0.18, delay=0){
+  const c = ac();
+  const t0 = c.currentTime + delay;
+  const osc = c.createOscillator();
+  const gain = c.createGain();
+  osc.type = type; osc.frequency.value = freq;
+  gain.gain.setValueAtTime(0, t0);
+  gain.gain.linearRampToValueAtTime(vol, t0+0.015);
+  gain.gain.exponentialRampToValueAtTime(0.0001, t0+dur);
+  osc.connect(gain); gain.connect(c.destination);
+  osc.start(t0); osc.stop(t0+dur+0.02);
+}
+function playCorrect(){ tone(523,0.14,'triangle',0.2); tone(659,0.16,'triangle',0.2,0.09); tone(784,0.22,'triangle',0.22,0.18); }
+function playWrong(){ tone(180,0.28,'sawtooth',0.15); tone(120,0.32,'sawtooth',0.14,0.05); }
+function playStamp(){ tone(90,0.12,'square',0.25); tone(60,0.18,'sine',0.2,0.02); }
+function playFlip(){ tone(340,0.08,'sine',0.08); }
+function speak(text){
+  if(!window.speechSynthesis) return;
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = 'zh-CN';
+  speechSynthesis.cancel();
+  speechSynthesis.speak(u);
+}
+
+/* ---------- Floating petals ---------- */
+const petalHost = document.getElementById('petals');
+function buildPetals(emojiSet, count, sizeRange){
+  petalHost.innerHTML = '';
+  for(let i=0;i<count;i++){
+    const p = document.createElement('span');
+    p.className = 'petal';
+    p.textContent = emojiSet[Math.floor(Math.random()*emojiSet.length)];
+    p.style.left = (Math.random()*100)+'vw';
+    p.style.fontSize = (sizeRange[0] + Math.random()*(sizeRange[1]-sizeRange[0])) + 'px';
+    const fallDur = 14 + Math.random()*14;
+    const swayDur = 3 + Math.random()*3;
+    p.style.animationDuration = fallDur+'s, '+swayDur+'s';
+    p.style.animationDelay = (Math.random()*14)+'s, 0s';
+    petalHost.appendChild(p);
+  }
+}
+buildPetals(['❀','🍃','❁'], 16, [14,18]);
+
+/* ---------- Floating lanterns ---------- */
+const lanternHost = document.getElementById('lanternLayer');
+function buildLanterns(){
+  lanternHost.innerHTML = '';
+  for(let i=0;i<10;i++){
+    const l = document.createElement('span');
+    l.className = 'lantern';
+    l.textContent = '🏮';
+    l.style.left = (Math.random()*100)+'vw';
+    const riseDur = 16 + Math.random()*14;
+    const swayDur = 4 + Math.random()*3;
+    l.style.animationDuration = riseDur+'s, '+swayDur+'s';
+    l.style.animationDelay = (Math.random()*16)+'s, 0s';
+    l.style.fontSize = (26 + Math.random()*18) + 'px';
+    lanternHost.appendChild(l);
+  }
+}
+buildLanterns();
+
+
+/* ---------- Confetti ---------- */
+const confettiCanvas = document.getElementById('confettiCanvas');
+const cctx = confettiCanvas.getContext('2d');
+function resizeConfetti(){ confettiCanvas.width = innerWidth; confettiCanvas.height = innerHeight; }
+resizeConfetti();
+window.addEventListener('resize', resizeConfetti);
+function burstConfetti(){
+  const colors = ['#2FA184','#5FCBAE','#B7362C','#D65A46','#C9A227','#F4EFE1'];
+  const pieces = Array.from({length:90}, ()=>({
+    x: innerWidth/2, y: innerHeight/2,
+    vx: (Math.random()-0.5)*16, vy: (Math.random()-1.4)*16,
+    size: 4+Math.random()*5, color: colors[Math.floor(Math.random()*colors.length)],
+    rot: Math.random()*360, vr: (Math.random()-0.5)*14, life: 0
+  }));
+  let frame = 0;
+  function step(){
+    cctx.clearRect(0,0,confettiCanvas.width,confettiCanvas.height);
+    frame++;
+    let alive = false;
+    pieces.forEach(p=>{
+      if(p.life > 90) return;
+      alive = true;
+      p.vy += 0.35; p.x += p.vx; p.y += p.vy; p.rot += p.vr; p.life++;
+      cctx.save();
+      cctx.translate(p.x,p.y); cctx.rotate(p.rot*Math.PI/180);
+      cctx.fillStyle = p.color; cctx.globalAlpha = Math.max(0,1-p.life/90);
+      cctx.fillRect(-p.size/2,-p.size/2,p.size,p.size);
+      cctx.restore();
+    });
+    if(alive) requestAnimationFrame(step);
+    else cctx.clearRect(0,0,confettiCanvas.width,confettiCanvas.height);
+  }
+  step();
+}
+
+/* ---------- Lesson pills & navigation ---------- */
+const visitedLessons = new Set([0]);
+const pillHost = document.getElementById('lessonPills');
+function buildPills(){
+  pillHost.innerHTML = '';
+  LESSONS.forEach((les, i)=>{
+    const pill = document.createElement('div');
+    pill.className = 'lpill' + (i===currentLesson?' active':'') + (visitedLessons.has(i)?' done':'');
+    pill.innerHTML = `${i+1}<span class="lpill-badge">${les.words.length}</span>`;
+    pill.addEventListener('click', ()=> selectLesson(i));
+    pillHost.appendChild(pill);
+  });
+}
+buildPills();
+
+function updateOverallProgress(){
+  const pct = Math.round((visitedLessons.size/LESSONS.length)*100);
+  document.getElementById('overallFill').style.width = pct+'%';
+  document.getElementById('overallLbl').textContent = `${visitedLessons.size}/${LESSONS.length} dars`;
+}
+updateOverallProgress();
+
+function selectLesson(i){
+  currentLesson = i;
+  visitedLessons.add(i);
+  buildPills();
+  updateOverallProgress();
+  const activePill = pillHost.children[i];
+  if(activePill) activePill.scrollIntoView({behavior:'smooth', inline:'center', block:'nearest'});
+  const les = LESSONS[i];
+  document.getElementById('eyebrow').textContent = `HSK 2 · ${i+1}-dars`;
+  const h1 = document.getElementById('lessonHz');
+  h1.textContent = les.hz;
+  h1.style.animation = 'none'; void h1.offsetWidth; h1.style.animation = '';
+  document.getElementById('lessonSub').textContent = les.sub;
+  document.getElementById('footerText').textContent = `制作 · HSK 2 标准教程 · ${i+1}-dars, ${les.words.length} so'z · Elektron doskada ishlash uchun tayyorlangan`;
+  renderCards(les.words);
+  document.getElementById('prevLesson').disabled = (i===0);
+  document.getElementById('nextLesson').disabled = (i===LESSONS.length-1);
+  if(document.getElementById('quiz').classList.contains('active')) startQuiz();
+  if(document.getElementById('match').classList.contains('active')) startMatchGame();
+  if(document.getElementById('speed').classList.contains('active')) renderSpeedIntro();
+  if(document.getElementById('listen').classList.contains('active')) startListenQuiz();
+  if(document.getElementById('build').classList.contains('active')) startBuildGame();
+  if(document.getElementById('hangman').classList.contains('active')) startHangman();
+  if(document.getElementById('sentence').classList.contains('active')) startSentenceGame();
+  if(document.getElementById('grammar').classList.contains('active')) renderGrammar();
+  if(document.getElementById('dialogues').classList.contains('active')) renderDialogues();
+  if(document.getElementById('writing').classList.contains('active')) startWriting();
+  if(showingFavorites){ showingFavorites=false; document.getElementById('favBtn').classList.remove('active-turn'); }
+}
+document.getElementById('prevLesson').addEventListener('click', ()=>{ if(currentLesson>0) selectLesson(currentLesson-1); });
+document.getElementById('nextLesson').addEventListener('click', ()=>{ if(currentLesson<LESSONS.length-1) selectLesson(currentLesson+1); });
+document.getElementById('prevLesson').disabled = true;
+
+/* ---------- Tabs ---------- */
+document.querySelectorAll('.tab').forEach(tab=>{
+  tab.addEventListener('click', ()=>{
+    document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+    document.querySelectorAll('section').forEach(s=>s.classList.remove('active'));
+    tab.classList.add('active');
+    const target = document.getElementById(tab.dataset.tab);
+    target.classList.add('active');
+    target.style.animation = 'none';
+    void target.offsetWidth;
+    target.style.animation = '';
+    if(tab.dataset.tab==='quiz') startQuiz();
+    if(tab.dataset.tab==='match') startMatchGame();
+    if(tab.dataset.tab==='speed') renderSpeedIntro();
+    if(tab.dataset.tab==='listen') startListenQuiz();
+    if(tab.dataset.tab==='build') startBuildGame();
+    if(tab.dataset.tab==='hangman') startHangman();
+    if(tab.dataset.tab==='sentence') startSentenceGame();
+    if(tab.dataset.tab==='boss') renderBossIntro();
+    if(tab.dataset.tab==='achievements') renderAchievements();
+    if(tab.dataset.tab==='stats') renderStats();
+    if(tab.dataset.tab==='party') renderPartyHome();
+    if(tab.dataset.tab==='grammar') renderGrammar();
+    if(tab.dataset.tab==='dialogues') renderDialogues();
+    if(tab.dataset.tab==='writing') startWriting();
+    if(tab.dataset.tab==='dictionary') renderDictionaryHome();
+    if(tab.dataset.tab==='notes') renderNotes();
+    if(tab.dataset.tab==='themes') renderThemes();
+  });
+});
+
+/* ---------- Flashcards ---------- */
+const grid = document.getElementById('cardGrid');
+function renderCards(list){
+  grid.innerHTML = '';
+  list.forEach((w, i)=>{
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.style.animationDelay = (i*0.05)+'s';
+    const isFav = (progress.favorites||[]).includes(w.hz);
+    card.innerHTML = `
+      <div class="card-inner">
+        <div class="face front">
+          <button class="fav-star ${isFav?'active':''}" data-hz="${w.hz}">⭐</button>
+          <span class="num">${String(i+1).padStart(2,'0')}</span>
+          <div class="hz hanzi">${w.hz}</div>
+          <span class="tap-hint">Bosing</span>
+        </div>
+        <div class="face back">
+          <div class="py">${w.py}</div>
+          <div class="uz">${w.uz}</div>
+          <button class="speaker">🔊</button>
+        </div>
+      </div>`;
+    card.addEventListener('click', (e)=>{
+      if(e.target.closest('.speaker')){ speak(w.hz); return; }
+      if(e.target.closest('.fav-star')){ toggleFavorite(w.hz, e.target.closest('.fav-star')); return; }
+      card.classList.toggle('flipped');
+      playFlip();
+    });
+    grid.appendChild(card);
+  });
+}
+renderCards(LESSONS[0].words);
+
+function toggleFavorite(hz, btn){
+  progress.favorites = progress.favorites || [];
+  const idx = progress.favorites.indexOf(hz);
+  if(idx>=0){ progress.favorites.splice(idx,1); btn.classList.remove('active'); }
+  else { progress.favorites.push(hz); btn.classList.add('active'); }
+  saveProgress();
+}
+
+let showingFavorites = false;
+document.getElementById('favBtn').addEventListener('click', ()=>{
+  showingFavorites = !showingFavorites;
+  document.getElementById('favBtn').classList.toggle('active-turn', showingFavorites);
+  if(showingFavorites){
+    const favWords = ALL_WORDS.filter(w=>(progress.favorites||[]).includes(w.hz));
+    document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+    document.querySelectorAll('section').forEach(s=>s.classList.remove('active'));
+    document.querySelector('.tab[data-tab="cards"]').classList.add('active');
+    document.getElementById('cards').classList.add('active');
+    if(favWords.length===0){
+      grid.innerHTML = `<p style="grid-column:1/-1;text-align:center;color:var(--text-dim);">Hali sevimli so'z tanlanmagan. Kartochkadagi ⭐ tugmasini bosing.</p>`;
+    } else {
+      renderCards(favWords);
+    }
+  } else {
+    renderCards(LESSONS[currentLesson].words);
+  }
+});
+
+/* ---------- Export / Import progress ---------- */
+document.getElementById('exportBtn').addEventListener('click', ()=>{
+  const blob = new Blob([JSON.stringify(progress, null, 2)], {type:'application/json'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = 'hsk2-progress.json';
+  document.body.appendChild(a); a.click(); document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+});
+document.getElementById('importBtn').addEventListener('click', ()=>{
+  document.getElementById('importFile').click();
+});
+document.getElementById('importFile').addEventListener('change', (e)=>{
+  const file = e.target.files[0];
+  if(!file) return;
+  const reader = new FileReader();
+  reader.onload = ()=>{
+    try{
+      const data = JSON.parse(reader.result);
+      progress = Object.assign(loadProgress(), data);
+      saveProgress();
+      updateXpUI();
+      buildPills();
+      applyTheme();
+      alert("Progress muvaffaqiyatli yuklandi!");
+    }catch(err){ alert("Fayl noto'g'ri formatda."); }
+  };
+  reader.readAsText(file);
+});
+
+/* ---------- Onboarding ---------- */
+if(!progress.onboarded){
+  document.getElementById('onboardOverlay').style.display = 'flex';
+}
+document.getElementById('onboardCloseBtn').addEventListener('click', ()=>{
+  document.getElementById('onboardOverlay').style.display = 'none';
+  progress.onboarded = true;
+  saveProgress();
+});
+
+document.getElementById('flipAll').addEventListener('click', ()=>{
+  document.querySelectorAll('.card').forEach(c=>c.classList.remove('flipped'));
+});
+document.getElementById('shuffleCards').addEventListener('click', ()=>{
+  const shuffled = [...LESSONS[currentLesson].words].sort(()=>Math.random()-0.5);
+  renderCards(shuffled);
+});
+
+/* ---------- Quiz ---------- */
+const quizBox = document.getElementById('quizBox');
+let quizOrder = [], qIndex = 0, score = 0, mistakes = [];
+let quizDir = 'hz2uz'; // 'hz2uz' or 'uz2hz'
+let quizPool = null; // when set (review mode), overrides current lesson words
+
+document.querySelectorAll('.dir-btn').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    document.querySelectorAll('.dir-btn').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    quizDir = btn.dataset.dir;
+    startQuiz();
+  });
+});
+
+let quizScope = 'lesson'; // 'lesson' | 'all'
+let quizAnswerMode = 'choice'; // 'choice' | 'type'
+const ALL_WORDS = LESSONS.flatMap(l=>l.words);
+document.getElementById('scopeLesson').addEventListener('click', function(){
+  quizScope='lesson'; this.classList.add('active'); document.getElementById('scopeAll').classList.remove('active'); startQuiz();
+});
+document.getElementById('scopeAll').addEventListener('click', function(){
+  quizScope='all'; this.classList.add('active'); document.getElementById('scopeLesson').classList.remove('active'); startQuiz();
+});
+document.getElementById('modeChoice').addEventListener('click', function(){
+  quizAnswerMode='choice'; this.classList.add('active'); document.getElementById('modeType').classList.remove('active'); startQuiz();
+});
+document.getElementById('modeType').addEventListener('click', function(){
+  quizAnswerMode='type'; this.classList.add('active'); document.getElementById('modeChoice').classList.remove('active'); startQuiz();
+});
+
+function makeOptions(correctWord, pool){
+  const distractors = pool.filter(w=>w.hz!==correctWord.hz).sort(()=>Math.random()-0.5).slice(0,3);
+  return [...distractors, correctWord].sort(()=>Math.random()-0.5);
+}
+
+function currentQuizPool(){
+  if(quizPool) return quizPool;
+  return quizScope==='all' ? ALL_WORDS : LESSONS[currentLesson].words;
+}
+
+function startQuiz(reviewList){
+  quizPool = reviewList || null;
+  const source = currentQuizPool();
+  quizOrder = [...source].sort(()=>Math.random()-0.5).slice(0, quizScope==='all' && !reviewList ? 20 : source.length);
+  qIndex = 0; score = 0; mistakes = [];
+  renderQuestion();
+}
+
+function renderQuestion(){
+  const pool = currentQuizPool();
+  if(qIndex >= quizOrder.length){ renderEnd(); return; }
+  const w = quizOrder[qIndex];
+  const isHz2Uz = quizDir === 'hz2uz';
+  const isType = quizAnswerMode === 'type' && isHz2Uz===false ? false : quizAnswerMode === 'type';
+  quizBox.innerHTML = `
+    <div class="quiz-meta">
+      <span>Savol ${qIndex+1} / ${quizOrder.length}</span>
+      <span>Ball: ${score}</span>
+    </div>
+    <div class="progress-track"><div class="progress-fill" style="width:${(qIndex/quizOrder.length)*100}%"></div></div>
+    <div class="prompt-card">
+      ${isHz2Uz
+        ? `<div class="prompt-hz hanzi">${w.hz}</div><div class="prompt-py"><span class="py-hide">${w.py}</span> · ${isType? "pinyinini yozing":"tarjimasini tanlang"}</div>`
+        : `<div class="prompt-uz">${w.uz}</div><div class="prompt-py">hanzi/pinyinni tanlang</div>`}
+      <div class="stamp" id="stamp">对</div>
+    </div>
+    <div id="answerArea"></div>
+  `;
+  if(isHz2Uz) document.querySelector('.prompt-card').addEventListener('click', ()=>speak(w.hz));
+  const area = document.getElementById('answerArea');
+
+  if(isType){
+    area.innerHTML = `
+      <input type="text" class="type-input" id="typeInput" placeholder="pinyin..." autocomplete="off">
+      <div><button class="type-submit" id="typeSubmit">Tekshirish</button></div>
+    `;
+    const input = document.getElementById('typeInput');
+    input.focus();
+    const submit = ()=>handleTypedAnswer(input.value, w, area);
+    document.getElementById('typeSubmit').addEventListener('click', submit);
+    input.addEventListener('keydown', e=>{ if(e.key==='Enter') submit(); });
+  } else {
+    const opts = makeOptions(w, pool);
+    const row = document.createElement('div');
+    row.className = 'options';
+    row.id = 'optRow';
+    opts.forEach((o,idx)=>{
+      const btn = document.createElement('button');
+      btn.className = 'opt';
+      btn.style.animationDelay = (idx*0.07)+'s';
+      btn.innerHTML = isHz2Uz ? o.uz : `<span class="hanzi">${o.hz}</span> · ${o.py}`;
+      btn.addEventListener('click', ()=>handleAnswer(btn, o, w, row));
+      row.appendChild(btn);
+    });
+    area.appendChild(row);
+  }
+}
+
+function normPinyin(s){
+  return s.toLowerCase().replace(/[1-5üv:ˉˊˇˋ]/g,(c)=> c==='ü'||c==='v' ? 'u' : '').replace(/\s+/g,'').trim();
+}
+
+function handleTypedAnswer(value, correctWord, area){
+  const ok = normPinyin(value) === normPinyin(correctWord.py.replace(/\s/g,''));
+  document.getElementById('typeSubmit').disabled = true;
+  document.getElementById('typeInput').disabled = true;
+  if(ok){
+    score++; playCorrect(); awardXp(8, "To'g'ri!");
+    document.getElementById('stamp').classList.add('show'); playStamp();
+    area.insertAdjacentHTML('beforeend', `<div style="margin-top:10px;color:var(--jade-light);font-weight:700;">To'g'ri! ✓</div>`);
+  } else {
+    playWrong(); mistakes.push(correctWord);
+    area.insertAdjacentHTML('beforeend', `<div style="margin-top:10px;color:var(--seal-light);font-weight:700;">To'g'ri javob: ${correctWord.py}</div>`);
+  }
+  setTimeout(()=>{ qIndex++; renderQuestion(); }, 1100);
+}
+
+function handleAnswer(btn, chosen, correctWord, row){
+
+  row.querySelectorAll('.opt').forEach(b=>b.disabled=true);
+  const isHz2Uz = quizDir === 'hz2uz';
+  if(chosen.hz === correctWord.hz){
+    btn.classList.add('correct');
+    score++;
+    playCorrect();
+    awardXp(10, "To'g'ri!");
+    recordWordResult(correctWord.hz, true);
+    const stamp = document.getElementById('stamp');
+    stamp.classList.add('show');
+    playStamp();
+  } else {
+    btn.classList.add('wrong');
+    playWrong();
+    mistakes.push(correctWord);
+    recordWordResult(correctWord.hz, false);
+    row.querySelectorAll('.opt').forEach(b=>{
+      const match = isHz2Uz ? b.textContent===correctWord.uz : b.textContent.includes(correctWord.hz);
+      if(match) b.classList.add('correct');
+    });
+  }
+  setTimeout(()=>{ qIndex++; renderQuestion(); }, 950);
+}
+
+function renderEnd(){
+  const pct = Math.round((score/quizOrder.length)*100);
+  let msg = "Yana mashq qilaylik!";
+  if(pct===100){ msg = "Mukammal! Barcha so'zlarni bilasiz 🎉"; progress.perfectQuizzes = (progress.perfectQuizzes||0)+1; saveProgress(); checkAchievements(); }
+  else if(pct>=70) msg = "Ajoyib natija!";
+  const uniqMistakes = [...new Map(mistakes.map(w=>[w.hz,w])).values()];
+  let mistakeHtml = '';
+  if(uniqMistakes.length){
+    mistakeHtml = `<div class="mistake-list"><h4>Xato qilingan so'zlar</h4>` +
+      uniqMistakes.map(w=>`<div class="mistake-row"><span class="mhz hanzi">${w.hz}</span><span class="muz">${w.py} — ${w.uz}</span></div>`).join('') +
+      `</div>`;
+  }
+  quizBox.innerHTML = `
+    <div class="quiz-end">
+      <div class="score">${score}/${quizOrder.length}</div>
+      <p>${msg}</p>
+      <div class="cta-row">
+        <button class="cta-btn" id="retryBtn">Qayta boshlash</button>
+        ${uniqMistakes.length ? `<button class="cta-btn secondary" id="reviewBtn">Xatolarni takrorlash (${uniqMistakes.length})</button>` : ''}
+      </div>
+      ${mistakeHtml}
+    </div>`;
+  document.getElementById('retryBtn').addEventListener('click', ()=>startQuiz());
+  const reviewBtn = document.getElementById('reviewBtn');
+  if(reviewBtn) reviewBtn.addEventListener('click', ()=>startQuiz(uniqMistakes));
+  if(pct>=70){ playCorrect(); burstConfetti(); }
+}
+
+/* ---------- Memory match game ---------- */
+const matchGrid = document.getElementById('matchGrid');
+const matchTimeEl = document.getElementById('matchTime');
+const matchMovesEl = document.getElementById('matchMoves');
+let matchTimer = null, matchSeconds = 0, matchMoves = 0;
+let matchFlipped = [], matchLock = false, matchPairsLeft = 0;
+
+document.getElementById('matchRestart').addEventListener('click', startMatchGame);
+
+function fmtTime(s){
+  const m = Math.floor(s/60).toString().padStart(2,'0');
+  const sec = (s%60).toString().padStart(2,'0');
+  return `${m}:${sec}`;
+}
+
+function startMatchGame(){
+  clearInterval(matchTimer);
+  matchSeconds = 0; matchMoves = 0; matchFlipped = []; matchLock = false;
+  matchTimeEl.textContent = '00:00';
+  matchMovesEl.textContent = '0';
+
+  const words = [...LESSONS[currentLesson].words].sort(()=>Math.random()-0.5).slice(0, 8);
+  matchPairsLeft = words.length;
+  const deck = [];
+  words.forEach((w, idx)=>{
+    deck.push({pairId: idx, side:'hz', hz:w.hz, py:w.py, uz:w.uz});
+    deck.push({pairId: idx, side:'uz', hz:w.hz, py:w.py, uz:w.uz});
+  });
+  deck.sort(()=>Math.random()-0.5);
+
+  matchGrid.innerHTML = '';
+  deck.forEach((d, i)=>{
+    const card = document.createElement('div');
+    card.className = 'mcard';
+    card.dataset.pairId = d.pairId;
+    card.style.animationDelay = (i*0.03)+'s';
+    card.innerHTML = `
+      <div class="mcard-inner">
+        <div class="mface mfront">?</div>
+        <div class="mface mback">${d.side==='hz' ? `<span class="mhz">${d.hz}</span>${d.py}` : d.uz}</div>
+      </div>`;
+    card.addEventListener('click', ()=>flipMatchCard(card));
+    matchGrid.appendChild(card);
+  });
+
+  matchTimer = setInterval(()=>{
+    matchSeconds++;
+    matchTimeEl.textContent = fmtTime(matchSeconds);
+  }, 1000);
+}
+
+function flipMatchCard(card){
+  if(matchLock || card.classList.contains('flipped') || card.classList.contains('matched')) return;
+  card.classList.add('flipped');
+  playFlip();
+  matchFlipped.push(card);
+  if(matchFlipped.length === 2){
+    matchLock = true;
+    matchMoves++;
+    matchMovesEl.textContent = matchMoves;
+    const [a,b] = matchFlipped;
+    if(a.dataset.pairId === b.dataset.pairId){
+      setTimeout(()=>{
+        a.classList.add('matched'); b.classList.add('matched');
+        playCorrect();
+        matchFlipped = []; matchLock = false;
+        matchPairsLeft--;
+        if(matchPairsLeft === 0) finishMatchGame();
+      }, 350);
+    } else {
+      a.classList.add('wrong-flash'); b.classList.add('wrong-flash');
+      playWrong();
+      setTimeout(()=>{
+        a.classList.remove('flipped','wrong-flash'); b.classList.remove('flipped','wrong-flash');
+        matchFlipped = []; matchLock = false;
+      }, 800);
+    }
+  }
+}
+
+function finishMatchGame(){
+  clearInterval(matchTimer);
+  awardXp(30, "Juftlik yakunlandi!");
+  setTimeout(()=>{
+    matchGrid.innerHTML = `
+      <div class="match-win" style="grid-column:1/-1">
+        <div class="score">${fmtTime(matchSeconds)}</div>
+        <p>${matchMoves} harakatda barcha juftliklar topildi! 🎉</p>
+        <button class="cta-btn" id="matchAgainBtn">Yana o'ynash</button>
+      </div>`;
+    document.getElementById('matchAgainBtn').addEventListener('click', startMatchGame);
+    burstConfetti();
+  }, 400);
+}
+
+/* ==================== SPEED ROUND ==================== */
+const speedBox = document.getElementById('speedBox');
+let speedTimer = null, speedSecondsLeft = 45, speedScore = 0, speedStreak = 0, speedRunning = false;
+
+function renderSpeedIntro(){
+  clearInterval(speedTimer); speedRunning = false;
+  speedBox.innerHTML = `
+    <div class="speed-start">
+      <p style="color:var(--text-dim);margin-bottom:6px;">45 soniyada imkon qadar ko'proq so'zga to'g'ri javob bering.</p>
+      <div class="speed-best">🏆 Eng yaxshi natija: ${progress.bestSpeed||0}</div>
+      <button class="cta-btn" id="speedStartBtn" style="margin-top:18px;">Boshlash</button>
+    </div>`;
+  document.getElementById('speedStartBtn').addEventListener('click', startSpeedRound);
+  document.getElementById('speedTime').textContent = 45;
+  document.getElementById('speedScore').textContent = 0;
+  document.getElementById('speedStreak').textContent = 0;
+}
+
+function startSpeedRound(){
+  speedSecondsLeft = 45; speedScore = 0; speedStreak = 0; speedRunning = true;
+  document.getElementById('speedTime').textContent = speedSecondsLeft;
+  document.getElementById('speedScore').textContent = speedScore;
+  document.getElementById('speedStreak').textContent = speedStreak;
+  speedTimer = setInterval(()=>{
+    speedSecondsLeft--;
+    document.getElementById('speedTime').textContent = speedSecondsLeft;
+    if(speedSecondsLeft<=0) endSpeedRound();
+  }, 1000);
+  renderSpeedQuestion();
+}
+
+function renderSpeedQuestion(){
+  if(!speedRunning) return;
+  const pool = ALL_WORDS;
+  const w = pool[Math.floor(Math.random()*pool.length)];
+  const distractors = pool.filter(x=>x.hz!==w.hz).sort(()=>Math.random()-0.5).slice(0,3);
+  const opts = [...distractors, w].sort(()=>Math.random()-0.5);
+  speedBox.innerHTML = `
+    <div class="prompt-card" style="padding:34px 20px;min-height:130px;">
+      <div class="prompt-hz hanzi" style="font-size:48px;">${w.hz}</div>
+    </div>
+    <div class="options" id="speedOptRow"></div>`;
+  const row = document.getElementById('speedOptRow');
+  opts.forEach(o=>{
+    const btn = document.createElement('button');
+    btn.className = 'opt';
+    btn.textContent = o.uz;
+    btn.addEventListener('click', ()=>{
+      if(!speedRunning) return;
+      row.querySelectorAll('.opt').forEach(b=>b.disabled=true);
+      if(o.hz===w.hz){
+        btn.classList.add('correct');
+        speedScore++; speedStreak++;
+        playCorrect();
+        document.getElementById('speedScore').textContent = speedScore;
+        document.getElementById('speedStreak').textContent = speedStreak;
+      } else {
+        btn.classList.add('wrong');
+        speedStreak = 0;
+        playWrong();
+        document.getElementById('speedStreak').textContent = speedStreak;
+      }
+      setTimeout(renderSpeedQuestion, 280);
+    });
+    row.appendChild(btn);
+  });
+}
+
+function endSpeedRound(){
+  clearInterval(speedTimer); speedRunning = false;
+  const isBest = speedScore > (progress.bestSpeed||0);
+  if(isBest){ progress.bestSpeed = speedScore; saveProgress(); }
+  awardXp(speedScore*3, "Tezlik raundi!");
+  speedBox.innerHTML = `
+    <div class="quiz-end">
+      <div class="score">${speedScore}</div>
+      <p>${isBest? "Yangi rekord! 🏆" : `Eng yaxshi natija: ${progress.bestSpeed}`}</p>
+      <button class="cta-btn" id="speedAgainBtn">Yana urinish</button>
+    </div>`;
+  document.getElementById('speedAgainBtn').addEventListener('click', renderSpeedIntro);
+  if(isBest) burstConfetti();
+}
+
+/* ==================== LISTENING QUIZ ==================== */
+const listenBox = document.getElementById('listenBox');
+let listenOrder = [], listenIdx = 0, listenScore = 0;
+let listenMode = 'choice'; // 'choice' | 'type'
+
+document.getElementById('listenModeChoice').addEventListener('click', function(){
+  listenMode='choice'; this.classList.add('active'); document.getElementById('listenModeType').classList.remove('active'); startListenQuiz();
+});
+document.getElementById('listenModeType').addEventListener('click', function(){
+  listenMode='type'; this.classList.add('active'); document.getElementById('listenModeChoice').classList.remove('active'); startListenQuiz();
+});
+
+function startListenQuiz(){
+  listenOrder = [...LESSONS[currentLesson].words].sort(()=>Math.random()-0.5);
+  listenIdx = 0; listenScore = 0;
+  renderListenQuestion();
+}
+
+function renderListenQuestion(){
+  if(listenIdx >= listenOrder.length){
+    listenBox.innerHTML = `
+      <div class="quiz-end">
+        <div class="score">${listenScore}/${listenOrder.length}</div>
+        <p>Tinglab ${listenMode==='type'?'yozish (diktant)':'tanlash'} yakunlandi!</p>
+        <button class="cta-btn" id="listenAgainBtn">Qayta boshlash</button>
+      </div>`;
+    document.getElementById('listenAgainBtn').addEventListener('click', startListenQuiz);
+    if(listenScore/listenOrder.length >= 0.7){ awardXp(20,"Tinglab topdingiz!"); burstConfetti(); }
+    return;
+  }
+  const w = listenOrder[listenIdx];
+  const pool = LESSONS[currentLesson].words;
+
+  if(listenMode === 'type'){
+    listenBox.innerHTML = `
+      <div class="quiz-meta"><span>Savol ${listenIdx+1} / ${listenOrder.length}</span><span>Ball: ${listenScore}</span></div>
+      <div class="progress-track"><div class="progress-fill" style="width:${(listenIdx/listenOrder.length)*100}%"></div></div>
+      <button class="listen-replay" id="replayBtn">🔊</button>
+      <p style="color:var(--text-dim);font-size:12px;margin-bottom:16px;">Ovozni tinglang va eshitgan so'zning pinyinini yozing</p>
+      <input class="type-input" id="listenTypeInput" placeholder="pinyin..." autocomplete="off" />
+      <br><button class="type-submit" id="listenTypeSubmit">Tekshirish</button>
+      <div id="listenTypeResult" style="margin-top:14px;font-weight:700;"></div>`;
+    document.getElementById('replayBtn').addEventListener('click', ()=>speak(w.hz));
+    speak(w.hz);
+    const input = document.getElementById('listenTypeInput');
+    input.focus();
+    const submit = ()=>{
+      const val = input.value;
+      const ok = normPinyin(val) === normPinyin(w.py);
+      const resultEl = document.getElementById('listenTypeResult');
+      input.disabled = true; document.getElementById('listenTypeSubmit').disabled = true;
+      if(ok){
+        resultEl.style.color = 'var(--jade-light)'; resultEl.textContent = "To'g'ri! " + w.hz + " · " + w.py;
+        listenScore++; playCorrect(); recordWordResult(w.hz, true);
+      } else {
+        resultEl.style.color = 'var(--seal-light)'; resultEl.textContent = `Javob: ${w.py} (${w.hz})`;
+        playWrong(); recordWordResult(w.hz, false);
+      }
+      setTimeout(()=>{ listenIdx++; renderListenQuestion(); }, 1100);
+    };
+    document.getElementById('listenTypeSubmit').addEventListener('click', submit);
+    input.addEventListener('keydown', e=>{ if(e.key==='Enter') submit(); });
+    return;
+  }
+
+  const distractors = pool.filter(x=>x.hz!==w.hz).sort(()=>Math.random()-0.5).slice(0,3);
+  const opts = [...distractors, w].sort(()=>Math.random()-0.5);
+  listenBox.innerHTML = `
+    <div class="quiz-meta"><span>Savol ${listenIdx+1} / ${listenOrder.length}</span><span>Ball: ${listenScore}</span></div>
+    <div class="progress-track"><div class="progress-fill" style="width:${(listenIdx/listenOrder.length)*100}%"></div></div>
+    <button class="listen-replay" id="replayBtn">🔊</button>
+    <p style="color:var(--text-dim);font-size:12px;margin-bottom:20px;">Ovozni tinglang va to'g'ri tarjimani tanlang</p>
+    <div class="options" id="listenOptRow"></div>`;
+  document.getElementById('replayBtn').addEventListener('click', ()=>speak(w.hz));
+  speak(w.hz);
+  const row = document.getElementById('listenOptRow');
+  opts.forEach(o=>{
+    const btn = document.createElement('button');
+    btn.className = 'opt';
+    btn.textContent = o.uz;
+    btn.addEventListener('click', ()=>{
+      row.querySelectorAll('.opt').forEach(b=>b.disabled=true);
+      if(o.hz===w.hz){ btn.classList.add('correct'); listenScore++; playCorrect(); recordWordResult(w.hz, true); }
+      else { btn.classList.add('wrong'); playWrong(); recordWordResult(w.hz, false);
+        row.querySelectorAll('.opt').forEach(b=>{ if(b.textContent===w.uz) b.classList.add('correct'); });
+      }
+      setTimeout(()=>{ listenIdx++; renderListenQuestion(); }, 900);
+    });
+    row.appendChild(btn);
+  });
+}
+
+/* ==================== WORD BUILDER ==================== */
+const buildBox = document.getElementById('buildBox');
+let buildQueue = [], buildIdx = 0, buildCurrent = null, buildSlots = [], buildSolved = 0;
+
+function startBuildGame(){
+  buildQueue = LESSONS[currentLesson].words.filter(w=>w.hz.length>=2).sort(()=>Math.random()-0.5);
+  if(buildQueue.length===0) buildQueue = ALL_WORDS.filter(w=>w.hz.length>=2).sort(()=>Math.random()-0.5).slice(0,8);
+  buildIdx = 0; buildSolved = 0;
+  renderBuildRound();
+}
+
+function renderBuildRound(){
+  if(buildIdx >= buildQueue.length){
+    buildBox.innerHTML = `
+      <div class="quiz-end">
+        <div class="score">${buildSolved}/${buildQueue.length}</div>
+        <p>So'z qurish mashqi tugadi!</p>
+        <button class="cta-btn" id="buildAgainBtn">Qayta boshlash</button>
+      </div>`;
+    document.getElementById('buildAgainBtn').addEventListener('click', startBuildGame);
+    return;
+  }
+  buildCurrent = buildQueue[buildIdx];
+  const chars = buildCurrent.hz.split('');
+  buildSlots = new Array(chars.length).fill(null);
+  const shuffled = chars.map((c,i)=>({c,i})).sort(()=>Math.random()-0.5);
+  buildBox.innerHTML = `
+    <div class="build-target">
+      <div class="build-uz">${buildIdx+1}/${buildQueue.length} · "${buildCurrent.uz}" so'zini quring (${buildCurrent.py})</div>
+      <div class="build-slots" id="buildSlotsRow"></div>
+    </div>
+    <div class="build-choices" id="buildChoicesRow"></div>
+  `;
+  const slotsRow = document.getElementById('buildSlotsRow');
+  chars.forEach((_,i)=>{
+    const slot = document.createElement('div');
+    slot.className = 'build-slot';
+    slot.dataset.slot = i;
+    slot.addEventListener('click', ()=>clearBuildSlot(i));
+    slotsRow.appendChild(slot);
+  });
+  const choicesRow = document.getElementById('buildChoicesRow');
+  shuffled.forEach(({c,i})=>{
+    const chip = document.createElement('button');
+    chip.className = 'build-chip';
+    chip.textContent = c;
+    chip.dataset.origIdx = i;
+    chip.addEventListener('click', ()=>placeBuildChip(chip, c));
+    choicesRow.appendChild(chip);
+  });
+}
+
+function placeBuildChip(chip, char){
+  const emptyIdx = buildSlots.findIndex(s=>s===null);
+  if(emptyIdx===-1) return;
+  buildSlots[emptyIdx] = {char, chip};
+  chip.disabled = true;
+  const slotEl = document.querySelector(`.build-slot[data-slot="${emptyIdx}"]`);
+  slotEl.textContent = char;
+  slotEl.classList.add('filled');
+  playFlip();
+  if(buildSlots.every(s=>s!==null)) checkBuildResult();
+}
+
+function clearBuildSlot(idx){
+  const s = buildSlots[idx];
+  if(!s) return;
+  s.chip.disabled = false;
+  buildSlots[idx] = null;
+  const slotEl = document.querySelector(`.build-slot[data-slot="${idx}"]`);
+  slotEl.textContent = '';
+  slotEl.classList.remove('filled');
+}
+
+function checkBuildResult(){
+  const assembled = buildSlots.map(s=>s.char).join('');
+  const allChips = document.querySelectorAll('.build-chip');
+  if(assembled === buildCurrent.hz){
+    allChips.forEach(c=>c.disabled=true);
+    document.querySelectorAll('.build-slot').forEach(s=>s.style.borderColor='var(--jade-light)');
+    playCorrect(); awardXp(12, "So'z quyildi!"); buildSolved++;
+    setTimeout(()=>{ buildIdx++; renderBuildRound(); }, 700);
+  } else {
+    playWrong();
+    document.querySelectorAll('.build-slot').forEach(s=>s.style.borderColor='var(--seal-light)');
+    setTimeout(()=>{
+      buildSlots.forEach((s,i)=>{ if(s){ s.chip.disabled=false; } });
+      buildSlots = new Array(buildCurrent.hz.length).fill(null);
+      document.querySelectorAll('.build-slot').forEach(s=>{ s.textContent=''; s.classList.remove('filled'); s.style.borderColor=''; });
+    }, 700);
+  }
+}
+
+/* ==================== HANGMAN ==================== */
+const hangBox = document.getElementById('hangBox');
+const HANG_KEYS = 'abcdefghijklmnopqrstuvwxyz'.split('');
+let hangWord = null, hangGuessed = [], hangWrong = 0;
+const HANG_MAX_WRONG = 6;
+const HANG_FACES = ['🙂','😐','😕','😟','😣','😖','😵'];
+
+function startHangman(){
+  const pool = LESSONS[currentLesson].words;
+  hangWord = pool[Math.floor(Math.random()*pool.length)];
+  hangGuessed = []; hangWrong = 0;
+  renderHangman();
+}
+
+function pyLetters(py){
+  return py.toLowerCase().replace(/[^a-z]/g,'').split('');
+}
+
+function renderHangman(){
+  const letters = pyLetters(hangWord.py);
+  const uniqueLetters = [...new Set(letters)];
+  const wonAll = uniqueLetters.every(l=>hangGuessed.includes(l));
+  const lost = hangWrong >= HANG_MAX_WRONG;
+
+  hangBox.innerHTML = `
+    <div class="hang-uz">"${hangWord.uz}" · <span class="hanzi">${hangWord.hz}</span> so'zining pinyinini toping</div>
+    <div class="hang-lives">${HANG_FACES[hangWrong]} ${'❤️'.repeat(HANG_MAX_WRONG-hangWrong)}${'🖤'.repeat(hangWrong)}</div>
+    <div class="hang-slots" id="hangSlots"></div>
+    <div class="hang-keyboard" id="hangKeyboard"></div>
+    <div id="hangResult"></div>
+  `;
+  const slotsHost = document.getElementById('hangSlots');
+  letters.forEach(l=>{
+    const el = document.createElement('div');
+    el.className = 'hang-letter';
+    el.textContent = (hangGuessed.includes(l) || lost) ? l : '_';
+    slotsHost.appendChild(el);
+  });
+  const kb = document.getElementById('hangKeyboard');
+  HANG_KEYS.forEach(k=>{
+    const btn = document.createElement('button');
+    btn.className = 'hang-key';
+    btn.textContent = k;
+    const used = hangGuessed.includes(k);
+    if(used) btn.classList.add(letters.includes(k) ? 'hit' : 'miss');
+    if(used || wonAll || lost) btn.disabled = true;
+    btn.addEventListener('click', ()=>guessHangLetter(k));
+    kb.appendChild(btn);
+  });
+
+  if(wonAll){
+    playCorrect(); awardXp(20, "So'z topildi!");
+    progress.hangWins = (progress.hangWins||0)+1; saveProgress(); checkAchievements();
+    document.getElementById('hangResult').innerHTML = `
+      <div class="quiz-end"><p style="color:var(--jade-light);font-weight:700;">To'g'ri! 🎉</p>
+      <button class="cta-btn" id="hangNextBtn">Keyingi so'z</button></div>`;
+    document.getElementById('hangNextBtn').addEventListener('click', startHangman);
+    burstConfetti();
+  } else if(lost){
+    playWrong();
+    document.getElementById('hangResult').innerHTML = `
+      <div class="quiz-end"><p style="color:var(--seal-light);font-weight:700;">Afsus! Javob: ${hangWord.py}</p>
+      <button class="cta-btn" id="hangNextBtn">Keyingi so'z</button></div>`;
+    document.getElementById('hangNextBtn').addEventListener('click', startHangman);
+  }
+}
+
+function guessHangLetter(letter){
+  if(hangGuessed.includes(letter)) return;
+  hangGuessed.push(letter);
+  const letters = pyLetters(hangWord.py);
+  if(!letters.includes(letter)){ hangWrong++; playWrong(); } else { playFlip(); }
+  renderHangman();
+}
+
+/* ==================== SENTENCE BUILDER (Gap qurish) ==================== */
+const sentenceBox = document.getElementById('sentenceBox');
+let sbChunks = [], sbSlots = [], sbLesson = 0;
+
+function startSentenceGame(){
+  sbLesson = currentLesson;
+  const les = LESSONS[sbLesson];
+  if(!les.chunks){ sentenceBox.innerHTML = `<p style="text-align:center;color:var(--text-dim);">Bu dars uchun gap topilmadi.</p>`; return; }
+  sbChunks = les.chunks;
+  sbSlots = new Array(sbChunks.length).fill(null);
+  const shuffled = sbChunks.map((c,i)=>({c,i})).sort(()=>Math.random()-0.5);
+  sentenceBox.innerHTML = `
+    <div class="sb-target-uz">"${les.sub}" jumlasini hosil qiling</div>
+    <div class="sb-slots" id="sbSlotsRow"></div>
+    <div class="sb-choices" id="sbChoicesRow"></div>
+    <div id="sbResult" style="text-align:center;margin-top:16px;font-weight:700;"></div>
+  `;
+  const slotsRow = document.getElementById('sbSlotsRow');
+  sbChunks.forEach((_,i)=>{
+    const slot = document.createElement('div');
+    slot.className = 'sb-slot';
+    slot.dataset.slot = i;
+    slot.addEventListener('click', ()=>clearSbSlot(i));
+    slotsRow.appendChild(slot);
+  });
+  const choicesRow = document.getElementById('sbChoicesRow');
+  shuffled.forEach(({c,i})=>{
+    const chip = document.createElement('button');
+    chip.className = 'sb-chip hanzi';
+    chip.textContent = c;
+    chip.dataset.origIdx = i;
+    chip.addEventListener('click', ()=>placeSbChip(chip, c));
+    choicesRow.appendChild(chip);
+  });
+}
+
+function placeSbChip(chip, char){
+  const emptyIdx = sbSlots.findIndex(s=>s===null);
+  if(emptyIdx===-1) return;
+  sbSlots[emptyIdx] = {char, chip};
+  chip.disabled = true;
+  const slotEl = document.querySelector(`.sb-slot[data-slot="${emptyIdx}"]`);
+  slotEl.textContent = char;
+  slotEl.classList.add('filled');
+  playFlip();
+  if(sbSlots.every(s=>s!==null)) checkSbResult();
+}
+
+function clearSbSlot(idx){
+  const s = sbSlots[idx];
+  if(!s) return;
+  s.chip.disabled = false;
+  sbSlots[idx] = null;
+  const slotEl = document.querySelector(`.sb-slot[data-slot="${idx}"]`);
+  slotEl.textContent = '';
+  slotEl.classList.remove('filled');
+}
+
+function checkSbResult(){
+  const assembled = sbSlots.map(s=>s.char).join('');
+  const correct = sbChunks.join('');
+  const resultEl = document.getElementById('sbResult');
+  if(assembled === correct){
+    resultEl.style.color = 'var(--jade-light)';
+    resultEl.textContent = "To'g'ri! 🎉 " + correct;
+    playCorrect(); awardXp(25, "Gap tuzildi!"); burstConfetti();
+    setTimeout(()=>{
+      const next = (sbLesson+1) % LESSONS.length;
+      sbLesson = next; currentLesson = next; selectLesson(next);
+      startSentenceGame();
+    }, 1400);
+  } else {
+    resultEl.style.color = 'var(--seal-light)';
+    resultEl.textContent = "Hali unmadi, qayta urinib ko'ring";
+    playWrong();
+    setTimeout(()=>{
+      sbSlots.forEach(s=>{ if(s) s.chip.disabled=false; });
+      sbSlots = new Array(sbChunks.length).fill(null);
+      document.querySelectorAll('.sb-slot').forEach(s=>{ s.textContent=''; s.classList.remove('filled'); });
+      resultEl.textContent='';
+    }, 900);
+  }
+}
+
+/* ==================== BOSS TESTS ==================== */
+const bossBox = document.getElementById('bossBox');
+const BOSS_GROUPS = [
+  {id:'b1', label:'1-5 dars', icon:'🐉', from:0, to:5},
+  {id:'b2', label:'6-10 dars', icon:'🦁', from:5, to:10},
+  {id:'b3', label:'11-15 dars', icon:'🐯', from:10, to:15},
+];
+function renderBossIntro(){
+  bossBox.innerHTML = `<div class="boss-grid">` + BOSS_GROUPS.map(g=>{
+    const words = LESSONS.slice(g.from,g.to).flatMap(l=>l.words);
+    const best = (progress.bossBest||{})[g.id];
+    return `<div class="boss-card" data-boss="${g.id}">
+      <div class="boss-icon">${g.icon}</div>
+      <div class="boss-title">${g.label} bossi</div>
+      <div class="boss-sub">${words.length} so'z · aralash test</div>
+      ${best!=null ? `<div class="boss-best">🏆 Eng yaxshi: ${best}%</div>` : ''}
+    </div>`;
+  }).join('') + `</div>`;
+  document.querySelectorAll('.boss-card').forEach(card=>{
+    card.addEventListener('click', ()=>startBossQuiz(card.dataset.boss));
+  });
+}
+let bossOrder=[], bossIdx=0, bossScore=0, bossGroupId=null;
+function startBossQuiz(groupId){
+  const g = BOSS_GROUPS.find(x=>x.id===groupId);
+  bossGroupId = groupId;
+  const words = LESSONS.slice(g.from,g.to).flatMap(l=>l.words);
+  bossOrder = weightedOrder(words, Math.min(20, words.length));
+  bossIdx = 0; bossScore = 0;
+  renderBossQuestion();
+}
+function renderBossQuestion(){
+  const g = BOSS_GROUPS.find(x=>x.id===bossGroupId);
+  const words = LESSONS.slice(g.from,g.to).flatMap(l=>l.words);
+  if(bossIdx >= bossOrder.length){
+    const pct = Math.round((bossScore/bossOrder.length)*100);
+    const prevBest = (progress.bossBest||{})[bossGroupId] || 0;
+    const isBest = pct > prevBest;
+    if(isBest){ progress.bossBest = progress.bossBest||{}; progress.bossBest[bossGroupId]=pct; saveProgress(); checkAchievements(); }
+    awardXp(Math.round(pct/2), `${g.label} bossi!`);
+    bossBox.innerHTML = `
+      <div class="quiz-end">
+        <div class="score">${bossScore}/${bossOrder.length}</div>
+        <p>${g.icon} ${g.label} bossi ${pct>=70?'yengildi! 🏆':'hali kuchli...'} (${pct}%)</p>
+        <div class="cta-row">
+          <button class="cta-btn" id="bossRetryBtn">Qayta urinish</button>
+          <button class="cta-btn secondary" id="bossBackBtn">Boss ro'yxati</button>
+        </div>
+      </div>`;
+    document.getElementById('bossRetryBtn').addEventListener('click', ()=>startBossQuiz(bossGroupId));
+    document.getElementById('bossBackBtn').addEventListener('click', renderBossIntro);
+    if(pct>=70) burstConfetti();
+    return;
+  }
+  const w = bossOrder[bossIdx];
+  const distractors = words.filter(x=>x.hz!==w.hz).sort(()=>Math.random()-0.5).slice(0,3);
+  const opts = [...distractors, w].sort(()=>Math.random()-0.5);
+  bossBox.innerHTML = `
+    <div class="quiz-meta"><span>${g.icon} Savol ${bossIdx+1} / ${bossOrder.length}</span><span>Ball: ${bossScore}</span></div>
+    <div class="progress-track"><div class="progress-fill" style="width:${(bossIdx/bossOrder.length)*100}%"></div></div>
+    <div class="prompt-card"><div class="prompt-hz hanzi">${w.hz}</div><div class="prompt-py"><span class="py-hide">${w.py}</span></div></div>
+    <div class="options" id="bossOptRow"></div>`;
+  document.querySelector('#bossBox .prompt-card').addEventListener('click', ()=>speak(w.hz));
+  const row = document.getElementById('bossOptRow');
+  opts.forEach(o=>{
+    const btn = document.createElement('button');
+    btn.className = 'opt';
+    btn.textContent = o.uz;
+    btn.addEventListener('click', ()=>{
+      row.querySelectorAll('.opt').forEach(b=>b.disabled=true);
+      if(o.hz===w.hz){ btn.classList.add('correct'); bossScore++; playCorrect(); recordWordResult(w.hz,true); }
+      else { btn.classList.add('wrong'); playWrong(); recordWordResult(w.hz,false);
+        row.querySelectorAll('.opt').forEach(b=>{ if(b.textContent===w.uz) b.classList.add('correct'); });
+      }
+      setTimeout(()=>{ bossIdx++; renderBossQuestion(); }, 800);
+    });
+    row.appendChild(btn);
+  });
+}
+
+/* ==================== STATS ==================== */
+function renderStats(){
+  const totalWords = ALL_WORDS.length;
+  const seenWords = Object.keys(progress.wordStats||{}).length;
+  const totalCorrect = Object.values(progress.wordStats||{}).reduce((s,w)=>s+w.correct,0);
+  const totalWrong = Object.values(progress.wordStats||{}).reduce((s,w)=>s+w.wrong,0);
+  const accuracy = (totalCorrect+totalWrong) ? Math.round(totalCorrect/(totalCorrect+totalWrong)*100) : 0;
+
+  const weakest = Object.entries(progress.wordStats||{})
+    .filter(([hz,s])=>s.seen>=1)
+    .map(([hz,s])=>({hz, s, word: ALL_WORDS.find(w=>w.hz===hz)}))
+    .filter(x=>x.word)
+    .sort((a,b)=> (a.s.correct/a.s.seen) - (b.s.correct/b.s.seen))
+    .slice(0,8);
+
+  const statsBox = document.getElementById('statsBox');
+  statsBox.innerHTML = `
+    <div class="stats-grid">
+      <div class="stat-card"><div class="stat-num">${seenWords}/${totalWords}</div><div class="stat-lbl">ko'rilgan so'zlar</div></div>
+      <div class="stat-card"><div class="stat-num">${accuracy}%</div><div class="stat-lbl">aniqlik</div></div>
+      <div class="stat-card"><div class="stat-num">${progress.xp}</div><div class="stat-lbl">jami XP</div></div>
+      <div class="stat-card"><div class="stat-num">${progress.streak||1}</div><div class="stat-lbl">kunlik streak</div></div>
+      <div class="stat-card"><div class="stat-num">${progress.achievements.length}/${ACHIEVEMENTS.length}</div><div class="stat-lbl">yutuqlar</div></div>
+      <div class="stat-card"><div class="stat-num">${visitedLessons.size}/15</div><div class="stat-lbl">ko'rilgan darslar</div></div>
+    </div>
+    ${weakest.length ? `
+    <h4 style="color:var(--seal-light);font-size:13px;text-transform:uppercase;letter-spacing:.05em;margin-bottom:14px;">Eng ko'p xato qilingan so'zlar</h4>
+    ${weakest.map(x=>{
+      const pct = Math.round(x.s.correct/x.s.seen*100);
+      return `<div class="stat-bar-row">
+        <span class="stat-bar-hz hanzi">${x.hz}</span>
+        <div class="stat-bar-track"><div class="stat-bar-fill" style="width:${pct}%"></div></div>
+        <span class="stat-bar-pct">${pct}%</span>
+      </div>`;
+    }).join('')}
+    ` : `<p style="text-align:center;color:var(--text-dim);">Hali statistika yo'q — mashqlarni boshlang!</p>`}
+  `;
+}
+
+/* ==================== THEME TOGGLE ==================== */
+const themeToggleBtn = document.getElementById('themeToggle');
+function applyTheme(){
+  document.body.setAttribute('data-theme', progress.theme==='light' ? 'light' : 'dark');
+  themeToggleBtn.textContent = progress.theme==='light' ? '☀️' : '🌙';
+}
+themeToggleBtn.addEventListener('click', ()=>{
+  progress.theme = progress.theme==='light' ? 'dark' : 'light';
+  saveProgress();
+  applyTheme();
+});
+applyTheme();
+
+/* ==================== PRINT ==================== */
+document.getElementById('printBtn').addEventListener('click', ()=>{
+  const les = LESSONS[currentLesson];
+  const area = document.getElementById('printArea');
+  area.innerHTML = `
+    <h1 style="font-family:'Noto Serif SC';">${les.hz}</h1>
+    <p>${les.sub}</p>
+    <table style="width:100%;border-collapse:collapse;">
+      <tr style="text-align:left;border-bottom:2px solid #333;"><th style="padding:6px;">#</th><th style="padding:6px;">汉字</th><th style="padding:6px;">Pinyin</th><th style="padding:6px;">O'zbekcha</th></tr>
+      ${les.words.map((w,i)=>`<tr style="border-bottom:1px solid #ccc;"><td style="padding:6px;">${i+1}</td><td style="padding:6px;font-family:'Noto Serif SC';font-size:16px;">${w.hz}</td><td style="padding:6px;">${w.py}</td><td style="padding:6px;">${w.uz}</td></tr>`).join('')}
+    </table>
+  `;
+  window.print();
+});
+
+/* ==================== JAMOVIY (PARTY / MULTIPLAYER) ==================== */
+const PARTY_COLORS = ['#B7362C','#2FA184','#C9A227','#5FCBAE','#D65A46','#7c8cf8'];
+let partyMode = null; // 'passplay' | 'teams' | 'host'
+let partyParticipants = []; // [{name,color,score}]
+let partyScope = 'lesson';
+let partyQuestions = [];
+let partyQIndex = 0;
+let partyTurnIndex = 0;
+let partyQPerPlayer = 6;
+const partyBox = document.getElementById('partyBox');
+
+function renderPartyHome(){
+  partyMode = null;
+  partyBox.innerHTML = `
+    <p style="text-align:center;color:var(--text-dim);font-size:13px;margin-bottom:22px;">Bitta qurilmada birga o'ynang — do'stlaringiz yoki sinfdoshlaringiz bilan</p>
+    <div class="mp-mode-grid">
+      <div class="mp-mode-card" data-mode="passplay">
+        <div class="mp-icon">🔄</div>
+        <div class="mp-title">Navbat bilan</div>
+        <div class="mp-desc">2-4 o'yinchi navbatma-navbat javob beradi, har birining balli alohida hisoblanadi</div>
+      </div>
+      <div class="mp-mode-card" data-mode="teams">
+        <div class="mp-icon">⚔️</div>
+        <div class="mp-title">Jamoa vs Jamoa</div>
+        <div class="mp-desc">Ikki guruhga bo'linib, savollarga navbat bilan javob berib, g'olib jamoani aniqlang</div>
+      </div>
+      <div class="mp-mode-card" data-mode="host">
+        <div class="mp-icon">🏫</div>
+        <div class="mp-title">Sinf viktorinasi</div>
+        <div class="mp-desc">O'qituvchi/boshqaruvchi so'zni ko'rsatadi, kim birinchi to'g'ri javob bersa, unga ball qo'shiladi</div>
+      </div>
+    </div>
+  `;
+  document.querySelectorAll('.mp-mode-card').forEach(card=>{
+    card.addEventListener('click', ()=>{ partyMode = card.dataset.mode; renderPartySetup(); });
+  });
+}
+
+function renderPartySetup(){
+  const isHost = partyMode === 'host';
+  const isTeams = partyMode === 'teams';
+  const defaultNames = isTeams ? ["1-jamoa","2-jamoa"] : isHost ? ["Ali","Vali","Guli"] : ["1-o'yinchi","2-o'yinchi"];
+  partyParticipants = defaultNames.map((n,i)=>({name:n, color:PARTY_COLORS[i%PARTY_COLORS.length], score:0}));
+
+  const title = isHost ? "Sinf viktorinasi — ishtirokchilar" : isTeams ? "Jamoa nomlarini kiriting" : "O'yinchilarni kiriting";
+  const maxP = isTeams ? 2 : (isHost ? 8 : 4);
+  const minP = 2;
+
+  partyBox.innerHTML = `
+    <div class="mp-setup">
+      <h3>${title}</h3>
+      <div id="partyPlayerRows"></div>
+      ${!isTeams ? `<button class="mp-add-btn" id="partyAddPlayer">+ Yana qo'shish</button>` : ''}
+      <div class="mp-scope-row">
+        <button class="toggle-btn active" data-scope="lesson">Joriy dars</button>
+        <button class="toggle-btn" data-scope="all">Barcha darslar</button>
+      </div>
+      <button class="mp-start-btn" id="partyStartBtn">🚀 Boshlash</button>
+      <p style="text-align:center;margin-top:14px;"><button class="ghost-btn" id="partyBackBtn">← Orqaga</button></p>
+    </div>
+  `;
+
+  function renderRows(){
+    const rowsHost = document.getElementById('partyPlayerRows');
+    rowsHost.innerHTML = partyParticipants.map((p,i)=>`
+      <div class="mp-player-row">
+        <span class="mp-swatch" style="background:${p.color}"></span>
+        <input type="text" value="${p.name}" data-idx="${i}" maxlength="16" />
+        ${(!isTeams && partyParticipants.length>minP) ? `<button class="mp-remove" data-idx="${i}">✕</button>` : ''}
+      </div>
+    `).join('');
+    rowsHost.querySelectorAll('input').forEach(inp=>{
+      inp.addEventListener('input', ()=>{ partyParticipants[+inp.dataset.idx].name = inp.value || `Ishtirokchi ${(+inp.dataset.idx)+1}`; });
+    });
+    rowsHost.querySelectorAll('.mp-remove').forEach(btn=>{
+      btn.addEventListener('click', ()=>{ partyParticipants.splice(+btn.dataset.idx,1); renderRows(); });
+    });
+  }
+  renderRows();
+
+  const addBtn = document.getElementById('partyAddPlayer');
+  if(addBtn) addBtn.addEventListener('click', ()=>{
+    if(partyParticipants.length >= maxP) return;
+    partyParticipants.push({name:`Ishtirokchi ${partyParticipants.length+1}`, color:PARTY_COLORS[partyParticipants.length%PARTY_COLORS.length], score:0});
+    renderRows();
+  });
+
+  document.querySelectorAll('.mp-scope-row .toggle-btn').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      document.querySelectorAll('.mp-scope-row .toggle-btn').forEach(b=>b.classList.remove('active'));
+      btn.classList.add('active');
+      partyScope = btn.dataset.scope;
+    });
+  });
+
+  document.getElementById('partyBackBtn').addEventListener('click', renderPartyHome);
+  document.getElementById('partyStartBtn').addEventListener('click', startPartyGame);
+}
+
+function getPartyWordPool(){
+  return partyScope === 'all' ? ALL_WORDS : LESSONS[currentLesson].words;
+}
+
+function startPartyGame(){
+  partyParticipants.forEach(p=>p.score=0);
+  const pool = getPartyWordPool();
+  if(partyMode === 'host'){
+    const n = Math.min(20, pool.length);
+    partyQuestions = weightedOrder(pool, n);
+    partyQIndex = 0;
+    renderHostQuestion();
+    return;
+  }
+  const perPlayer = partyMode==='teams' ? 10 : partyQPerPlayer;
+  const totalQ = partyMode==='teams' ? perPlayer*2 : perPlayer*partyParticipants.length;
+  let src = [...pool];
+  while(src.length < totalQ){ src = src.concat([...pool].sort(()=>Math.random()-0.5)); }
+  partyQuestions = src.sort(()=>Math.random()-0.5).slice(0, totalQ);
+  partyQIndex = 0; partyTurnIndex = 0;
+  renderPartyTurnBanner();
+}
+
+function renderScoreboard(activeIdx){
+  return `<div class="mp-scoreboard">` + partyParticipants.map((p,i)=>`
+    <div class="mp-score-chip ${i===activeIdx?'active-turn':''}">
+      <span class="mp-dot" style="background:${p.color}"></span>
+      <span>${p.name}</span>
+      <span class="mp-pts">${p.score}</span>
+    </div>
+  `).join('') + `</div>`;
+}
+
+function renderPartyTurnBanner(){
+  if(partyQIndex >= partyQuestions.length){ renderPartyEnd(); return; }
+  const p = partyParticipants[partyTurnIndex];
+  partyBox.innerHTML = `
+    ${renderScoreboard(partyTurnIndex)}
+    <div class="mp-turn-banner">
+      <div style="color:var(--text-dim);font-size:12px;text-transform:uppercase;letter-spacing:.08em;">Navbat</div>
+      <div class="mp-turn-name">${p.name}</div>
+      <div class="mp-turn-sub">Savol ${partyQIndex+1} / ${partyQuestions.length}</div>
+      <button class="cta-btn" id="partyTurnStartBtn" style="margin-top:20px;">Javob berish</button>
+    </div>
+  `;
+  document.getElementById('partyTurnStartBtn').addEventListener('click', renderPartyQuestion);
+}
+
+function renderPartyQuestion(){
+  const w = partyQuestions[partyQIndex];
+  const pool = getPartyWordPool();
+  const distractors = pool.filter(x=>x.hz!==w.hz).sort(()=>Math.random()-0.5).slice(0,3);
+  const opts = [...distractors, w].sort(()=>Math.random()-0.5);
+  partyBox.innerHTML = `
+    ${renderScoreboard(partyTurnIndex)}
+    <div class="prompt-card"><div class="prompt-hz hanzi">${w.hz}</div><div class="prompt-py"><span class="py-hide">${w.py}</span></div></div>
+    <div class="options" id="partyOptRow"></div>
+  `;
+  document.querySelector('#party .prompt-card, #partyBox .prompt-card')?.addEventListener('click', ()=>speak(w.hz));
+  const row = document.getElementById('partyOptRow');
+  opts.forEach(o=>{
+    const btn = document.createElement('button');
+    btn.className = 'opt';
+    btn.textContent = o.uz;
+    btn.addEventListener('click', ()=>{
+      row.querySelectorAll('.opt').forEach(b=>b.disabled=true);
+      if(o.hz===w.hz){
+        btn.classList.add('correct'); playCorrect();
+        partyParticipants[partyTurnIndex].score++;
+      } else {
+        btn.classList.add('wrong'); playWrong();
+        row.querySelectorAll('.opt').forEach(b=>{ if(b.textContent===w.uz) b.classList.add('correct'); });
+      }
+      setTimeout(()=>{
+        partyQIndex++;
+        partyTurnIndex = (partyTurnIndex+1) % partyParticipants.length;
+        renderPartyTurnBanner();
+      }, 900);
+    });
+    row.appendChild(btn);
+  });
+}
+
+function renderPartyEnd(){
+  const ranked = [...partyParticipants].sort((a,b)=>b.score-a.score);
+  awardXp(15, "Jamoviy o'yin!");
+  const podiumOrder = [ranked[1], ranked[0], ranked[2]].filter(Boolean);
+  const cls = ['silver','gold','bronze'];
+  partyBox.innerHTML = `
+    <div style="text-align:center;">
+      <div class="mp-podium">
+        ${podiumOrder.map((p,i)=>{
+          if(!p) return '';
+          const rank = ranked.indexOf(p);
+          const c = rank===0?'gold':rank===1?'silver':'bronze';
+          return `<div class="mp-podium-col ${c}">
+            <div class="mp-podium-bar">${rank+1}</div>
+            <div class="mp-podium-name">${p.name}</div>
+            <div class="mp-podium-pts">${p.score} ball</div>
+          </div>`;
+        }).join('')}
+      </div>
+      <p style="color:var(--text-dim);font-size:13px;margin-bottom:20px;">🎉 G'olib: <b style="color:var(--gold);">${ranked[0].name}</b></p>
+      <div class="cta-row">
+        <button class="cta-btn" id="partyAgainBtn">Yana o'ynash</button>
+        <button class="cta-btn secondary" id="partyHomeBtn">Bosh menyu</button>
+      </div>
+    </div>
+  `;
+  document.getElementById('partyAgainBtn').addEventListener('click', startPartyGame);
+  document.getElementById('partyHomeBtn').addEventListener('click', renderPartyHome);
+  burstConfetti();
+}
+
+/* ---- Host / classroom mode ---- */
+function renderHostQuestion(){
+  if(partyQIndex >= partyQuestions.length){ renderPartyEnd(); return; }
+  const w = partyQuestions[partyQIndex];
+  partyBox.innerHTML = `
+    ${renderScoreboard(-1)}
+    <div class="host-word-card" id="hostWordCard">
+      <div class="host-hz hanzi">${w.hz}</div>
+      <div class="host-hint">Savol ${partyQIndex+1} / ${partyQuestions.length} · Bosing: ovoz + javobni ko'rsatish</div>
+    </div>
+    <div id="hostAnswerArea"></div>
+  `;
+  document.getElementById('hostWordCard').addEventListener('click', ()=>{
+    speak(w.hz);
+    if(document.getElementById('hostAnswerArea').innerHTML) return;
+    document.getElementById('hostAnswerArea').innerHTML = `
+      <div class="host-answer">${w.py} — ${w.uz}</div>
+      <p style="text-align:center;color:var(--text-dim);font-size:12px;margin-bottom:12px;">Kim birinchi to'g'ri topdi? Unga ball bering:</p>
+      <div class="host-award-row" id="hostAwardRow"></div>
+      <button class="host-next-btn" id="hostNextBtn">Keyingi so'z →</button>
+    `;
+    const row = document.getElementById('hostAwardRow');
+    partyParticipants.forEach((p,i)=>{
+      const btn = document.createElement('button');
+      btn.className = 'host-award-btn';
+      btn.textContent = `+1 ${p.name}`;
+      btn.style.borderBottom = `3px solid ${p.color}`;
+      btn.addEventListener('click', ()=>{
+        p.score++; playCorrect();
+        document.querySelector(`${'#partyBox'} .mp-scoreboard`).outerHTML = renderScoreboard(-1);
+      });
+      row.appendChild(btn);
+    });
+    document.getElementById('hostNextBtn').addEventListener('click', ()=>{
+      partyQIndex++;
+      renderHostQuestion();
+    });
+  });
+}
+
+/* ==================== GRAMMAR GUIDE ==================== */
+const GRAMMAR = [
+  {title:"也...也不...", explain:"Ikki xususiyatni bir vaqtda tasdiqlash yoki inkor qilish uchun ishlatiladi — na u, na bu.", ex:{hz:"九月的北京天气不冷也不热。", py:"Jiǔyuè de Běijīng tiānqì bù lěng yě bú rè.", uz:"Sentabrda Pekin ob-havosi na sovuq, na issiq."}},
+  {title:"是不是 savoli", explain:"Gap boshida yoki kesim oldida qo'llanib, taxminni tasdiqlashni so'raydi.", ex:{hz:"你是不是喜欢运动？", py:"Nǐ shì bu shì xǐhuan yùndòng?", uz:"Sen sportni yoqtirasanmi (shunday emasmi)?"}},
+  {title:"的 iborasi", explain:"Egalik yoki sifatlovchidan keyin otni tushirib qoldirish mumkin — ma'no 的 so'zining o'zidan tushuniladi.", ex:{hz:"这块手表是你的吗？", py:"Zhè kuài shǒubiǎo shì nǐ de ma?", uz:"Bu soat seniki-mi?"}},
+  {title:"是...的 tuzilmasi", explain:"Allaqachon bo'lib o'tgan harakatning kim, qachon yoki qanday bajarilganini ta'kidlash uchun ishlatiladi.", ex:{hz:"这本书是我写的。", py:"Zhè běn shū shì wǒ xiě de.", uz:"Bu kitobni men yozganman."}},
+  {title:"就 (qat'iy xulosa)", explain:"Fe'ldan oldin kelib, avvalgi gapdan kelib chiqadigan xulosa yoki qat'iy niyatni bildiradi.", ex:{hz:"就做你爱吃的鱼。", py:"Jiù zuò nǐ ài chī de yú.", uz:"Aynan sen yaxshi ko'rgan baliqni pishiraman."}},
+  {title:"因为...所以...", explain:"Sabab va natijani bog'laydi — birinchi qism sababni, ikkinchisi natijani bildiradi.", ex:{hz:"因为天气不好，所以我们没去。", py:"Yīnwèi tiānqì bù hǎo, suǒyǐ wǒmen méi qù.", uz:"Ob-havo yomon bo'lgani uchun, biz bormadik."}},
+  {title:"离 predlogi", explain:"Ikki joy orasidagi masofani bildirish uchun ishlatiladi.", ex:{hz:"你家离公司远吗？", py:"Nǐ jiā lí gōngsī yuǎn ma?", uz:"Uying kompaniyadan uzoqmi?"}},
+  {title:"让 (ruxsat/majburlash)", explain:"\"Kimgadir biror narsa qilishga ruxsat berish yoki majbur qilish\" ma'nosini beradi — birinchi fe'lning obyekti ikkinchi fe'lning bajaruvchisiga aylanadi.", ex:{hz:"让我想想再告诉你。", py:"Ràng wǒ xiǎngxiang zài gàosu nǐ.", uz:"Menga o'ylab ko'rishga ruxsat ber, keyin aytaman."}},
+  {title:"Fe'lning takrorlanishi (AA)", explain:"Fe'lni ikki marta takrorlash qisqa, yengil yoki tasodifiy harakatni bildiradi.", ex:{hz:"我们聊聊天吧。", py:"Wǒmen liáoliao tiān ba.", uz:"Keling, birozgina suhbatlashaylik."}},
+  {title:"Natija to'ldiruvchisi", explain:"Fe'ldan keyin kelib, harakatning natijasini bildiruvchi qo'shimcha so'z qo'shiladi.", ex:{hz:"我没听懂。", py:"Wǒ méi tīngdǒng.", uz:"Men tinglab tushunmadim."}},
+  {title:"比 bilan solishtirish", explain:"\"A 比 B + sifat\" tuzilmasi ikki narsa/kishini solishtirish uchun ishlatiladi.", ex:{hz:"他比我大三岁。", py:"Tā bǐ wǒ dà sān suì.", uz:"U mendan uch yosh katta."}},
+  {title:"得 — daraja to'ldiruvchisi", explain:"Fe'l yoki sifatdan keyin kelib, harakatning qanday/qay darajada bajarilganini bildiradi.", ex:{hz:"你穿得太少了。", py:"Nǐ chuān de tài shǎo le.", uz:"Sen juda kam(yupqa) kiyinibsan."}},
+  {title:"着 — davomiylik yordamchisi", explain:"Fe'ldan keyin kelib, harakat yoki holatning davom etayotganini bildiradi.", ex:{hz:"门开着呢。", py:"Mén kāizhe ne.", uz:"Eshik ochiq turibdi."}},
+  {title:"虽然...但是...", explain:"Ikki qarama-qarshi fikrni bog'laydi — \"garchi... lekin...\" ma'nosida.", ex:{hz:"虽然去过，但是还想再去。", py:"Suīrán qùguo, dànshì hái xiǎng zài qù.", uz:"Borgan bo'lsam ham, yana bormoqchiman."}},
+  {title:"快要...了 / 就要...了", explain:"Yaqin kelajakda sodir bo'ladigan voqeani bildiradi — \"tez orada... bo'ladi\".", ex:{hz:"新年就要到了。", py:"Xīnnián jiù yào dào le.", uz:"Yangi yil tez orada keladi (yaqinlashib qolibdi)."}},
+];
+function renderGrammar(){
+  const g = GRAMMAR[currentLesson];
+  const grammarBox = document.getElementById('grammarBox');
+  if(!g){ grammarBox.innerHTML = `<p style="text-align:center;color:var(--text-dim);">Bu dars uchun ma'lumot yo'q.</p>`; return; }
+  grammarBox.innerHTML = `
+    <div class="gram-card">
+      <h3>${LESSONS[currentLesson].hz} — grammatika nuqtasi</h3>
+      <p><b style="color:var(--gold);">${g.title}</b><br>${g.explain}</p>
+      <div class="gram-example">
+        <div class="g-hz hanzi">${g.ex.hz}</div>
+        <div class="g-py">${g.ex.py}</div>
+        <div class="g-uz">${g.ex.uz}</div>
+      </div>
+    </div>
+    <p style="text-align:center;"><button class="ghost-btn" id="gramSpeakBtn">🔊 Tinglash</button></p>
+  `;
+  document.getElementById('gramSpeakBtn').addEventListener('click', ()=>speak(g.ex.hz));
+}
+
+/* ==================== DIALOGUES (fill-in-blank) ==================== */
+const DIALOGUES = [
+  {lines:[{s:'A',t:"我要去北京旅游，你觉得什么时候去最好？"},{s:'B',t:"九月去北京{BLANK}最好。"},{s:'A',t:"为什么？"},{s:'B',t:"九月的北京天气不冷也不热。"}], blank:"旅游"},
+  {lines:[{s:'A',t:"你很少生病，是不是喜欢运动？"},{s:'B',t:"是啊，我每天早上都要出去跑步。"},{s:'A',t:"你每天几点起床？"},{s:'B',t:"我每天六点{BLANK}。"}], blank:"起床"},
+  {lines:[{s:'A',t:"这块{BLANK}是你的吗？"},{s:'B',t:"不是我的，是我爸爸的。"},{s:'A',t:"多少钱买的？"},{s:'B',t:"三十多块。"}], blank:"手表"},
+  {lines:[{s:'A',t:"{BLANK}快乐！这是送给你的！"},{s:'B',t:"是什么？是一本书吗？"},{s:'A',t:"对，这本书是我写的。"},{s:'B',t:"太谢谢你了！"}], blank:"生日"},
+  {lines:[{s:'A',t:"晚上我们去饭馆吃饭，怎么样？"},{s:'B',t:"我不想去外面吃，我想在家吃。"},{s:'A',t:"那你{BLANK}做什么呢？"},{s:'B',t:"就做你爱吃的鱼。"}], blank:"准备"},
+  {lines:[{s:'A',t:"今天的羊肉很好吃，你怎么不吃了？"},{s:'B',t:"这个星期天天吃羊肉，不想吃了。"},{s:'A',t:"那你还想吃什么？"},{s:'B',t:"来一点儿{BLANK}吧。"}], blank:"面条"},
+  {lines:[{s:'A',t:"大卫回来了吗？"},{s:'B',t:"没有，他还在{BLANK}学习呢。"},{s:'A',t:"已经9点多了，他怎么还在学习？"},{s:'B',t:"明天有考试，他说今天要好好准备。"}], blank:"教室"},
+  {lines:[{s:'A',t:"我们下午去看电影，好吗？"},{s:'B',t:"今天下午我没有时间，明天下午再去吧。"},{s:'A',t:"你想看什么电影？"},{s:'B',t:"让我想想再{BLANK}你。"}], blank:"告诉"},
+  {lines:[{s:'A',t:"你好！请问张欢在吗？"},{s:'B',t:"你打{BLANK}了，我们这儿没有叫张欢的。"},{s:'A',t:"对不起。"}], blank:"错"},
+  {lines:[{s:'A',t:"不要看电视了，明天上午还有汉语课呢。"},{s:'B',t:"看电视对学汉语有{BLANK}。"},{s:'A',t:"明天的课你都准备好了吗？"},{s:'B',t:"都准备好了。"}], blank:"帮助"},
+  {lines:[{s:'A',t:"王方，昨天和你一起{BLANK}的人是谁？"},{s:'B',t:"一个朋友。"},{s:'A',t:"什么朋友？是不是男朋友？"},{s:'B',t:"不是不是，我同学介绍的，昨天第一次见。"}], blank:"唱歌"},
+  {lines:[{s:'A',t:"再来点儿米饭吧，你吃得太少了。"},{s:'B',t:"不少了，今天吃得很好，太谢谢你了。"},{s:'A',t:"你做饭做得怎么样？"},{s:'B',t:"不怎么样，我{BLANK}比我做得好。"}], blank:"妻子"},
+  {lines:[{s:'A',t:"{BLANK}开着呢，请进。"},{s:'B',t:"请问，张先生在吗？"},{s:'A',t:"他出去了。你下午再来吧。"},{s:'B',t:"好的，谢谢！"}], blank:"门"},
+  {lines:[{s:'A',t:"你看过那个电影没有？"},{s:'B',t:"没看过，听说很有意思。"},{s:'A',t:"那我们下个星期一起去看吧？"},{s:'B',t:"可以，但是我女朋友也想去。"},{s:'A',t:"听说你去过中国，还想去吗？"},{s:'B',t:"我{BLANK}去过好几次，但是还想再去玩儿玩儿。"}], blank:"虽然"},
+  {lines:[{s:'A',t:"今天是12月20日，新年就要到了。"},{s:'B',t:"新年你准备做什么？"},{s:'A',t:"我想去北京旅游，北京很不错，我去过一次。"},{s:'B',t:"你买票了吗？"},{s:'A',t:"还没有呢，明天就去{BLANK}买票。"}], blank:"火车站"},
+];
+function renderDialogues(){
+  const d = DIALOGUES[currentLesson];
+  const dialoguesBox = document.getElementById('dialoguesBox');
+  if(!d){ dialoguesBox.innerHTML = `<p style="text-align:center;color:var(--text-dim);">Bu dars uchun dialog topilmadi.</p>`; return; }
+  const words = LESSONS[currentLesson].words;
+  const blankWordObj = words.find(w=>w.hz===d.blank) || {hz:d.blank, py:'', uz:''};
+  const distractors = words.filter(w=>w.hz!==d.blank).sort(()=>Math.random()-0.5).slice(0,3);
+  const opts = [...distractors, blankWordObj].sort(()=>Math.random()-0.5);
+
+  let solved = false;
+  const linesHtml = d.lines.map(line=>{
+    let text = line.t;
+    if(text.includes('{BLANK}')){
+      text = text.replace('{BLANK}', `<span class="dlg-blank" id="dlgBlankSpan">?</span>`);
+    }
+    return `<div class="dlg-line speaker${line.s}"><div class="dlg-avatar">${line.s}</div><div class="dlg-text">${text}</div></div>`;
+  }).join('');
+
+  dialoguesBox.innerHTML = `
+    <div class="dlg-card">
+      <p style="text-align:center;color:var(--text-dim);font-size:12px;margin-bottom:16px;">Asl suhbatni tinglang va bo'sh joyni to'g'ri so'z bilan to'ldiring</p>
+      ${linesHtml}
+      <div class="dlg-choices" id="dlgChoices"></div>
+      <p style="text-align:center;"><button class="ghost-btn" id="dlgPlayAllBtn">🔊 Suhbatni tinglash</button></p>
+      <div id="dlgFeedback" style="text-align:center;margin-top:10px;font-weight:700;"></div>
+    </div>
+  `;
+  document.getElementById('dlgPlayAllBtn').addEventListener('click', ()=>{
+    const full = d.lines.map(l=>l.t.replace('{BLANK}', d.blank)).join('，');
+    speak(full);
+  });
+  const choicesRow = document.getElementById('dlgChoices');
+  opts.forEach(o=>{
+    const btn = document.createElement('button');
+    btn.className = 'sb-chip hanzi';
+    btn.textContent = o.hz;
+    btn.addEventListener('click', ()=>{
+      if(solved) return;
+      const blankSpan = document.getElementById('dlgBlankSpan');
+      const feedback = document.getElementById('dlgFeedback');
+      if(o.hz === d.blank){
+        solved = true;
+        blankSpan.textContent = o.hz;
+        blankSpan.classList.add('filled');
+        choicesRow.querySelectorAll('.sb-chip').forEach(b=>b.disabled=true);
+        feedback.style.color = 'var(--jade-light)';
+        feedback.textContent = "To'g'ri! 🎉";
+        playCorrect(); awardXp(15, "Dialog tugallandi!"); recordWordResult(o.hz, true);
+      } else {
+        blankSpan.classList.add('wrong');
+        playWrong(); recordWordResult(d.blank, false);
+        feedback.style.color = 'var(--seal-light)';
+        feedback.textContent = "Qayta urinib ko'ring";
+        setTimeout(()=>blankSpan.classList.remove('wrong'), 500);
+      }
+    });
+    choicesRow.appendChild(btn);
+  });
+}
+
+/* ==================== WRITING TRACE ==================== */
+let writeWordIdx = 0;
+let writeCtx = null, writeDrawing = false;
+function startWriting(){
+  writeWordIdx = 0;
+  renderWritingWord();
+}
+function renderWritingWord(){
+  const words = LESSONS[currentLesson].words;
+  const w = words[writeWordIdx % words.length];
+  const writingBox = document.getElementById('writingBox');
+  writingBox.innerHTML = `
+    <div class="write-card">
+      <div class="write-meta">${writeWordIdx+1} / ${words.length} — <b style="color:var(--text-hi);">${w.py}</b> · ${w.uz}</div>
+      <div class="write-canvas-wrap">
+        <div class="write-ghost hanzi">${w.hz}</div>
+        <canvas id="writeCanvas" width="280" height="280"></canvas>
+      </div>
+      <div class="write-controls">
+        <button class="ghost-btn" id="writeClearBtn">Tozalash</button>
+        <button class="ghost-btn" id="writeSpeakBtn">🔊</button>
+        <button class="cta-btn" id="writeNextBtn">Keyingisi →</button>
+      </div>
+    </div>
+  `;
+  const canvas = document.getElementById('writeCanvas');
+  writeCtx = canvas.getContext('2d');
+  writeCtx.lineWidth = 6; writeCtx.lineCap = 'round'; writeCtx.lineJoin='round';
+  writeCtx.strokeStyle = getComputedStyle(document.body).getPropertyValue('--jade-light') || '#5FCBAE';
+
+  function getPos(e){
+    const rect = canvas.getBoundingClientRect();
+    const cx = (e.touches ? e.touches[0].clientX : e.clientX) - rect.left;
+    const cy = (e.touches ? e.touches[0].clientY : e.clientY) - rect.top;
+    return {x: cx * (canvas.width/rect.width), y: cy * (canvas.height/rect.height)};
+  }
+  function start(e){ writeDrawing = true; const p=getPos(e); writeCtx.beginPath(); writeCtx.moveTo(p.x,p.y); e.preventDefault(); }
+  function move(e){ if(!writeDrawing) return; const p=getPos(e); writeCtx.lineTo(p.x,p.y); writeCtx.stroke(); e.preventDefault(); }
+  function end(){ writeDrawing = false; }
+  canvas.addEventListener('mousedown', start);
+  canvas.addEventListener('mousemove', move);
+  window.addEventListener('mouseup', end);
+  canvas.addEventListener('touchstart', start, {passive:false});
+  canvas.addEventListener('touchmove', move, {passive:false});
+  canvas.addEventListener('touchend', end);
+
+  document.getElementById('writeClearBtn').addEventListener('click', ()=>{
+    writeCtx.clearRect(0,0,canvas.width,canvas.height);
+  });
+  document.getElementById('writeSpeakBtn').addEventListener('click', ()=>speak(w.hz));
+  document.getElementById('writeNextBtn').addEventListener('click', ()=>{
+    writeWordIdx++;
+    awardXp(5, "Yozildi!");
+    renderWritingWord();
+  });
+}
+
+/* ==================== SEARCH ==================== */
+const searchOverlay = document.getElementById('searchOverlay');
+const searchInput = document.getElementById('searchInput');
+const searchResults = document.getElementById('searchResults');
+
+function openSearch(){
+  searchOverlay.classList.add('show');
+  searchInput.value = '';
+  renderSearchResults('');
+  setTimeout(()=>searchInput.focus(), 50);
+}
+function closeSearch(){ searchOverlay.classList.remove('show'); }
+
+document.getElementById('searchToggle').addEventListener('click', openSearch);
+searchOverlay.addEventListener('click', (e)=>{ if(e.target===searchOverlay) closeSearch(); });
+
+function findWordLesson(hz){
+  for(let i=0;i<LESSONS.length;i++){
+    if(LESSONS[i].words.some(w=>w.hz===hz)) return i;
+  }
+  return -1;
+}
+
+function renderSearchResults(query){
+  const q = query.trim().toLowerCase();
+  let matches;
+  if(!q){
+    matches = ALL_WORDS.slice(0, 12);
+  } else {
+    matches = ALL_WORDS.filter(w=>
+      w.hz.includes(query.trim()) ||
+      w.py.toLowerCase().includes(q) ||
+      w.uz.toLowerCase().includes(q)
+    ).slice(0, 30);
+  }
+  if(matches.length===0){
+    searchResults.innerHTML = `<div class="search-empty">Hech narsa topilmadi</div>`;
+    return;
+  }
+  searchResults.innerHTML = matches.map(w=>{
+    const li = findWordLesson(w.hz);
+    return `<div class="search-result-row" data-hz="${w.hz}" data-lesson="${li}">
+      <span class="sr-hz hanzi">${w.hz}</span>
+      <span class="sr-mid">${w.py} — ${w.uz}</span>
+      <span class="sr-lesson">${li+1}-dars</span>
+    </div>`;
+  }).join('');
+  searchResults.querySelectorAll('.search-result-row').forEach(row=>{
+    row.addEventListener('click', ()=>{
+      const li = +row.dataset.lesson;
+      closeSearch();
+      document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+      document.querySelectorAll('section').forEach(s=>s.classList.remove('active'));
+      document.querySelector('.tab[data-tab="cards"]').classList.add('active');
+      document.getElementById('cards').classList.add('active');
+      selectLesson(li);
+      setTimeout(()=>{
+        const cardEls = document.querySelectorAll('#cardGrid .card');
+        const idx = LESSONS[li].words.findIndex(w=>w.hz===row.dataset.hz);
+        const target = cardEls[idx];
+        if(target){
+          target.scrollIntoView({behavior:'smooth', block:'center'});
+          target.classList.add('flipped');
+          target.style.boxShadow = '0 0 0 3px var(--gold)';
+          setTimeout(()=>{ target.style.boxShadow=''; }, 1800);
+        }
+      }, 150);
+    });
+  });
+}
+searchInput.addEventListener('input', ()=>renderSearchResults(searchInput.value));
+
+/* ==================== KEYBOARD SHORTCUTS ==================== */
+document.addEventListener('keydown', (e)=>{
+  const tag = (e.target.tagName||'').toLowerCase();
+  const typing = tag==='input' || tag==='textarea';
+
+  if(e.key === '/' && !typing){
+    e.preventDefault(); openSearch(); return;
+  }
+  if(e.key === 'Escape'){
+    if(searchOverlay.classList.contains('show')) closeSearch();
+    return;
+  }
+  if(typing) return;
+
+  if(e.key === 'ArrowLeft'){
+    const btn = document.getElementById('prevLesson');
+    if(!btn.disabled) selectLesson(currentLesson-1);
+  } else if(e.key === 'ArrowRight'){
+    const btn = document.getElementById('nextLesson');
+    if(!btn.disabled) selectLesson(currentLesson+1);
+  } else if(e.key === 'f' || e.key === 'F'){
+    document.getElementById('favBtn').click();
+  } else if(e.key === 't' || e.key === 'T'){
+    document.getElementById('themeToggle').click();
+  }
+});
+
+/* ==================== THEMED DICTIONARY ==================== */
+const DICT_CATEGORIES = [
+  {id:'family', icon:'👪', name:"Oila va odamlar", words:["丈夫","姐姐","哥哥","妻子","弟弟","妹妹","男","女","孩子","大家","服务员","姓"]},
+  {id:'food', icon:'🍜', name:"Ovqat-ichimlik", words:["牛奶","鱼","咖啡","羊肉","面条","鸡蛋","西瓜","好吃"]},
+  {id:'colors', icon:'🎨', name:"Ranglar", words:["粉色","颜色","红色","白","黑"]},
+  {id:'time', icon:'⏰', name:"Vaqt, sana va bayram", words:["早上","时间","晚上","已经","以后","经常","小时","去年","日","新年","正在","一直","生日"]},
+  {id:'movement', icon:'🏃', name:"Harakat, sport, sayohat", words:["运动","踢","足球","踢足球","跑步","打篮球","游泳","跳舞","唱歌","走","进","拿","玩儿","穿","笑","旅游"]},
+  {id:'home', icon:'🏠', name:"Uy va buyumlar", words:["门","房间","手表","报纸","铅笔","手机","票","自行车","公共汽车"]},
+  {id:'places', icon:'📍', name:"Joy va transport", words:["公司","远","教室","机场","路","宾馆","路口","火车站","旁边","左边","右边","外面","外","离","近","往","到"]},
+  {id:'communication', icon:'🗣', name:"Muloqot va yordam", words:["觉得","知道","希望","懂","问","告诉","说话","让","欢迎","介绍","给","接","找","等","送","帮","帮助"]},
+  {id:'adjectives', icon:'😊', name:"Sifat va hissiyot", words:["快乐","非常","新","高","忙","不错","贵","便宜","错","有意思","长","真","慢","快"]},
+  {id:'numbers', icon:'🔢', name:"Raqam va o'lchov", words:["千","两","一下","件","公斤","第一","零","度","次","百","米"]},
+  {id:'weather', icon:'🌦', name:"Ob-havo va tabiat", words:["雪","晴","阴"]},
+  {id:'school', icon:'🏫', name:"Maktab va ish", words:["考试","课","题","班","上班"]},
+  {id:'health', icon:'🩺', name:"Tana, salomatlik, kunlik", words:["眼睛","身体","手","生病","药","出院","起床","休息","洗","准备","开始","完"]},
+  {id:'grammar', icon:'🧩', name:"Grammatika so'zlari", words:["为什么","也","要","它","就","吧","还","可以","因为","所以","再","别","得","着","从","比","可能","但是","虽然","更","对","过","每","最","意思","事情","问题"]},
+];
+
+let dictActiveCat = null;
+function renderDictionaryHome(){
+  dictActiveCat = null;
+  const box = document.getElementById('dictionaryBox');
+  box.innerHTML = `
+    <div class="dict-total-badge">📖 Jami ${ALL_WORDS.length} ta so'z</div>
+    <p style="text-align:center;color:var(--text-dim);font-size:13px;margin-bottom:18px;">Mavzu bo'yicha ko'ring yoki barcha so'zlarni A-Z tartibida oching</p>
+    <button class="dict-all-btn" id="dictAllBtn">📋 Barcha ${ALL_WORDS.length} ta so'zni ko'rish</button>
+    <div class="dict-cat-grid" id="dictCatGrid"></div>
+  `;
+  document.getElementById('dictAllBtn').addEventListener('click', renderDictionaryAll);
+  const grid = document.getElementById('dictCatGrid');
+  DICT_CATEGORIES.forEach(cat=>{
+    const card = document.createElement('div');
+    card.className = 'dict-cat-card';
+    card.innerHTML = `<div class="dc-icon">${cat.icon}</div><div class="dc-name">${cat.name}</div><div class="dc-count">${cat.words.length} so'z</div>`;
+    card.addEventListener('click', ()=>renderDictionaryCategory(cat.id));
+    grid.appendChild(card);
+  });
+}
+
+function makeDictRow(w){
+  const row = document.createElement('div');
+  row.className = 'dict-word-row';
+  row.innerHTML = `
+    <span class="dw-hz hanzi">${w.hz}</span>
+    <div class="dw-mid"><div class="dw-py">${w.py}</div><div class="dw-uz">${w.uz}</div></div>
+    <span class="dw-lesson">${w.lesson+1}-dars</span>
+  `;
+  row.addEventListener('click', ()=>{
+    document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+    document.querySelectorAll('section').forEach(s=>s.classList.remove('active'));
+    document.querySelector('.tab[data-tab="cards"]').classList.add('active');
+    document.getElementById('cards').classList.add('active');
+    selectLesson(w.lesson);
+    setTimeout(()=>{
+      const cardEls = document.querySelectorAll('#cardGrid .card');
+      const idx = LESSONS[w.lesson].words.findIndex(x=>x.hz===w.hz && x.py===w.py);
+      const target = cardEls[idx];
+      if(target){
+        target.scrollIntoView({behavior:'smooth', block:'center'});
+        target.classList.add('flipped');
+        target.style.boxShadow = '0 0 0 3px var(--gold)';
+        setTimeout(()=>{ target.style.boxShadow=''; }, 1800);
+      }
+    }, 150);
+  });
+  return row;
+}
+
+function renderDictionaryAll(){
+  const box = document.getElementById('dictionaryBox');
+  const withLesson = ALL_WORDS.map(w=>({...w, lesson: findWordLesson(w.hz)}));
+  const sorted = [...withLesson].sort((a,b)=>a.py.localeCompare(b.py));
+  const letters = [...new Set(sorted.map(w=>w.py[0].toUpperCase()))];
+
+  box.innerHTML = `
+    <button class="ghost-btn dict-back-btn" id="dictBackBtn">← Mavzular</button>
+    <div class="dict-total-badge">Jami ${ALL_WORDS.length} ta so'z — pinyin bo'yicha A-Z</div>
+    <input type="text" class="dict-filter-input" id="dictFilterInput" placeholder="Ro'yxat ichida qidirish (hanzi / pinyin / o'zbekcha)..." autocomplete="off" />
+    <div class="dict-az-bar" id="dictAzBar"></div>
+    <div class="dict-word-list" id="dictAllList"></div>
+  `;
+  document.getElementById('dictBackBtn').addEventListener('click', renderDictionaryHome);
+
+  const azBar = document.getElementById('dictAzBar');
+  letters.forEach(l=>{
+    const btn = document.createElement('button');
+    btn.className = 'dict-az-btn';
+    btn.textContent = l;
+    btn.addEventListener('click', ()=>{
+      const el = document.getElementById('dictLetter_'+l);
+      if(el) el.scrollIntoView({behavior:'smooth', block:'start'});
+    });
+    azBar.appendChild(btn);
+  });
+
+  function renderList(data){
+    const listEl = document.getElementById('dictAllList');
+    listEl.innerHTML = '';
+    if(data.length===0){
+      listEl.innerHTML = `<div class="search-empty">Hech narsa topilmadi</div>`;
+      return;
+    }
+    let lastLetter = null;
+    data.forEach(w=>{
+      const letter = w.py[0].toUpperCase();
+      if(letter !== lastLetter){
+        lastLetter = letter;
+        const label = document.createElement('div');
+        label.className = 'dict-az-group-label';
+        label.id = 'dictLetter_'+letter;
+        label.textContent = letter;
+        listEl.appendChild(label);
+      }
+      listEl.appendChild(makeDictRow(w));
+    });
+  }
+  renderList(sorted);
+
+  document.getElementById('dictFilterInput').addEventListener('input', (e)=>{
+    const q = e.target.value.trim().toLowerCase();
+    if(!q){ renderList(sorted); document.getElementById('dictAzBar').style.display='flex'; return; }
+    document.getElementById('dictAzBar').style.display='none';
+    const filtered = sorted.filter(w=>w.hz.includes(e.target.value.trim()) || w.py.toLowerCase().includes(q) || w.uz.toLowerCase().includes(q));
+    renderList(filtered);
+  });
+}
+
+function renderDictionaryCategory(catId){
+  dictActiveCat = catId;
+  const cat = DICT_CATEGORIES.find(c=>c.id===catId);
+  const box = document.getElementById('dictionaryBox');
+  const entries = cat.words.map(hz=>{
+    const w = ALL_WORDS.find(x=>x.hz===hz);
+    const li = findWordLesson(hz);
+    return w ? {...w, lesson: li} : null;
+  }).filter(Boolean);
+
+  box.innerHTML = `
+    <button class="ghost-btn dict-back-btn" id="dictBackBtn">← Barcha mavzular</button>
+    <h3 style="text-align:center;margin-bottom:18px;color:var(--jade-light);">${cat.icon} ${cat.name} <span style="color:var(--text-dim);font-weight:400;font-size:13px;">(${entries.length} so'z)</span></h3>
+    <div class="dict-word-list" id="dictWordList"></div>
+  `;
+  document.getElementById('dictBackBtn').addEventListener('click', renderDictionaryHome);
+  const list = document.getElementById('dictWordList');
+  entries.forEach(w=>{
+    const row = document.createElement('div');
+    row.className = 'dict-word-row';
+    row.innerHTML = `
+      <span class="dw-hz hanzi">${w.hz}</span>
+      <div class="dw-mid"><div class="dw-py">${w.py}</div><div class="dw-uz">${w.uz}</div></div>
+      <span class="dw-lesson">${w.lesson+1}-dars</span>
+    `;
+    row.addEventListener('click', ()=>{
+      document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+      document.querySelectorAll('section').forEach(s=>s.classList.remove('active'));
+      document.querySelector('.tab[data-tab="cards"]').classList.add('active');
+      document.getElementById('cards').classList.add('active');
+      selectLesson(w.lesson);
+      setTimeout(()=>{
+        const cardEls = document.querySelectorAll('#cardGrid .card');
+        const idx = LESSONS[w.lesson].words.findIndex(x=>x.hz===w.hz);
+        const target = cardEls[idx];
+        if(target){
+          target.scrollIntoView({behavior:'smooth', block:'center'});
+          target.classList.add('flipped');
+          target.style.boxShadow = '0 0 0 3px var(--gold)';
+          setTimeout(()=>{ target.style.boxShadow=''; }, 1800);
+        }
+      }, 150);
+    });
+    list.appendChild(row);
+  });
+}
+
+/* ==================== BELL / NOTIFICATION PANEL ==================== */
+const bellPanel = document.getElementById('bellPanel');
+function fmtRelTime(ts){
+  const diff = Math.floor((Date.now()-ts)/1000);
+  if(diff<60) return "hozirgina";
+  if(diff<3600) return Math.floor(diff/60)+" daqiqa oldin";
+  if(diff<86400) return Math.floor(diff/3600)+" soat oldin";
+  return Math.floor(diff/86400)+" kun oldin";
+}
+function renderBellList(){
+  const list = document.getElementById('bellList');
+  const items = progress.notifications||[];
+  if(items.length===0){
+    list.innerHTML = `<div class="bell-empty">Hali bildirishnoma yo'q. Mashq qiling — bu yerda yutuqlaringiz ko'rinadi!</div>`;
+    return;
+  }
+  list.innerHTML = items.map(n=>`
+    <div class="bell-item">
+      <div class="bi-icon">${n.icon}</div>
+      <div><div class="bi-text">${n.text}</div><div class="bi-time">${fmtRelTime(n.time)}</div></div>
+    </div>
+  `).join('');
+}
+function positionBellPanel(){
+  const btn = document.getElementById('bellToggle');
+  const rect = btn.getBoundingClientRect();
+  bellPanel.style.left = Math.max(16, rect.left) + 'px';
+}
+document.getElementById('bellToggle').addEventListener('click', (e)=>{
+  e.stopPropagation();
+  const isShowing = bellPanel.classList.toggle('show');
+  if(isShowing){
+    positionBellPanel();
+    renderBellList();
+    progress.unreadNotif = 0;
+    saveProgress();
+    updateBellBadge();
+  }
+});
+document.addEventListener('click', (e)=>{
+  if(bellPanel.classList.contains('show') && !bellPanel.contains(e.target) && e.target.id!=='bellToggle'){
+    bellPanel.classList.remove('show');
+  }
+});
+document.getElementById('bellClearBtn').addEventListener('click', ()=>{
+  progress.notifications = [];
+  saveProgress();
+  renderBellList();
+});
+updateBellBadge();
+
+/* ---- Daily reminder toggle (Notification API, best-effort while tab open) ---- */
+const reminderToggle = document.getElementById('reminderToggle');
+function refreshReminderToggleUI(){
+  reminderToggle.classList.toggle('on', !!progress.remindersEnabled);
+}
+refreshReminderToggleUI();
+reminderToggle.addEventListener('click', async ()=>{
+  if(!progress.remindersEnabled){
+    if(typeof Notification === 'undefined'){
+      alert("Bu brauzer bildirishnomalarni qo'llab-quvvatlamaydi.");
+      return;
+    }
+    let perm = Notification.permission;
+    if(perm === 'default'){ perm = await Notification.requestPermission(); }
+    if(perm !== 'granted'){
+      alert("Bildirishnoma ruxsati berilmadi. Brauzer sozlamalaridan yoqishingiz mumkin.");
+      return;
+    }
+    progress.remindersEnabled = true;
+    pushNotification('🔔', "Kunlik eslatmalar yoqildi!", {real:true});
+  } else {
+    progress.remindersEnabled = false;
+  }
+  saveProgress();
+  refreshReminderToggleUI();
+});
+
+/* ==================== NOTES (Qaydlar) ==================== */
+function renderNotes(){
+  const box = document.getElementById('notesBox');
+  const notes = progress.notes || [];
+  box.innerHTML = `
+    <div class="notes-composer">
+      <textarea id="noteInput" placeholder="Eslatma, mnemonika yoki shaxsiy fikringizni yozing..."></textarea>
+      <div class="notes-composer-row">
+        <select id="noteLessonSelect">
+          <option value="-1">Umumiy qayd</option>
+          ${LESSONS.map((l,i)=>`<option value="${i}" ${i===currentLesson?'selected':''}>${i+1}-dars — ${l.hz}</option>`).join('')}
+        </select>
+        <button class="cta-btn" id="noteSaveBtn">💾 Saqlash</button>
+      </div>
+    </div>
+    <div class="notes-list" id="notesList"></div>
+  `;
+  document.getElementById('noteSaveBtn').addEventListener('click', ()=>{
+    const text = document.getElementById('noteInput').value.trim();
+    if(!text) return;
+    const lessonIdx = +document.getElementById('noteLessonSelect').value;
+    progress.notes = progress.notes || [];
+    progress.notes.unshift({id: Date.now(), text, lesson: lessonIdx, time: Date.now()});
+    saveProgress();
+    pushNotification('📝', "Yangi qayd saqlandi.");
+    renderNotes();
+  });
+  renderNotesList();
+}
+function renderNotesList(){
+  const listEl = document.getElementById('notesList');
+  const notes = progress.notes || [];
+  if(notes.length===0){
+    listEl.innerHTML = `<div class="search-empty">Hali qaydlar yo'q. Yuqoridagi maydonga birinchi qaydingizni yozing.</div>`;
+    return;
+  }
+  listEl.innerHTML = notes.map(n=>{
+    const tag = n.lesson>=0 ? `${n.lesson+1}-dars` : "Umumiy";
+    const date = new Date(n.time).toLocaleDateString('uz-UZ', {day:'2-digit', month:'2-digit', year:'numeric'});
+    return `<div class="note-card">
+      <div class="note-card-head">
+        <span class="note-card-tag">${tag}</span>
+        <span style="display:flex;align-items:center;gap:10px;">
+          <span class="note-card-date">${date}</span>
+          <button class="note-del-btn" data-id="${n.id}">🗑</button>
+        </span>
+      </div>
+      <p>${n.text.replace(/</g,'&lt;')}</p>
+    </div>`;
+  }).join('');
+  listEl.querySelectorAll('.note-del-btn').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      progress.notes = progress.notes.filter(n=>n.id !== +btn.dataset.id);
+      saveProgress();
+      renderNotesList();
+    });
+  });
+}
+
+/* ==================== PINYIN TOGGLE ==================== */
+function applyPinyinMode(){
+  document.body.classList.toggle('hide-pinyin', !progress.showPinyin);
+  const btn = document.getElementById('pinyinToggleBtn');
+  btn.lastChild.textContent = progress.showPinyin ? ' Pinyin: yoqilgan' : ' Pinyin: yashirilgan';
+}
+document.getElementById('pinyinToggleBtn').addEventListener('click', ()=>{
+  progress.showPinyin = !progress.showPinyin;
+  saveProgress();
+  applyPinyinMode();
+});
+applyPinyinMode();
+// Tap-to-peek support for touch devices (blurred pinyin reveals on tap)
+document.addEventListener('click', (e)=>{
+  const el = e.target.closest('.py-hide');
+  if(el && document.body.classList.contains('hide-pinyin')){
+    el.classList.toggle('peek');
+  }
+});
+
+/* ==================== BACKGROUND THEMES (Mavzular) ==================== */
+const BG_THEMES = [
+  {id:'ipak', name:"Ipak yo'li", desc:"Jade va muhr rangidagi klassik", emojis:['❀','🍃','❁'], preview:['❀','🍃','❁','❀']},
+  {id:'lantern', name:"Fonarlar kechasi", desc:"Suzib yuruvchi qizil fonarlar", emojis:[], preview:['🏮','🏮','🏮']},
+  {id:'mountain', name:"Tog' va oy", desc:"Tungi tog' silueti, suzuvchi bulutlar", emojis:[], preview:['⛰️','☁️','🌙']},
+  {id:'blossom', name:"Bahor gullari", desc:"Zich uchayotgan gilos gullari", emojis:['🌸','💮','🌺'], preview:['🌸','🌸','💮','🌸']},
+];
+function applyBgTheme(id){
+  document.body.setAttribute('data-bg', id);
+  const t = BG_THEMES.find(x=>x.id===id) || BG_THEMES[0];
+  if(t.emojis.length){ buildPetals(t.emojis, id==='blossom'?28:16, id==='blossom'?[14,20]:[14,18]); }
+  if(id==='lantern'){ buildLanterns(); }
+}
+function renderThemes(){
+  const box = document.getElementById('themesBox');
+  box.innerHTML = `
+    <p style="text-align:center;color:var(--text-dim);font-size:13px;margin-bottom:22px;">Animatsiyali fon mavzusini tanlang</p>
+    <div class="theme-grid" id="themeGrid"></div>
+  `;
+  const grid = document.getElementById('themeGrid');
+  BG_THEMES.forEach(t=>{
+    const card = document.createElement('div');
+    card.className = 'theme-card' + (progress.bgTheme===t.id ? ' active':'');
+    const emojiSpans = t.preview.map((e,i)=>`<span class="tp-emoji" style="left:${10+i*22}%;top:${10+ (i%2)*40}%;">${e}</span>`).join('');
+    card.innerHTML = `
+      <div class="theme-preview" style="background:linear-gradient(160deg, var(--ink-2), #0a1420);">${emojiSpans}</div>
+      <div class="theme-label"><div class="tl-name">${t.name}</div><div class="tl-desc">${t.desc}</div></div>
+      <div class="theme-check">✓</div>
+    `;
+    card.addEventListener('click', ()=>{
+      progress.bgTheme = t.id;
+      saveProgress();
+      applyBgTheme(t.id);
+      renderThemes();
+    });
+    grid.appendChild(card);
+  });
+}
+applyBgTheme(progress.bgTheme || 'ipak');
+</script>
+
+
+
+
+</body></html>
